@@ -1,0 +1,760 @@
+[
+  {
+    "name": "/user/login",
+    "key": "USER:LOGIN",
+    "type": "route",
+    "path": "/user/login",
+    "authority": [],
+    "ext": "{\"index\":0}",
+    "children": []
+  },
+  {
+    "name": "欢迎",
+    "key": "WELCOME",
+    "type": "route",
+    "path": "/welcome",
+    "authority": [],
+    "ext": "{\"index\":0}",
+    "icon": "like",
+    "children": []
+  },
+  {
+    "name": "权限管理",
+    "key": "AUTHORITY",
+    "type": "route",
+    "path": "/authority",
+    "authority": [],
+    "ext": "{\"index\":1}",
+    "icon": "team",
+    "children": [
+      {
+        "name": "角色管理",
+        "key": "AUTHORITY:ROLES",
+        "type": "route",
+        "path": "/authority/roles",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "用户管理",
+        "key": "AUTHORITY:USERS",
+        "type": "route",
+        "path": "/authority/users",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": []
+      },
+      {
+        "name": "用户角色管理",
+        "key": "AUTHORITY:USERS_ROLES",
+        "type": "route",
+        "path": "/authority/users-roles",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "到货管理",
+    "key": "ARRIVAL",
+    "type": "route",
+    "path": "/arrival",
+    "authority": [],
+    "ext": "{\"index\":2}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "到货单管理",
+        "key": "ARRIVAL:ARRIVAL_NOTE",
+        "type": "route",
+        "path": "/arrival/arrival-note",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": [
+          {
+            "name": "查询",
+            "key": "ARRIVAL:ARRIVAL_NOTE:SEARCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/page,/ae/tradeShipper/list,/ae/tradeSupplier/list,/ae/document/listSimple"
+          },
+          {
+            "name": "查看",
+            "key": "ARRIVAL:ARRIVAL_NOTE:WATCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/get"
+          },
+          {
+            "name": "关闭",
+            "key": "ARRIVAL:ARRIVAL_NOTE:CLOSE",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/close"
+          },
+          {
+            "name": "取消关闭",
+            "key": "ARRIVAL:ARRIVAL_NOTE:CANCEL-CLOSE",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/cancelClose"
+          },
+          {
+            "name": "到货确认",
+            "key": "ARRIVAL:ARRIVAL_NOTE:ARRIVAL-SURE",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/listToBeConfirmed,/ae/asn/inspection/confirm/saveBatch"
+          },
+          {
+            "name": "收货明细",
+            "key": "ARRIVAL:ARRIVAL_NOTE:ARRIVAL-DETAIL",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/inspection/confirm/listConfirmed,/ae/asn/inspection/confirm/cancel"
+          },
+          {
+            "name": "入库明细",
+            "key": "ARRIVAL:ARRIVAL_NOTE:STORAGE-DETAIL",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/inbound/listInboundDetails,/ae/inbound/cancelInbound"
+          },
+          {
+            "name": "打印预检单",
+            "key": "ARRIVAL:ARRIVAL_NOTE:PREFLIGHT-ORDERS",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asn/printPreInspectionDoc"
+          }
+        ]
+      },
+      {
+        "name": "特殊入库单",
+        "key": "ARRIVAL:SPECIAL_INBOUND_ORDER",
+        "type": "route",
+        "path": "/arrival/special-inbound-order",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": [
+          {
+            "name": "查询",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:SEARCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/list,/ae/tradeShipper/selectListActive,/ae/tradeSupplier/selectListActive"
+          },
+          {
+            "name": "新建",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:ADD",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/upsert"
+          },
+          {
+            "name": "编辑",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:EDIT",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/upsert"
+          },
+          {
+            "name": "送审",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:TRIAL",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/sendAudit"
+          },
+          {
+            "name": "作废",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:INVALID",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/cancel"
+          },
+          {
+            "name": "查看",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:WATCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/get,/ae/asnSpecial/importDetail,/ae/asnSpecial/downloadTemplate"
+          },
+          {
+            "name": "删除",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER:DELETE",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/delete"
+          }
+        ]
+      },
+      {
+        "name": "特殊入库单审核",
+        "key": "ARRIVAL:SPECIAL_INBOUND_ORDER_AUDIT",
+        "type": "route",
+        "path": "/arrival/special-inbound-order-audit",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": [
+          {
+            "name": "查询",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER_AUDIT:SEARCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/list"
+          },
+          {
+            "name": "审核",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER_AUDIT:AUDIT",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecialReview/review"
+          },
+          {
+            "name": "详情",
+            "key": "ARRIVAL:SPECIAL_INBOUND_ORDER_AUDIT:WATCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/asnSpecial/get"
+          }
+        ]
+      },
+      {
+        "name": "上架明细",
+        "key": "ARRIVAL:INBOUND_ORDER",
+        "type": "route",
+        "path": "/arrival/inbound-order",
+        "authority": [],
+        "ext": "{\"index\":3}",
+        "children": [
+          {
+            "name": "查询",
+            "key": "ARRIVAL:INBOUND_ORDER:SEARCH",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/putOn/shelves/detail/page"
+          },
+          {
+            "name": "导出",
+            "key": "ARRIVAL:INBOUND_ORDER:EXPORT",
+            "type": "component",
+            "authority": [],
+            "path": "/ae/putOn/shelves/detail/export"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "出库管理",
+    "key": "OUTBOUND",
+    "type": "route",
+    "path": "/outbound",
+    "authority": [],
+    "ext": "{\"index\":3}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "出库单管理",
+        "key": "OUTBOUND:OUTBOUND_NOTE",
+        "type": "route",
+        "path": "/outbound/outbound-note",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "合并订单信息",
+        "key": "OUTBOUND:COMBINED_NOTE",
+        "type": "route",
+        "path": "/outbound/combined-note",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": []
+      },
+      {
+        "name": "特殊出库单",
+        "key": "OUTBOUND:SPECIAL_OUTBOUND_ORDER",
+        "type": "route",
+        "path": "/outbound/special-outbound-order",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": []
+      },
+      {
+        "name": "特殊出库单审核",
+        "key": "OUTBOUND:SPECIAL_OUTBOUND_ORDER_AUDIT",
+        "type": "route",
+        "path": "/outbound/special-outbound-order-audit",
+        "authority": [],
+        "ext": "{\"index\":3}",
+        "children": []
+      },
+      {
+        "name": "波次管理",
+        "key": "OUTBOUND:WELLEN_MANAGE",
+        "type": "route",
+        "path": "/outbound/wellen-manage",
+        "authority": [],
+        "ext": "{\"index\":4}",
+        "icon": "hdd",
+        "children": [
+          {
+            "name": "波次",
+            "key": "OUTBOUND:WELLEN_MANAGE:WELLEN",
+            "type": "route",
+            "path": "/outbound/wellen-manage/wellen",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "制单管理",
+        "key": "OUTBOUND:PREPARE_DOCUMENT",
+        "type": "route",
+        "path": "/outbound/prepare-document",
+        "authority": [],
+        "ext": "{\"index\":5}",
+        "icon": "hdd",
+        "children": [
+          {
+            "name": "普通制单管理",
+            "key": "OUTBOUND:PREPARE_DOCUMENT:NORMAL_PREPARE_DOCUMENT",
+            "type": "route",
+            "path": "/outbound/prepare-document/normal-prepare-document",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          },
+          {
+            "name": "预包装制单管理",
+            "key": "OUTBOUND:PREPARE_DOCUMENT:PREPACKAGE_PREPARE_DOCUMENT",
+            "type": "route",
+            "path": "/outbound/prepare-document/prepackage-prepare-document",
+            "authority": [],
+            "ext": "{\"index\":1}",
+            "children": []
+          },
+          {
+            "name": "非销售制单管理",
+            "key": "OUTBOUND:PREPARE_DOCUMENT:NOT_SALE_PREPARE_DOCUMENT",
+            "type": "route",
+            "path": "/outbound/prepare-document/not-sale-prepare-document",
+            "authority": [],
+            "ext": "{\"index\":2}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "装载管理",
+        "key": "OUTBOUND:LOAD",
+        "type": "route",
+        "path": "/outbound/load",
+        "authority": [],
+        "ext": "{\"index\":6}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "调拨管理",
+    "key": "ALLOCATION",
+    "type": "route",
+    "path": "/allocation",
+    "authority": [],
+    "ext": "{\"index\":4}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "调拨单管理",
+        "key": "ALLOCATION:ALLOCATION_ORDER",
+        "type": "route",
+        "path": "/allocation/allocation-order",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "盘点管理",
+    "key": "STOCKTAKING",
+    "type": "route",
+    "path": "/stocktaking",
+    "authority": [],
+    "ext": "{\"index\":5}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "盘点单管理",
+        "key": "STOCKTAKING:STOCKTAKING_ORDER",
+        "type": "route",
+        "path": "/stocktaking/stocktaking-order",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "任务管理",
+    "key": "TASK",
+    "type": "route",
+    "path": "/task",
+    "authority": [],
+    "ext": "{\"index\":6}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "任务浏览",
+        "key": "TASK:TASK_BROWSING",
+        "type": "route",
+        "path": "/task/task-browsing",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "生产数据导出",
+        "key": "TASK:PRODUCTION_DATA_EXPORT",
+        "type": "route",
+        "path": "/task/production-data-export",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": []
+      },
+      {
+        "name": "拣货任务确认",
+        "key": "TASK:PICK_CONFIRMATION",
+        "type": "route",
+        "path": "/task/pick-confirmation",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "库存管理",
+    "key": "INVENTORY",
+    "type": "route",
+    "path": "/inventory",
+    "authority": [],
+    "ext": "{\"index\":7}",
+    "icon": "hdd",
+    "children": [
+      {
+        "name": "库存账册",
+        "key": "INVENTORY:INVENTORY_BOOKS",
+        "type": "route",
+        "path": "/inventory/inventory-books",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "批次库存",
+        "key": "INVENTORY:BATCH_INVENTORY",
+        "type": "route",
+        "path": "/inventory/batch-inventory",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": []
+      },
+      {
+        "name": "库位库存浏览",
+        "key": "INVENTORY:LOCATION_INVENTORY_BROWSING",
+        "type": "route",
+        "path": "/inventory/location-inventory-browsing",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "基础管理",
+    "key": "BASE",
+    "type": "route",
+    "path": "/base",
+    "authority": [],
+    "ext": "{\"index\":8}",
+    "icon": "setting",
+    "children": [
+      {
+        "name": "仓库管理",
+        "key": "BASE:WAREHOUSE",
+        "type": "route",
+        "path": "/base/warehouse",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "贸易伙伴管理",
+        "key": "BASE:TRADE_PARTNER",
+        "type": "route",
+        "path": "/base/trade-partner",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": [
+          {
+            "name": "货主管理",
+            "key": "BASE:TRADE_PARTNER:CONSIGNER",
+            "type": "route",
+            "path": "/base/trade-partner/consigner",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          },
+          {
+            "name": "供应商管理",
+            "key": "BASE:TRADE_PARTNER:SUPPLIER",
+            "type": "route",
+            "path": "/base/trade-partner/supplier",
+            "authority": [],
+            "ext": "{\"index\":1}",
+            "children": []
+          },
+          {
+            "name": "物流公司管理",
+            "key": "BASE:TRADE_PARTNER:LOGISTICS",
+            "type": "route",
+            "path": "/base/trade-partner/logistics",
+            "authority": [],
+            "ext": "{\"index\":2}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "仓库设施管理",
+        "key": "BASE:STORAGE_FACILITIES",
+        "type": "route",
+        "path": "/base/storage-facilities",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": [
+          {
+            "name": "区段管理",
+            "key": "BASE:STORAGE_FACILITIES:ZONE",
+            "type": "route",
+            "path": "/base/storage-facilities/zone",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          },
+          {
+            "name": "区域管理",
+            "key": "BASE:STORAGE_FACILITIES:AREA",
+            "type": "route",
+            "path": "/base/storage-facilities/area",
+            "authority": [],
+            "ext": "{\"index\":1}",
+            "children": []
+          },
+          {
+            "name": "库位管理",
+            "key": "BASE:STORAGE_FACILITIES:WAREHOUSE_LOCATION",
+            "type": "route",
+            "path": "/base/storage-facilities/warehouse-location",
+            "authority": [],
+            "ext": "{\"index\":2}",
+            "children": []
+          },
+          {
+            "name": "库位类型管理",
+            "key": "BASE:STORAGE_FACILITIES:LOCATION_TYPE",
+            "type": "route",
+            "path": "/base/storage-facilities/location-type",
+            "authority": [],
+            "ext": "{\"index\":3}",
+            "children": []
+          },
+          {
+            "name": "容器管理",
+            "key": "BASE:STORAGE_FACILITIES:WAREHOUSE_CONTAINER",
+            "type": "route",
+            "path": "/base/storage-facilities/warehouse-container",
+            "authority": [],
+            "ext": "{\"index\":4}",
+            "children": []
+          },
+          {
+            "name": "播种组管理",
+            "key": "BASE:STORAGE_FACILITIES:WAREHOUSE_SEED_GROUP",
+            "type": "route",
+            "path": "/base/storage-facilities/warehouse-seed-group",
+            "authority": [],
+            "ext": "{\"index\":5}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "货品管理",
+        "key": "BASE:ITEM",
+        "type": "route",
+        "path": "/base/item",
+        "authority": [],
+        "ext": "{\"index\":3}",
+        "children": [
+          {
+            "name": "预包装管理",
+            "key": "BASE:ITEM:PREPACKAGE",
+            "type": "route",
+            "path": "/base/item/prepackage",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          },
+          {
+            "name": "货品管理",
+            "key": "BASE:ITEM:GOODS",
+            "type": "route",
+            "path": "/base/item/goods",
+            "authority": [],
+            "ext": "{\"index\":1}",
+            "children": []
+          },
+          {
+            "name": "包装管理",
+            "key": "BASE:ITEM:PACKAGING",
+            "type": "route",
+            "path": "/base/item/packaging",
+            "authority": [],
+            "ext": "{\"index\":2}",
+            "children": []
+          },
+          {
+            "name": "批属性管理",
+            "key": "BASE:ITEM:ITEM_LOT_ATTRIBUTE",
+            "type": "route",
+            "path": "/base/item/item-lot-attribute",
+            "authority": [],
+            "ext": "{\"index\":3}",
+            "children": []
+          },
+          {
+            "name": "批属性填充规则",
+            "key": "BASE:ITEM:ITEM_LOT_RULE",
+            "type": "route",
+            "path": "/base/item/item-lot-rule",
+            "authority": [],
+            "ext": "{\"index\":4}",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "配置管理",
+    "key": "CONFIGURATION",
+    "type": "route",
+    "path": "/configuration",
+    "authority": [],
+    "ext": "{\"index\":9}",
+    "icon": "sliders",
+    "children": [
+      {
+        "name": "单据类型管理",
+        "key": "CONFIGURATION:NOTE_TYPE",
+        "type": "route",
+        "path": "/configuration/note-type",
+        "authority": [],
+        "ext": "{\"index\":0}",
+        "children": []
+      },
+      {
+        "name": "入库配置",
+        "key": "CONFIGURATION:INBOUND_CONFIGURATION",
+        "type": "route",
+        "path": "/configuration/inbound-configuration",
+        "authority": [],
+        "ext": "{\"index\":1}",
+        "children": [
+          {
+            "name": "入库首选项",
+            "key": "CONFIGURATION:INBOUND_CONFIGURATION:INBOUND_PREFERENCES",
+            "type": "route",
+            "path": "/configuration/inbound-configuration/inbound-preferences",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "出库配置",
+        "key": "CONFIGURATION:OUTBOUND_CONFIGURATION",
+        "type": "route",
+        "path": "/configuration/outbound-configuration",
+        "authority": [],
+        "ext": "{\"index\":2}",
+        "children": [
+          {
+            "name": "库存周转规则",
+            "key": "CONFIGURATION:OUTBOUND_CONFIGURATION:REVOLVE_TYPE_RULES",
+            "type": "route",
+            "path": "/configuration/outbound-configuration/revolve-type-rules",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          },
+          {
+            "name": "库存分配规则",
+            "key": "CONFIGURATION:OUTBOUND_CONFIGURATION:INVENTORY_ALLOCATION_RULES",
+            "type": "route",
+            "path": "/configuration/outbound-configuration/inventory-allocation-rules",
+            "authority": [],
+            "ext": "{\"index\":1}",
+            "children": []
+          },
+          {
+            "name": "库存分配策略",
+            "key": "CONFIGURATION:OUTBOUND_CONFIGURATION:INVENTORY_ALLOCATION_TACTICS",
+            "type": "route",
+            "path": "/configuration/outbound-configuration/inventory-allocation-tactics",
+            "authority": [],
+            "ext": "{\"index\":2}",
+            "children": []
+          },
+          {
+            "name": "不合单货品配置",
+            "key": "CONFIGURATION:OUTBOUND_CONFIGURATION:NOT_COMBINED_GOODS_CONFIGURATION",
+            "type": "route",
+            "path": "/configuration/outbound-configuration/not-combined-goods-configuration",
+            "authority": [],
+            "ext": "{\"index\":3}",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "盘点配置",
+        "key": "CONFIGURATION:INVENTORY_CONFIGURATION",
+        "type": "route",
+        "path": "/configuration/inventory-configuration",
+        "authority": [],
+        "ext": "{\"index\":3}",
+        "children": [
+          {
+            "name": "盘点首选项",
+            "key": "CONFIGURATION:INVENTORY_CONFIGURATION:INVENTORY_PREFERENCES",
+            "type": "route",
+            "path": "/configuration/inventory-configuration/inventory-preferences",
+            "authority": [],
+            "ext": "{\"index\":0}",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
