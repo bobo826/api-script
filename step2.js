@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const buf = new Buffer.alloc(10240000);
-const outDir = "./dist/api-codes.json";
-const dealOutDir = "./dist/deal-api-codes.json";
-const inJson = require("./dist/deal-codes.json");
+const outDir = "./src/erp/temp/api-codes.json";
+const dealOutDir = "./src/erp/temp/deal-api-codes.json";
+const inJson = require("./src/erp/temp/route-apiPath-newSet.json");
 const apiMap = {};
 const dealValues = [];
 const openFile = async (location, newKey) => {
@@ -41,7 +41,6 @@ const openFile = async (location, newKey) => {
       } else if (newKey.indexOf('/components') > -1) {
         newKey = newKey.substring(0, newKey.indexOf('/components'))
       }
-      console.log('newKey===', newKey);
       key = newKey
       if (!apiMap.hasOwnProperty(key)) {
         apiMap[key] = {

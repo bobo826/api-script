@@ -1,0 +1,737 @@
+[
+	{
+		"listPhoneView": "/ae/phoneView/listPhoneView"
+	},
+	{
+		"listViewDetail": "/ae/phoneView/listViewDetail"
+	},
+	{
+		"listAllDept": "/ae/phoneView/listAllDept"
+	},
+	{
+		"queryDataList": "/api/ae/deliveryCourseAssign/list"
+	},
+	{
+		"courseEnable": "/api/ae/deliveryCourseAssign/start"
+	},
+	{
+		"courseDisable": "/api/ae/deliveryCourseAssign/stop"
+	},
+	{
+		"saveData": "/api/ae/deliveryCourseAssign/save"
+	},
+	{
+		"getData": "/api/ae/deliveryCourseAssign/getCourseAssignById"
+	},
+	{
+		"queryDeliveryList": "/ae/gift/warehouse/list"
+	},
+	{
+		"wareHouseEnable": "/ae/gift/warehouse/startGiftWarehouse"
+	},
+	{
+		"wareHouseDisable": "/ae/gift/warehouse/stopGiftWarehouse"
+	},
+	{
+		"createForm": "/ae/gift/warehouse/saveGiftWarehouse"
+	},
+	{
+		"detailForm": "/ae/gift/warehouse/getInfoById"
+	},
+	{
+		"list": "/ae/goodsCodeAssign/list"
+	},
+	{
+		"start": "/ae/goodsCodeAssign/start"
+	},
+	{
+		"stop": "/ae/goodsCodeAssign/stop"
+	},
+	{
+		"save": "/ae/goodsCodeAssign/save"
+	},
+	{
+		"delById": "/ae/goodsCodeAssign/delById"
+	},
+	{
+		"getById": "/ae/goodsCodeAssign/getById"
+	},
+	{
+		"validCode": "/ae/goodsCodeAssign/validCode"
+	},
+	{
+		"queryDataList": "/ae/delivery/rule/listGoodsRule"
+	},
+	{
+		"ruleDetail": "/ae/delivery/rule/goodsRuleDetail"
+	},
+	{
+		"updateDataInfo": "/ae/delivery/rule/editGoodsRule"
+	},
+	{
+		"createDataItem": "/ae/delivery/rule/createGoodsRule"
+	},
+	{
+		"queryDataList": "/api/ae/deliveryUserAssign/list"
+	},
+	{
+		"updateDataInfo": "/api/ae/deliveryUserAssign/update"
+	},
+	{
+		"createDataItem": "/api/ae/deliveryUserAssign/insert"
+	},
+	{
+		"queryDeliveryList": "/ae/delivery/rule/list"
+	},
+	{
+		"wareHouseEnable": "/ae/delivery/rule/enable"
+	},
+	{
+		"wareHouseDisable": "/ae/delivery/rule/disable"
+	},
+	{
+		"createForm": "/ae/delivery/rule/create"
+	},
+	{
+		"detailForm": "/ae/delivery/rule/detail"
+	},
+	{
+		"editForm": "/ae/delivery/rule/update"
+	},
+	{
+		"queryDataList": "/api/ae/deliveryInfo/list"
+	},
+	{
+		"queryAllCpy": "/api/ae/deliveryInfo/allMap"
+	},
+	{
+		"createForm": "/api/ae/deliveryInfo/insert"
+	},
+	{
+		"updateData": "/api/ae/deliveryInfo/update"
+	},
+	{
+		"validateForm": "/api/ae/deliveryInfo/validateDuplicate"
+	},
+	{
+		"unNormalOrderDetail": "/ae/specialOrder/listSpecialOrder"
+	},
+	{
+		"orderRetry": "/ae/specialOrder/retry"
+	},
+	{
+		"getAddress": "ae/specialOrder/getAddress"
+	},
+	{
+		"getAddressList": "/ae/specialOrder/getAddressInfo"
+	},
+	{
+		"addressUpdate": "ae/specialOrder/updateAddress"
+	},
+	{
+		"queryAbnormalOrderDetail": "/ae/specialOrder/getSpecialOrderDetail"
+	},
+	{
+		"exportAnnormalOrder": "ae/specialOrder/exportOrder"
+	},
+	{
+		"queryOrderList": "/ae/order/listOrder"
+	},
+	{
+		"reSycnOrderToWare": "ae/order/reSyncOrderToWarehouse"
+	},
+	{
+		"cancelIntercept": "/ae/order/cancelHandle"
+	},
+	{
+		"queryReissue": "/ae/reissueOrder/getGoods"
+	},
+	{
+		"createReissue": "/ae/reissueOrder/createReissue"
+	},
+	{
+		"exportXsl": "/ae/order/exportOrder"
+	},
+	{
+		"exportXslData": "/ae/order/showTask"
+	},
+	{
+		"mergeOrder": "/ae/order/mergeOrder"
+	},
+	{
+		"bulkDelivery": "/ae/order/bulkDelivery"
+	},
+	{
+		"queryWareHouse": "/ae/warehouse/getWarehouseList"
+	},
+	{
+		"queryOrderDetail": "/ae/order/getOrderDetail"
+	},
+	{
+		"queryUserName": "/ae/phone/queryPhone"
+	},
+	{
+		"queryUseraddRess": "/ae/phone/queryPhone"
+	},
+	{
+		"queryUserMobile": "/ae/phone/queryPhone"
+	},
+	{
+		"getTraces": "/api/ae/deliveryQuery/queryDeliveryTracesNew"
+	},
+	{
+		"queryRessiueDetail": "/ae/reissueOrder/getReissueOrder"
+	},
+	{
+		"switchWarehouse": "/ae/order/switchWarehouse"
+	},
+	{
+		"queryOrderList": "/ae/reissueOrder/list"
+	},
+	{
+		"handleExport": "/ae/reissueOrder/export"
+	},
+	{
+		"createOldReissue": "/ae/reissueOrder/createOldReissueOrder"
+	},
+	{
+		"reSyncOrder": "ae/reissueOrder/reSyncReissueOrder"
+	},
+	{
+		"cancelReissueOrder": "/ae/reissueOrder/closeReissueOrder"
+	},
+	{
+		"batchInsertOrder": "/ae/reissueOrder/batchCreateReissueOrder"
+	},
+	{
+		"exportAddressLibrary": "/ae/reissueOrder/exportAddress"
+	},
+	{
+		"reissueOrderTemplate": "/ae/reissueOrder/getReissueOrderTemplate"
+	},
+	{
+		"querySpDeliveryList": "/ae/apply/delivery/listDeliveryApply"
+	},
+	{
+		"creatSpApply": "ae/apply/delivery/create"
+	},
+	{
+		"switchSpShip": "ae/apply/delivery/deliveryApplySwitch"
+	},
+	{
+		"queryDeliveryGoodsList": "/ae/asn/list"
+	},
+	{
+		"queryDetail": "/ae/asn/getViewById"
+	},
+	{
+		"diffConfirm": "/ae/asn/differenceConfirm"
+	},
+	{
+		"diffConfirmList": "/ae/asn/listDifferenceConfirm"
+	},
+	{
+		"querySupplieGoodsList": "/ae/price-adjust/list"
+	},
+	{
+		"saveBaseInfo": "/ae/price-adjust/saveBase"
+	},
+	{
+		"goodsInfoList": "/ae/price-adjust/listDetailV2"
+	},
+	{
+		"queryGoodsInfo": "/ae/price-adjust/supplierGoodsInfo"
+	},
+	{
+		"goodsPriceRange": "/ae/price-adjust/saveDetail"
+	},
+	{
+		"clearGoodsInfo": "/ae/price-adjust/delAllDetail"
+	},
+	{
+		"queryDetail": "/ae/price-adjust/getInfoById"
+	},
+	{
+		"submitAudit": "/ae/price-adjust/submit"
+	},
+	{
+		"delGoods": "/ae/price-adjust/delDetail"
+	},
+	{
+		"queryLog": "/ae/price-adjust/listAuditLog"
+	},
+	{
+		"editPrice": "/ae/price-adjust/editPrice"
+	},
+	{
+		"priceAdjustLetterDownLoad": "/ae/price-adjust/getAdjustLetterUrl"
+	},
+	{
+		"priceGoodsImport": "/ae/price-adjust/importDetail"
+	},
+	{
+		"priceAdjustDel": "/ae/price-adjust/delPriceAdjust"
+	},
+	{
+		"priceAdjustTemplate": "/ae/price-adjust/getImportTemplateAddr"
+	},
+	{
+		"priceCompare": "/ae/price-adjust/compare', param"
+	},
+	{
+		"queryPurchaseList": "/ae/purchase-order/list"
+	},
+	{
+		"saveBaseInfo": "/ae/purchase-order/saveBase"
+	},
+	{
+		"queryGoods": "/ae/purchase-order/getGoods"
+	},
+	{
+		"saveGoodsInfo": "/ae/purchase-order/addGoods"
+	},
+	{
+		"queryGoodsList": "/ae/purchase-order/listDetail"
+	},
+	{
+		"templateDown": "/ae/purchase-order/getImportTemplateAddr"
+	},
+	{
+		"purchaseDetail": "/ae/purchase-order/getInfoById"
+	},
+	{
+		"cancelOrder": "/ae/purchase-order/cancelOrder"
+	},
+	{
+		"closeOrder": "/ae/purchase-order/closeOrder"
+	},
+	{
+		"delOrder": "/ae/purchase-order/delOrder"
+	},
+	{
+		"purChaseOrderImport": "/ae/purchase-order/importDetail"
+	},
+	{
+		"editQuantity": "/ae/purchase-order/editPurchaseCount"
+	},
+	{
+		"delGoodsList": "/ae/purchase-order/delOneDetail"
+	},
+	{
+		"confirmOrder": "/ae/purchase-order/confirmOrder"
+	},
+	{
+		"validateParentOrderNo": "/ae/purchase-order/validateParentOrderNo"
+	},
+	{
+		"exportXsl": "/ae/purchase-order/export"
+	},
+	{
+		"findByGoodId": "/ae/price-adjust-result/findByGoodId"
+	},
+	{
+		"queryOrderList": "/ae/return-order/search"
+	},
+	{
+		"createReOrder": "/ae/return-order/create"
+	},
+	{
+		"queryGoodsList": "/ae/goods/search-goods"
+	},
+	{
+		"queryReGoodsList": "/ae/return-order/item/search"
+	},
+	{
+		"append": "/ae/return-order/item/append"
+	},
+	{
+		"remove": "/ae/return-order/item/remove"
+	},
+	{
+		"update": "/ae/return-order/item/update-quantity"
+	},
+	{
+		"updateOrder": "/ae/return-order/update"
+	},
+	{
+		"cancel": "/ae/return-order/cancel"
+	},
+	{
+		"del": "/ae/return-order/delete"
+	},
+	{
+		"detail": "/ae/return-order/detail"
+	},
+	{
+		"querySupplierList": "/ae/supplier/listSupplierActive"
+	},
+	{
+		"getWarehouseList": "/ae/warehouse/getWarehouseList"
+	},
+	{
+		"submit": "/ae/return-order/submit"
+	},
+	{
+		"querySupplierList": "/ae/supplier/list"
+	},
+	{
+		"createSupplier": "/ae/supplier/create"
+	},
+	{
+		"queryDetail": "/ae/supplier/detail"
+	},
+	{
+		"queryLogDetail": "/ae/supplier/logDetail"
+	},
+	{
+		"querySupplier": "/ae/supplier/listSupplier"
+	},
+	{
+		"queryEnableSupplier": "/ae/supplier/listSupplierActive"
+	},
+	{
+		"stopCooper": "/ae/supplier/stopCooperation"
+	},
+	{
+		"auditSubmit": "/ae/supplier/submit"
+	},
+	{
+		"purchaseSubmit": "/ae/supplier/purchaseSubmit"
+	},
+	{
+		"purchaseReject": "/ae/supplier/purchaseDecline"
+	},
+	{
+		"financeSubmit": "/ae/supplier/financeSubmit"
+	},
+	{
+		"financeReject": "/ae/supplier/financeDecline"
+	},
+	{
+		"queryManage": "/ae/supplier/findManager"
+	},
+	{
+		"supplierEdit": "/ae/supplier/edit"
+	},
+	{
+		"syncWarehouse": "/ae/supplier/synToWms"
+	},
+	{
+		"supplierDelete": "/ae/supplier/delete"
+	},
+	{
+		"querySupplieGoodsList": "/ae/price-adjust-result/list"
+	},
+	{
+		"supplierGoodsImport": "/ae/price-adjust-result/import"
+	},
+	{
+		"queryDetail": "/ae/price-adjust-result/findById"
+	},
+	{
+		"supplierGoodsEdit": "/ae/price-adjust-result/cycleEdit"
+	},
+	{
+		"templateDownLoad": "/ae/price-adjust-result/getImportTemplateAddr"
+	},
+	{
+		"exportPriceChangeLog": "/ae/price-adjust-result/exportSku"
+	},
+	{
+		"histroyLog": "/ae/price-adjust-result/histroy"
+	},
+	{
+		"exportXsl": "/ae/price-adjust-result/export"
+	},
+	{
+		"exportAveragepPriceXsl": "/ae/price-adjust-result/exportGoodsWeightedAveragePrice"
+	},
+	{
+		"queryGiftMapList": "/ae/gift/good/list"
+	},
+	{
+		"deleteData": "/ae/gift/good/delete"
+	},
+	{
+		"disableData": "/ae/gift/good/stopGiftGoods"
+	},
+	{
+		"getCourseList": "/ae/course-goods/course-list"
+	},
+	{
+		"getClassList": "/ae/course-goods/class-list"
+	},
+	{
+		"getGiftList": "/ae/gift/listGift"
+	},
+	{
+		"getStudySegmentCodeList": "/ae/course-goods/studySegment"
+	},
+	{
+		"createSubjectMap": "/ae/gift/good/save"
+	},
+	{
+		"giftMapDetail": "/ae/gift/good/getGiftGoodsInfoById"
+	},
+	{
+		"subjectMapEdit": "/ae/gift/good/save"
+	},
+	{
+		"subjectAudit": "/ae/gift/good/auditGiftGoods"
+	},
+	{
+		"subjectAuditReject": "/ae/gift/good/auditGiftGoods"
+	},
+	{
+		"submitAudit": "/ae/gift/good/submitGiftGoods"
+	},
+	{
+		"syncWms": "/ae/course-goods/synToWms"
+	},
+	{
+		"createData": "/ae/category/add"
+	},
+	{
+		"queryClassify": "/ae/category/list"
+	},
+	{
+		"editData": "/ae/category/edit"
+	},
+	{
+		"queryDataList": "/ae/goods/list"
+	},
+	{
+		"handleGoodsEnable": "/ae/goods/enable"
+	},
+	{
+		"handleGoodsDisable": "/ae/goods/disable"
+	},
+	{
+		"handleSyncGoods": "/ae/goods/sync"
+	},
+	{
+		"goodsDelete": "/ae/goods/delete"
+	},
+	{
+		"getGoodsDetail": "/ae/goods/detail"
+	},
+	{
+		"exportsGoods": "/ae/goods/exportGoods"
+	},
+	{
+		"createData": "/ae/goods/add"
+	},
+	{
+		"editData": "/ae/goods/edit"
+	},
+	{
+		"queryGoodsList": "/ae/goods/list"
+	},
+	{
+		"queryCourseList": "/ae/course-goods/list"
+	},
+	{
+		"deleteData": "/ae/course-goods/delete"
+	},
+	{
+		"disableData": "/ae/course-goods/disable"
+	},
+	{
+		"getPeriod": "/ae/course-goods/class-delivery-periods"
+	},
+	{
+		"createSubjectMap": "/ae/course-goods/add"
+	},
+	{
+		"subjectMapDetail": "/ae/course-goods/detail"
+	},
+	{
+		"subjectMapEdit": "/ae/course-goods/edit"
+	},
+	{
+		"subjectAudit": "/ae/course-goods/confirm"
+	},
+	{
+		"subjectAuditReject": "/ae/course-goods/reject"
+	},
+	{
+		"virtualDelete": "/ae/goods/delete"
+	},
+	{
+		"virtualAdd": "/ae/goods/add"
+	},
+	{
+		"queryDataDetail": "/ae/goods/detail"
+	},
+	{
+		"virtualEdit": "/ae/goods/edit"
+	},
+	{
+		"virtualAudit": "/ae/goods/audit"
+	},
+	{
+		"listReport": "/ae/invoicing/list"
+	},
+	{
+		"exportReport": "/ae/invoicing/export"
+	},
+	{
+		"queryDataList": "/api/erp/ae/statement/list"
+	},
+	{
+		"getDetailData": "/ae/statement/getViewById"
+	},
+	{
+		"getDataByHand": "/ae/statement/listAllExpenseOnHand"
+	},
+	{
+		"updateDataByHand": "/ae/statement/saveExpenseOnHand"
+	},
+	{
+		"submitAudit": "/ae/statement/audit"
+	},
+	{
+		"deleteRecord": "/ae/statement/deleteExpenseOnHand"
+	},
+	{
+		"submitStatement": "/ae/statement/submit"
+	},
+	{
+		"reCompute": "/ae/statement/reCompute"
+	},
+	{
+		"printBill": "/ae/statement/printBill"
+	},
+	{
+		"payCallBack": "/ae/statement/payCallBack"
+	},
+	{
+		"fetchLog": "/ae/statement/listAuditLog"
+	},
+	{
+		"exportByExpenseId": "/ae/statement/exportByExpenseId"
+	},
+	{
+		"exportXslData": "/api/ae/common/showTask"
+	},
+	{
+		"getAllExpenseItem": "/ae/statementExpenseItem/allExpenseItem"
+	},
+	{
+		"createOrder": "/ae/statement/create"
+	},
+	{
+		"delOrder": "/ae/statement/delete"
+	},
+	{
+		"queryDataList": "/api/ae/cost/list"
+	},
+	{
+		"createDeliverRule": "/api/ae/cost/create"
+	},
+	{
+		"modifyDeliverRule": "/api/ae/cost/modify"
+	},
+	{
+		"getDeliverRuleDetail": "/api/ae/cost/showDetail"
+	},
+	{
+		"stopDeliverCost": "/api/ae/cost/disable"
+	},
+	{
+		"copyDeliverRule": "/api/ae/cost/copy"
+	},
+	{
+		"submitProcess": "/api/ae/cost/submit"
+	},
+	{
+		"viewLog": "/api/ae/cost/showOperationLog"
+	},
+	{
+		"queryCostList": "/api/ae/cost/listCost"
+	},
+	{
+		"createDeliverCost": "/api/ae/cost/createCost"
+	},
+	{
+		"modifyDeliverCost": "/api/ae/cost/modifyCost"
+	},
+	{
+		"deleteDeliverCost": "/api/ae/cost/deleteCost"
+	},
+	{
+		"getWarehouseList": "/api/erp/ae/warehouse/getWarehouseList"
+	},
+	{
+		"getProvinceList": "/api/ae/address/get-province"
+	},
+	{
+		"queryDataList": "/api/erp/ae/statementExpenseItem/list"
+	},
+	{
+		"createForm": "/api/erp/ae/statementExpenseItem/saveItem"
+	},
+	{
+		"handCostItemDelete": "/api/erp/ae/statementExpenseItem/deleteItem"
+	},
+	{
+		"queryWaitSettleBillingList": "/ae/waitSettleBilling/list"
+	},
+	{
+		"billingMoney": "/ae/waitSettleBilling/billingMoney"
+	},
+	{
+		"billedMoney": "/ae/waitSettleBilling/billedMoney"
+	},
+	{
+		"waitSettleBillingCountData": "/ae/waitSettleBilling/countData"
+	},
+	{
+		"waitSettleBillingCreateBilling": "/ae/waitSettleBilling/createBilling"
+	},
+	{
+		"queryBillingList": "/ae/billing/list"
+	},
+	{
+		"detail": "/ae/billing/detail"
+	},
+	{
+		"addMulFee": "ae/billing/addMulFee"
+	},
+	{
+		"deleteMulFee": "ae/billing/deleteMulFee"
+	},
+	{
+		"modifyMulFee": "ae/billing/modifyMulFee"
+	},
+	{
+		"submit": "ae/billing/submit"
+	},
+	{
+		"audit": "ae/billing/audit"
+	},
+	{
+		"printBill": "/ae/billing/print"
+	},
+	{
+		"payCallBack": "/ae/billing/payCallBack"
+	},
+	{
+		"feeDetail": "/ae/billing/feeDetail"
+	},
+	{
+		"downloadFeeDetail": "/ae/billing/downloadFeeDetail"
+	},
+	{
+		"transferBillingList": "/ae/billing/transfer/list"
+	},
+	{
+		"transferStatistics": "/ae/billing/transfer/statistics"
+	},
+	{
+		"stockProductList": "/ae/inventory/product/listGoodsInventory"
+	},
+	{
+		"exportXsl": "/ae/inventory/product/exportGoodsInventory"
+	}
+]

@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const buf = new Buffer.alloc(10240000);
-const outDir = "./dist/codes.json";
-const dealOutDir = "./dist/deal-codes.json";
+const outDir = "./src/erp/temp/route-apiPath.json";
+const dealOutDir = "./src/erp/temp/route-apiPath-newSet.json";
 const apiMap = {};
 const values = [];
 const openFile = async (location, key) => {
