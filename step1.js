@@ -1,3 +1,4 @@
+// 第一步扫描文件，将接口名称及接口地址写入文件./src/erp/temp/route-apiPath.json，去重得到./src/erp/temp/route-apiPath-newSet.json
 const fs = require('fs');
 const path = require('path');
 const buf = new Buffer.alloc(10240000);

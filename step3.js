@@ -1,27 +1,19 @@
 const fs = require('fs');
-const outDir = "./src/erp/out/new-router.js";
-const erpRoutes = require("./src/erp/in/router");
-const erpApis = require("./src/erp/temp/api-codes.json");
-const parseRoute = (erpRoutes = []) => {
-  erpRoutes.forEach(item => {
-    if (item.routes && item.routes.length) {
-      parseRoute(item.routes)
+const erpAuthKeys = require("./src/erp/in/authorization");
+const erpOutAuthkeysObj = './src/erp/temp/authkeys-obj.json';
+const authKeysObj = {};
+const parseAuthKeys = (erpAuthKeys = []) => {
+  erpAuthKeys.forEach(item => {
+    if (item.children && item.children.length && item.type === 'route') {
+      authKeysObj[item.name] = item.key
+      parseAuthKeys(item.children)
     } else {
-      Object.keys(item).forEach(key => {
-        if (key === 'component') {
-          let newKey = item[key]
-          if (newKey.lastIndexOf('/') > -1) {
-            newKey = newKey.substring(0, newKey.lastIndexOf('/'))
-          }
-          const apiPath = erpApis[newKey].apiPath.join(',');
-          item.apiPath = apiPath;
-        }
-      })
+      authKeysObj[item.name] = item.key
     }
   })
-  fs.writeFileSync(outDir, JSON.stringify(erpRoutes, null, "\t"), {
+  fs.writeFileSync(erpOutAuthkeysObj, JSON.stringify(authKeysObj, null, "\t"), {
     encoding: "utf8",
   });
 }
 
-parseRoute(erpRoutes)
+parseAuthKeys(erpAuthKeys)

@@ -606,6 +606,12 @@
 		"exportReport": "/ae/invoicing/export"
 	},
 	{
+		"queryWareHouse": "/ae/warehouse/getWarehouseList"
+	},
+	{
+		"exportXslData": "/ae/order/showTask"
+	},
+	{
 		"queryDataList": "/api/erp/ae/statement/list"
 	},
 	{
