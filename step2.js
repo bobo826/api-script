@@ -30,18 +30,8 @@ const openFile = async (location, newKey) => {
           Object.keys(apiObj).forEach(n => {
             if (item && item.indexOf(n) > -1) {
               let api = apiObj[n];
-              if (api.substring(0, 4) === '/ae/') {
-                // 不处理
-              } else if (api.substring(0, 3) === 'ae/') {
-                api = `/${api}`;
-              } else if (api.substring(0, 8) === '/api/erp') {
-                api = api.substring(8, api.length);
-              } else if (api.substring(0, 4) === '/api') {
-                api = api.substring(4, api.length);
-              } else {
-                console.log('异常api---------', api);
-              }
-              values.push(`/api/erp${api}`)
+              console.log('api---------', api);
+              values.push(api)
               dealValues.push(api)
             }
           })

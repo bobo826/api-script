@@ -12,7 +12,7 @@ module.exports = [
         "name": "快递公司管理",
         "key": "MERCHANT_MANAGE:DELIVERYCPY_MANAGE",
         "type": "route",
-        "path": "/merchant-manage/deliveryCpy-manage,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/deliveryInfo/allMap,/ae/gift/warehouse/saveGiftWarehouse,/ae/delivery/rule/create,/ae/deliveryInfo/insert,/ae/statementExpenseItem/saveItem,/ae/deliveryInfo/update,/ae/return-order/item/update-quantity,/ae/deliveryInfo/validateDuplicate",
+        "path": "/merchant-manage/deliveryCpy-manage",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -54,7 +54,7 @@ module.exports = [
         "name": "订单管理",
         "key": "ORDER:ORDER_MANAGE",
         "type": "route",
-        "path": "/order/order-manage,/ae/deliveryInfo/allMap,/ae/order/bulkDelivery,/ae/return-order/delete,/ae/return-order/detail,/ae/billing/detail,/ae/order/cancelHandle,/ae/return-order/cancel,/ae/reissueOrder/createReissue,/ae/order/exportOrder,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/inventory/product/exportGoodsInventory,/ae/order/showTask,/ae/common/showTask,/ae/deliveryQuery/queryDeliveryTracesNew,/ae/order/mergeOrder,/ae/order/getOrderDetail,/ae/order/listOrder,/ae/reissueOrder/list,/ae/return-order/search,/ae/reissueOrder/getGoods,/ae/warehouse/getWarehouseList,/ae/order/reSyncOrderToWarehouse,/ae/order/switchWarehouse,/ae/phone/queryPhone,/ae/specialOrder/getAddress,/ae/specialOrder/getAddressInfo,/ae/goods/detail,/ae/course-goods/class-list,/ae/gift/listGift,/ae/course-goods/course-list,/ae/course-goods/class-delivery-periods",
+        "path": "/order/order-manage",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -176,7 +176,7 @@ module.exports = [
         "name": "补发单管理",
         "key": "ORDER:REISSUE",
         "type": "route",
-        "path": "/order/reissue,/ae/deliveryInfo/allMap,/ae/reissueOrder/getReissueOrder,/ae/return-order/delete,/ae/warehouse/getWarehouseList,/ae/reissueOrder/batchCreateReissueOrder,/ae/return-order/detail,/ae/billing/detail,/ae/reissueOrder/closeReissueOrder,/ae/return-order/cancel,/ae/reissueOrder/createOldReissueOrder,/ae/order/listOrder,/ae/reissueOrder/list,/ae/return-order/search,/ae/reissueOrder/exportAddress,/ae/reissueOrder/getReissueOrderTemplate,/ae/reissueOrder/reSyncReissueOrder,/ae/phone/queryPhone",
+        "path": "/order/reissue",
         "authority": [],
         "ext": "{\"index\":1}",
         "children": [
@@ -235,7 +235,7 @@ module.exports = [
         "name": "异常订单管理",
         "key": "ORDER:ANNORMALORDER_MANAGE",
         "type": "route",
-        "path": "/order/annormalOrder-manage,/ae/specialOrder/updateAddress,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/return-order/detail,/ae/price-adjust-result/export,/ae/common/showTask,/ae/billing/detail,/ae/inventory/product/exportGoodsInventory,/ae/specialOrder/exportOrder,/ae/specialOrder/getAddress,/ae/specialOrder/retry,/ae/specialOrder/getSpecialOrderDetail,/ae/specialOrder/listSpecialOrder,/ae/specialOrder/getAddressInfo,/ae/course-goods/class-list,/ae/gift/listGift,/ae/course-goods/course-list,/ae/course-goods/class-delivery-periods",
+        "path": "/order/annormalOrder-manage",
         "authority": [],
         "ext": "{\"index\":2}",
         "children": [
@@ -287,7 +287,7 @@ module.exports = [
         "name": "特殊发货申请",
         "key": "ORDER:SPSHIPAPP",
         "type": "route",
-        "path": "/order/spShipApp,/ae/apply/delivery/listDeliveryApply,/ae/apply/delivery/create,/ae/apply/delivery/deliveryApplySwitch",
+        "path": "/order/spShipApp",
         "authority": [],
         "ext": "{\"index\":3}",
         "children": [
@@ -319,10 +319,10 @@ module.exports = [
     "icon": "apartment",
     "children": [
       {
-        "name": "货品管理",
+        "name": "货品信息管理",
         "key": "PRODUCT:PRODUCT_MANAGE:LIST",
         "type": "route",
-        "path": "/product/product-manage/list,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/return-order/detail,/ae/price-adjust-result/export,/ae/goods/exportGoods,/ae/common/showTask,/ae/billing/detail,/ae/inventory/product/exportGoodsInventory,/ae/goods/detail,/ae/goods/delete,/ae/goods/disable,/ae/goods/enable,/ae/goods/sync,/ae/category/list,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list",
+        "path": "/product/product-manage/list",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": []
@@ -331,7 +331,7 @@ module.exports = [
         "name": "新增商品",
         "key": "PRODUCT:PRODUCT_MANAGE:NEW",
         "type": "route",
-        "path": "/product/product-manage/new,/ae/category/add,/ae/goods/detail,/ae/goods/add,/ae/category/edit,/ae/goods/edit,/ae/category/list,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods,/ae/goods/list",
+        "path": "/product/product-manage/new",
         "authority": [],
         "ext": "{\"index\":1}",
         "hidden": true,
@@ -363,7 +363,7 @@ module.exports = [
         "name": "虚拟组套",
         "key": "PRODUCT:PRODUCT_MANAGE:VIRTUALSUIT",
         "type": "route",
-        "path": "/product/product-manage/virtualSuit,/ae/goods/disable,/ae/goods/detail,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/goods/add,/ae/goods/audit,/ae/goods/delete,/ae/goods/edit,/ae/course-goods/course-list,/ae/category/list,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods",
+        "path": "/product/product-manage/virtualSuit",
         "authority": [],
         "ext": "{\"index\":2}",
         "children": [
@@ -415,7 +415,7 @@ module.exports = [
         "name": "内容包映射",
         "key": "PRODUCT:PRODUCT_MANAGE:SUBJECTMAP",
         "type": "route",
-        "path": "/product/product-manage/subjectMap,/ae/gift/good/save,/ae/course-goods/add,/ae/return-order/delete,/ae/gift/good/delete,/ae/course-goods/delete,/ae/gift/good/stopGiftGoods,/ae/course-goods/disable,/ae/course-goods/studySegment,/ae/course-goods/list,/ae/gift/good/auditGiftGoods,/ae/course-goods/confirm,/ae/course-goods/reject,/ae/course-goods/detail,/ae/course-goods/edit,/ae/course-goods/synToWms,/ae/category/list,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods,/ae/goods/list,/ae/course-goods/class-list,/ae/course-goods/course-list,/ae/course-goods/class-delivery-periods,/ae/gift/listGift",
+        "path": "/product/product-manage/subjectMap",
         "authority": [],
         "ext": "{\"index\":3}",
         "children": [
@@ -488,7 +488,7 @@ module.exports = [
         "name": "礼包实物映射",
         "key": "PRODUCT:PRODUCT_MANAGE:GIFTENTITYMAP",
         "type": "route",
-        "path": "/product/product-manage/giftEntityMap,/ae/gift/good/save,/ae/course-goods/add,/ae/return-order/delete,/ae/gift/good/delete,/ae/course-goods/delete,/ae/gift/good/stopGiftGoods,/ae/course-goods/disable,/ae/course-goods/studySegment,/ae/gift/good/getGiftGoodsInfoById,/ae/gift/good/list,/ae/gift/good/auditGiftGoods,/ae/course-goods/confirm,/ae/course-goods/reject,/ae/course-goods/edit,/ae/price-adjust/submit,/ae/return-order/submit,/ae/gift/good/submitGiftGoods,/ae/statement/audit,/ae/billing/submit,/ae/category/list,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods,/ae/goods/list,/ae/course-goods/class-list,/ae/course-goods/course-list,/ae/gift/listGift,/ae/course-goods/class-delivery-periods",
+        "path": "/product/product-manage/giftEntityMap",
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
@@ -540,7 +540,7 @@ module.exports = [
         "name": "品类分类",
         "key": "PRODUCT:PRODUCT_MANAGE:CATEGORY",
         "type": "route",
-        "path": "/product/product-manage/category,/ae/category/list,/ae/category/add,/ae/goods/add,/ae/category/edit,/ae/goods/edit",
+        "path": "/product/product-manage/category",
         "authority": [],
         "ext": "{\"index\":5}",
         "children": [
@@ -575,7 +575,7 @@ module.exports = [
         "name": "货品库存管理",
         "key": "STOCK_MANAGE:PRODUCT",
         "type": "route",
-        "path": "/stock-manage/product,/ae/inventory/product/listGoodsInventory,/ae/category/list,/ae/order/exportOrder,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/inventory/product/exportGoodsInventory,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/common/showTask,/ae/inventory/product/exportGoodsInventory",
+        "path": "/stock-manage/product",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -610,7 +610,7 @@ module.exports = [
         "name": "按用户指定快递",
         "key": "LOGISTICS_MANAGE:USER",
         "type": "route",
-        "path": "/logistics-manage/user,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/deliveryInfo/allMap,/ae/return-order/delete,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/delivery/rule/createGoodsRule,/ae/deliveryUserAssign/insert,/ae/category/add,/ae/goods/add,/ae/delivery/rule/editGoodsRule,/ae/deliveryUserAssign/update,/ae/deliveryInfo/update,/ae/return-order/item/update-quantity",
+        "path": "/logistics-manage/user",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": []
@@ -619,7 +619,7 @@ module.exports = [
         "name": "按内容包指定快递",
         "key": "LOGISTICS_MANAGE:COURSE",
         "type": "route",
-        "path": "/logistics-manage/course,/ae/deliveryCourseAssign/stop,/ae/deliveryInfo/allMap,/ae/return-order/delete,/ae/return-order/detail,/ae/billing/detail,/ae/deliveryCourseAssign/start,/ae/deliveryCourseAssign/getCourseAssignById,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/deliveryCourseAssign/save,/ae/goodsCodeAssign/save,/ae/specialOrder/getAddress,/ae/specialOrder/getAddressInfo,/ae/warehouse/getWarehouseList,/ae/course-goods/class-list,/ae/course-goods/course-list,/ae/course-goods/class-delivery-periods,/ae/gift/listGift",
+        "path": "/logistics-manage/course",
         "authority": [],
         "ext": "{\"index\":1}",
         "children": [
@@ -664,7 +664,7 @@ module.exports = [
         "name": "按内容包指定仓库",
         "key": "LOGISTICS_MANAGE:WAREHOUSE",
         "type": "route",
-        "path": "/logistics-manage/wareHouse,/ae/gift/warehouse/saveGiftWarehouse,/ae/delivery/rule/create,/ae/deliveryInfo/insert,/ae/warehouse/getWarehouseList,/ae/statementExpenseItem/saveItem,/ae/gift/warehouse/getInfoById,/ae/delivery/rule/detail,/ae/return-order/detail,/ae/billing/detail,/ae/delivery/rule/update,/ae/gift/warehouse/list,/ae/delivery/rule/list,/ae/gift/warehouse/stopGiftWarehouse,/ae/delivery/rule/disable,/ae/gift/warehouse/startGiftWarehouse,/ae/delivery/rule/enable,/ae/course-goods/class-list,/ae/course-goods/course-list,/ae/course-goods/class-delivery-periods,/ae/gift/listGift",
+        "path": "/logistics-manage/wareHouse",
         "authority": [],
         "ext": "{\"index\":2}",
         "children": [
@@ -716,7 +716,7 @@ module.exports = [
         "name": "按货品指定仓库",
         "key": "LOGISTICS_MANAGE:GOODS",
         "type": "route",
-        "path": "/logistics-manage/goods,/ae/warehouse/getWarehouseList,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/delivery/rule/createGoodsRule,/ae/deliveryUserAssign/insert,/ae/category/add,/ae/goods/add,/ae/delivery/rule/editGoodsRule,/ae/deliveryUserAssign/update,/ae/deliveryInfo/update,/ae/return-order/item/update-quantity,/ae/delivery/rule/goodsRuleDetail",
+        "path": "/logistics-manage/goods",
         "authority": [],
         "ext": "{\"index\":3}",
         "children": [
@@ -740,7 +740,7 @@ module.exports = [
         "name": "按礼包指定仓库",
         "key": "LOGISTICS_MANAGE:GIFTSPECIFYWAREHOUSE",
         "type": "route",
-        "path": "/logistics-manage/giftSpecifyWarehouse,/ae/gift/warehouse/saveGiftWarehouse,/ae/delivery/rule/create,/ae/deliveryInfo/insert,/ae/warehouse/getWarehouseList,/ae/statementExpenseItem/saveItem,/ae/gift/warehouse/getInfoById,/ae/delivery/rule/detail,/ae/return-order/detail,/ae/billing/detail,/ae/gift/warehouse/list,/ae/delivery/rule/list,/ae/gift/warehouse/stopGiftWarehouse,/ae/delivery/rule/disable,/ae/gift/warehouse/startGiftWarehouse,/ae/delivery/rule/enable,/ae/course-goods/course-list,/ae/gift/listGift,/ae/course-goods/class-list,/ae/course-goods/class-delivery-periods",
+        "path": "/logistics-manage/giftSpecifyWarehouse",
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
@@ -780,7 +780,7 @@ module.exports = [
         "name": "按商品编码指定快递",
         "key": "LOGISTICS_MANAGE:PRODUCTCODE",
         "type": "route",
-        "path": "/logistics-manage/productCode,/ae/specialOrder/getAddress,/ae/specialOrder/getAddressInfo,/ae/goodsCodeAssign/save,/ae/deliveryInfo/allMap,/ae/return-order/delete,/ae/goodsCodeAssign/validCode,/ae/goodsCodeAssign/list,/ae/goodsCodeAssign/delById,/ae/goodsCodeAssign/start,/ae/goodsCodeAssign/stop",
+        "path": "/logistics-manage/productCode",
         "authority": [],
         "ext": "{\"index\":5}",
         "children": [
@@ -843,7 +843,7 @@ module.exports = [
         "name": "供应商管理",
         "key": "PROCUREMENT:SUPPLIER",
         "type": "route",
-        "path": "/procurement/supplier,/ae/return-order/detail,/ae/billing/detail,/ae/supplier/submit,/ae/billing/audit,/ae/supplier/create,/ae/supplier/financeDecline,/ae/supplier/financeSubmit,/ae/supplier/purchaseDecline,/ae/supplier/purchaseSubmit,/ae/asn/getViewById,/ae/price-adjust/getInfoById,/ae/supplier/detail,/ae/price-adjust-result/findById,/ae/price-adjust/listAuditLog,/ae/supplier/logDetail,/ae/supplier/listSupplier,/ae/supplier/listSupplierActive,/ae/supplier/list,/ae/goodsCodeAssign/stop,/ae/supplier/stopCooperation,/ae/supplier/delete,/ae/supplier/edit,/ae/supplier/synToWms,/ae/supplier/findManager",
+        "path": "/procurement/supplier",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -944,7 +944,7 @@ module.exports = [
         "name": "供应商货品管理",
         "key": "PROCUREMENT:SUPPLIERGOODS",
         "type": "route",
-        "path": "/procurement/supplierGoods,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/common/showTask,/ae/inventory/product/exportGoodsInventory,/ae/price-adjust/list,/ae/price-adjust-result/list,/ae/price-adjust-result/import,/ae/asn/getViewById,/ae/price-adjust/getInfoById,/ae/supplier/detail,/ae/price-adjust-result/findById,/ae/price-adjust-result/cycleEdit,/ae/purchase-order/getImportTemplateAddr,/ae/price-adjust-result/getImportTemplateAddr,/ae/price-adjust-result/exportSku,/ae/price-adjust-result/histroy,/ae/price-adjust-result/exportGoodsWeightedAveragePrice,/ae/supplier/listSupplier,/ae/supplier/findManager",
+        "path": "/procurement/supplierGoods",
         "authority": [],
         "ext": "{\"index\":1}",
         "children": [
@@ -1002,7 +1002,7 @@ module.exports = [
         "name": "价格调整单管理",
         "key": "PROCUREMENT:PRICEADJUSTMENT",
         "type": "route",
-        "path": "/procurement/priceAdjustment,/ae/billing/audit,/ae/price-adjust/list,/ae/price-adjust-result/list,/ae/price-adjust/submit,/ae/return-order/submit,/ae/gift/good/submitGiftGoods,/ae/statement/audit,/ae/billing/submit,/ae/price-adjust/listAuditLog,/ae/asn/getViewById,/ae/price-adjust/getInfoById,/ae/supplier/detail,/ae/price-adjust-result/findById,/ae/goodsCodeAssign/save,/ae/price-adjust/saveBase,/ae/purchase-order/saveBase,/ae/price-adjust/getAdjustLetterUrl,/ae/price-adjust/delPriceAdjust,/ae/supplier/listSupplier,/ae/price-adjust/listDetailV2,/ae/price-adjust/compare', param,/ae/price-adjust/supplierGoodsInfo,/ae/purchase-order/getGoods,/ae/price-adjust/saveDetail,/ae/price-adjust/delAllDetail,/ae/price-adjust/delDetail,/ae/return-order/delete,/ae/price-adjust/editPrice,/ae/price-adjust/importDetail,/ae/price-adjust/getImportTemplateAddr,/ae/supplier/listSupplierActive,/ae/supplier/findManager",
+        "path": "/procurement/priceAdjustment",
         "authority": [],
         "ext": "{\"index\":2}",
         "children": [
@@ -1078,7 +1078,7 @@ module.exports = [
         "name": "采购单管理",
         "key": "PROCUREMENT:PURCHASEORDER",
         "type": "route",
-        "path": "/procurement/purchaseOrder,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/common/showTask,/ae/inventory/product/exportGoodsInventory,/ae/warehouse/getWarehouseList,/ae/purchase-order/cancelOrder,/ae/return-order/cancel,/ae/return-order/detail,/ae/supplier/listSupplierActive,/ae/billing/detail,/ae/purchase-order/closeOrder,/ae/purchase-order/confirmOrder,/ae/purchase-order/delOrder,/ae/return-order/delete,/ae/statement/delete,/ae/purchase-order/getInfoById,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods,/ae/goods/list,/ae/purchase-order/list,/ae/goodsCodeAssign/save,/ae/price-adjust/saveBase,/ae/purchase-order/saveBase,/ae/price-adjust-result/findByGoodId,/ae/price-adjust/delDetail,/ae/purchase-order/delOneDetail,/ae/purchase-order/editPurchaseCount,/ae/purchase-order/importDetail,/ae/purchase-order/addGoods,/ae/purchase-order/getImportTemplateAddr,/ae/purchase-order/validateParentOrderNo",
+        "path": "/procurement/purchaseOrder",
         "authority": [],
         "ext": "{\"index\":3}",
         "children": [
@@ -1144,7 +1144,7 @@ module.exports = [
         "name": "到货单管理",
         "key": "PROCUREMENT:DELIVERYORDER",
         "type": "route",
-        "path": "/procurement/deliveryOrder,/ae/warehouse/getWarehouseList,/ae/asn/differenceConfirm,/ae/return-order/detail,/ae/supplier/listSupplier,/ae/billing/detail,/ae/asn/listDifferenceConfirm,/ae/asn/list,/ae/asn/getViewById,/ae/price-adjust/getInfoById,/ae/supplier/detail,/ae/price-adjust-result/findById",
+        "path": "/procurement/deliveryOrder",
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
@@ -1182,7 +1182,7 @@ module.exports = [
         "name": "采购退货管理",
         "key": "PROCUREMENT:PURCHASERETURN",
         "type": "route",
-        "path": "/procurement/purchaseReturn,/ae/return-order/item/append,/ae/purchase-order/getGoods,/ae/purchase-order/listDetail,/ae/goods/search-goods,/ae/goods/list,/ae/return-order/create,/ae/warehouse/getWarehouseList,/ae/return-order/item/search,/ae/supplier/listSupplierActive,/ae/supplier/list,/ae/supplier/listSupplier,/ae/return-order/item/remove,/ae/return-order/submit,/ae/billing/submit,/ae/return-order/item/update-quantity,/ae/return-order/update,/ae/return-order/cancel,/ae/return-order/delete,/ae/order/listOrder,/ae/reissueOrder/list,/ae/return-order/search,/ae/return-order/detail,/ae/billing/detail",
+        "path": "/procurement/purchaseReturn",
         "authority": [],
         "ext": "{\"index\":5}",
         "children": [
@@ -1190,13 +1190,15 @@ module.exports = [
             "name": "查询",
             "key": "PURCHASE_RETURN:SEARCH",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "新建采购退货单",
             "key": "PURCHASE_RETURN:ADD",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "删除",
@@ -1214,13 +1216,15 @@ module.exports = [
             "name": "作废",
             "key": "PURCHASE_RETURN:VOID",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "查看详情",
             "key": "PURCHASE_RETURN:WATCH",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           }
         ]
       }
@@ -1239,7 +1243,7 @@ module.exports = [
         "name": "物流费用规则管理",
         "key": "SETTLEMENT:DELIVERCOUNTRULEMANAGE",
         "type": "route",
-        "path": "/settlement/deliverCountRuleManage,/ae/return-order/delete,/ae/return-order/detail,/ae/billing/detail,/ae/cost/copy,/ae/cost/showDetail,/ae/warehouse/getWarehouseList,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/goodsCodeAssign/stop,/ae/cost/disable,/ae/return-order/submit,/ae/cost/submit,/ae/billing/submit,/ae/cost/createCost,/ae/cost/create,/ae/cost/deleteCost,/ae/cost/modifyCost,/ae/cost/modify,/ae/cost/listCost,/ae/deliveryInfo/allMap,/ae/address/get-province,/ae/cost/showOperationLog",
+        "path": "/settlement/deliverCountRuleManage",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -1345,48 +1349,56 @@ module.exports = [
             "key": "DELIVER-COUNT-RULE:DELIVER-MANAGER-AUDIT",
             "name": "物流经理审核",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:DELIVER-MANAGER-REJECT",
             "name": "物流经理审核驳回",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:SUPPLY-CHAIN-DIRECTOR-AUDIT",
             "name": "供应链总监审核",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:SUPPLY-CHAIN-DIRECTOR-REJECT",
             "name": "供应链总监审核驳回",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-FIRST-AUDIT",
             "name": "财务初审",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-FIRST-REJECT",
             "name": "财务初审驳回",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-REVIEW-AUDIT",
             "name": "财务复审",
             "authority": [],
+            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-REVIEW-REJECT",
             "name": "财务复审驳回",
             "authority": [],
+            "path": "",
             "type": "component"
           }
         ]
@@ -1395,7 +1407,7 @@ module.exports = [
         "name": "物流对账单管理",
         "key": "SETTLEMENT:DELIVERBILLMANAGE",
         "type": "route",
-        "path": "/settlement/deliverBillManage,/ae/warehouse/getWarehouseList,/ae/return-order/delete,/ae/return-order/detail,/ae/statement/create,/ae/billing/detail,/ae/purchase-order/delOrder,/ae/statement/delete,/ae/statement/printBill,/ae/billing/print,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/statement/reCompute,/ae/price-adjust/submit,/ae/return-order/submit,/ae/gift/good/submitGiftGoods,/ae/statement/audit,/ae/billing/submit,/ae/statementExpenseItem/allExpenseItem,/ae/statement/getViewById,/ae/deliveryCourseAssign/getCourseAssignById,/ae/statement/listAllExpenseOnHand,/ae/deliveryInfo/update,/ae/return-order/item/update-quantity,/ae/statement/saveExpenseOnHand,/ae/statement/deleteExpenseOnHand,/ae/statement/submit,/ae/statement/exportByExpenseId,/ae/statement/listAuditLog,/ae/statement/payCallBack,/ae/billing/payCallBack",
+        "path": "/settlement/deliverBillManage",
         "authority": [],
         "ext": "{\"index\":1}",
         "children": [
@@ -1526,7 +1538,7 @@ module.exports = [
         "name": "采购对账单管理",
         "key": "SETTLEMENT:PURCHASEBILLMANAGE",
         "type": "route",
-        "path": "/settlement/purchaseBillManage,/ae/billing/feeDetail,/ae/statement/payCallBack,/ae/billing/payCallBack,/ae/statement/printBill,/ae/billing/print,/ae/billing/list,/ae/billing/addMulFee,/ae/billing/audit,/ae/return-order/delete,/ae/billing/deleteMulFee,/ae/return-order/detail,/ae/billing/detail,/ae/billing/downloadFeeDetail,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/common/showTask,/ae/inventory/product/exportGoodsInventory,/ae/billing/modifyMulFee,/ae/return-order/submit,/ae/billing/submit,/ae/supplier/listSupplierActive,/ae/supplier/list,/ae/supplier/listSupplier",
+        "path": "/settlement/purchaseBillManage",
         "authority": [],
         "ext": "{\"index\":2}",
         "children": [
@@ -1534,25 +1546,29 @@ module.exports = [
             "name": "查询",
             "key": "PURCHASE_BILL_MANAGE:SEARCH",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "查看详情",
             "key": "PURCHASE_BILL_MANAGE:WATCH",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "打印付款审批单",
             "key": "PURCHASE_BILL_MANAGE:PRINT",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           },
           {
             "name": "付款回执",
             "key": "PURCHASE_BILL_MANAGE:PAYMENT_RECEIPT",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           }
         ]
       },
@@ -1560,7 +1576,7 @@ module.exports = [
         "name": "手工费用项管理",
         "key": "SETTLEMENT:HANDCOSTMANAGE",
         "type": "route",
-        "path": "/settlement/handCostManage,/ae/deliveryCourseAssign/list,/ae/delivery/rule/listGoodsRule,/ae/deliveryUserAssign/list,/ae/deliveryInfo/list,/ae/goods/list,/ae/statement/list,/ae/cost/list,/ae/statementExpenseItem/list,/ae/gift/warehouse/saveGiftWarehouse,/ae/delivery/rule/create,/ae/deliveryInfo/insert,/ae/statementExpenseItem/saveItem,/ae/statementExpenseItem/deleteItem",
+        "path": "/settlement/handCostManage",
         "authority": [],
         "ext": "{\"index\":3}",
         "children": [
@@ -1591,7 +1607,7 @@ module.exports = [
         "name": "待结算订单管理",
         "key": "SETTLEMENT:PENDINGBILLMANAGE",
         "type": "route",
-        "path": "/settlement/pendingBillManage,/ae/waitSettleBilling/billedMoney,/ae/waitSettleBilling/billingMoney,/ae/waitSettleBilling/list,/ae/waitSettleBilling/countData,/ae/waitSettleBilling/createBilling,/ae/supplier/listSupplierActive,/ae/supplier/list,/ae/supplier/listSupplier",
+        "path": "/settlement/pendingBillManage",
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
@@ -1599,7 +1615,8 @@ module.exports = [
             "name": "创建预付款账单",
             "key": "PENDING_BILL_MANAGE:CREATE",
             "type": "component",
-            "authority": []
+            "authority": [],
+            "path": ""
           }
         ]
       },
@@ -1607,7 +1624,7 @@ module.exports = [
         "name": "调拨明细-寄售",
         "key": "SETTLEMENT:TRANSFERDETAILSCONSIGNMENT",
         "type": "route",
-        "path": "/settlement/transferDetailsConsignment,/ae/billing/transfer/list,/ae/billing/transfer/statistics,/ae/supplier/listSupplierActive,/ae/supplier/list,/ae/supplier/listSupplier,/ae/warehouse/getWarehouseList",
+        "path": "/settlement/transferDetailsConsignment",
         "authority": [],
         "ext": "{\"index\":5}",
         "children": []
@@ -1627,7 +1644,7 @@ module.exports = [
         "name": "客户信息日志查询",
         "key": "CRS_MESSAGE_MANAGE:CRS_MESSAGE_LOG",
         "type": "route",
-        "path": "/crs-message-manage/crs-message-log,/ae/phoneView/listPhoneView,/ae/goodsCodeAssign/list,/ae/phoneView/listViewDetail,/ae/phoneView/listAllDept",
+        "path": "/crs-message-manage/crs-message-log",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -1654,7 +1671,7 @@ module.exports = [
         "name": "进销汇存总表",
         "key": "REPORT_MANAGE:REMITDEPOSIT",
         "type": "route",
-        "path": "/report-manage/remitDeposit,/ae/goodsCodeAssign/list,/ae/invoicing/list,/ae/warehouse/getWarehouseList,/ae/invoicing/export,/ae/order/exportOrder,/ae/order/showTask,/ae/purchase-order/export,/ae/price-adjust-result/export,/ae/common/showTask,/ae/inventory/product/exportGoodsInventory",
+        "path": "/report-manage/remitDeposit",
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
@@ -1683,4 +1700,4 @@ module.exports = [
       }
     ]
   }
-]
+];

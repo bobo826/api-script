@@ -1,669 +1,672 @@
 [
 	{
-		"listPhoneView": "/ae/phoneView/listPhoneView"
+		"listPhoneView": "/api/erp/ae/phoneView/listPhoneView"
 	},
 	{
-		"listViewDetail": "/ae/phoneView/listViewDetail"
+		"listViewDetail": "/api/erp/ae/phoneView/listViewDetail"
 	},
 	{
-		"listAllDept": "/ae/phoneView/listAllDept"
+		"listAllDept": "/api/erp/ae/phoneView/listAllDept"
 	},
 	{
-		"queryDataList": "/api/ae/deliveryCourseAssign/list"
+		"queryDataList": "/admin-api/delivery/api/ae/deliveryCourseAssign/list"
 	},
 	{
-		"courseEnable": "/api/ae/deliveryCourseAssign/start"
+		"courseEnable": "/admin-api/delivery/api/ae/deliveryCourseAssign/start"
 	},
 	{
-		"courseDisable": "/api/ae/deliveryCourseAssign/stop"
+		"courseDisable": "/admin-api/delivery/api/ae/deliveryCourseAssign/stop"
 	},
 	{
-		"saveData": "/api/ae/deliveryCourseAssign/save"
+		"saveData": "/admin-api/delivery/api/ae/deliveryCourseAssign/save"
 	},
 	{
-		"getData": "/api/ae/deliveryCourseAssign/getCourseAssignById"
+		"getData": "/admin-api/delivery/api/ae/deliveryCourseAssign/getCourseAssignById"
 	},
 	{
-		"queryDeliveryList": "/ae/gift/warehouse/list"
+		"queryDeliveryList": "/api/erp/ae/gift/warehouse/list"
 	},
 	{
-		"wareHouseEnable": "/ae/gift/warehouse/startGiftWarehouse"
+		"wareHouseEnable": "/api/erp/ae/gift/warehouse/startGiftWarehouse"
 	},
 	{
-		"wareHouseDisable": "/ae/gift/warehouse/stopGiftWarehouse"
+		"wareHouseDisable": "/api/erp/ae/gift/warehouse/stopGiftWarehouse"
 	},
 	{
-		"createForm": "/ae/gift/warehouse/saveGiftWarehouse"
+		"createForm": "/api/erp/ae/gift/warehouse/saveGiftWarehouse"
 	},
 	{
-		"detailForm": "/ae/gift/warehouse/getInfoById"
+		"detailForm": "/api/erp/ae/gift/warehouse/getInfoById"
 	},
 	{
-		"list": "/ae/goodsCodeAssign/list"
+		"list": "/api/erp/ae/goodsCodeAssign/list"
 	},
 	{
-		"start": "/ae/goodsCodeAssign/start"
+		"start": "/api/erp/ae/goodsCodeAssign/start"
 	},
 	{
-		"stop": "/ae/goodsCodeAssign/stop"
+		"stop": "/api/erp/ae/goodsCodeAssign/stop"
 	},
 	{
-		"save": "/ae/goodsCodeAssign/save"
+		"save": "/api/erp/ae/goodsCodeAssign/save"
 	},
 	{
-		"delById": "/ae/goodsCodeAssign/delById"
+		"delById": "/api/erp/ae/goodsCodeAssign/delById"
 	},
 	{
-		"getById": "/ae/goodsCodeAssign/getById"
+		"getById": "/api/erp/ae/goodsCodeAssign/getById"
 	},
 	{
-		"validCode": "/ae/goodsCodeAssign/validCode"
+		"validCode": "/api/erp/ae/goodsCodeAssign/validCode"
 	},
 	{
-		"queryDataList": "/ae/delivery/rule/listGoodsRule"
+		"queryDataList": "/api/erp/ae/delivery/rule/listGoodsRule"
 	},
 	{
-		"ruleDetail": "/ae/delivery/rule/goodsRuleDetail"
+		"ruleDetail": "/api/erp/ae/delivery/rule/goodsRuleDetail"
 	},
 	{
-		"updateDataInfo": "/ae/delivery/rule/editGoodsRule"
+		"updateDataInfo": "/api/erp/ae/delivery/rule/editGoodsRule"
 	},
 	{
-		"createDataItem": "/ae/delivery/rule/createGoodsRule"
+		"createDataItem": "/api/erp/ae/delivery/rule/createGoodsRule"
 	},
 	{
-		"queryDataList": "/api/ae/deliveryUserAssign/list"
+		"queryDataList": "/admin-api/delivery/api/ae/deliveryUserAssign/list"
 	},
 	{
-		"updateDataInfo": "/api/ae/deliveryUserAssign/update"
+		"updateDataInfo": "/admin-api/delivery/api/ae/deliveryUserAssign/update"
 	},
 	{
-		"createDataItem": "/api/ae/deliveryUserAssign/insert"
+		"createDataItem": "/admin-api/delivery/api/ae/deliveryUserAssign/insert"
 	},
 	{
-		"queryDeliveryList": "/ae/delivery/rule/list"
+		"queryDeliveryList": "/api/erp/ae/delivery/rule/list"
 	},
 	{
-		"wareHouseEnable": "/ae/delivery/rule/enable"
+		"wareHouseEnable": "/api/erp/ae/delivery/rule/enable"
 	},
 	{
-		"wareHouseDisable": "/ae/delivery/rule/disable"
+		"wareHouseDisable": "/api/erp/ae/delivery/rule/disable"
 	},
 	{
-		"createForm": "/ae/delivery/rule/create"
+		"createForm": "/api/erp/ae/delivery/rule/create"
 	},
 	{
-		"detailForm": "/ae/delivery/rule/detail"
+		"detailForm": "/api/erp/ae/delivery/rule/detail"
 	},
 	{
-		"editForm": "/ae/delivery/rule/update"
+		"editForm": "/api/erp/ae/delivery/rule/update"
 	},
 	{
-		"queryDataList": "/api/ae/deliveryInfo/list"
+		"queryDataList": "/admin-api/delivery/api/ae/deliveryInfo/list"
 	},
 	{
-		"queryAllCpy": "/api/ae/deliveryInfo/allMap"
+		"queryAllCpy": "/admin-api/delivery/api/ae/deliveryInfo/allMap"
 	},
 	{
-		"createForm": "/api/ae/deliveryInfo/insert"
+		"createForm": "/admin-api/delivery/api/ae/deliveryInfo/insert"
 	},
 	{
-		"updateData": "/api/ae/deliveryInfo/update"
+		"updateData": "/admin-api/delivery/api/ae/deliveryInfo/update"
 	},
 	{
-		"validateForm": "/api/ae/deliveryInfo/validateDuplicate"
+		"validateForm": "/admin-api/delivery/api/ae/deliveryInfo/validateDuplicate"
 	},
 	{
-		"unNormalOrderDetail": "/ae/specialOrder/listSpecialOrder"
+		"unNormalOrderDetail": "/api/erp/ae/specialOrder/listSpecialOrder"
 	},
 	{
-		"orderRetry": "/ae/specialOrder/retry"
+		"orderRetry": "/api/erp/ae/specialOrder/retry"
 	},
 	{
-		"getAddress": "ae/specialOrder/getAddress"
+		"getAddress": "/api/erp/ae/specialOrder/getAddress"
 	},
 	{
-		"getAddressList": "/ae/specialOrder/getAddressInfo"
+		"getAddressList": "/api/erp/ae/specialOrder/getAddressInfo"
 	},
 	{
-		"addressUpdate": "ae/specialOrder/updateAddress"
+		"addressUpdate": "/api/erp/ae/specialOrder/updateAddress"
 	},
 	{
-		"queryAbnormalOrderDetail": "/ae/specialOrder/getSpecialOrderDetail"
+		"queryAbnormalOrderDetail": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
 	},
 	{
-		"exportAnnormalOrder": "ae/specialOrder/exportOrder"
+		"exportAnnormalOrder": "/api/erp/ae/specialOrder/exportOrder"
 	},
 	{
-		"queryOrderList": "/ae/order/listOrder"
+		"queryOrderList": "/api/erp/ae/order/listOrder"
 	},
 	{
-		"reSycnOrderToWare": "ae/order/reSyncOrderToWarehouse"
+		"reSycnOrderToWare": "/api/erp/ae/order/reSyncOrderToWarehouse"
 	},
 	{
-		"cancelIntercept": "/ae/order/cancelHandle"
+		"cancelIntercept": "/api/erp/ae/order/cancelHandle"
 	},
 	{
-		"queryReissue": "/ae/reissueOrder/getGoods"
+		"queryReissue": "/api/erp/ae/reissueOrder/getGoods"
 	},
 	{
-		"createReissue": "/ae/reissueOrder/createReissue"
+		"createReissue": "/api/erp/ae/reissueOrder/createReissue"
 	},
 	{
-		"exportXsl": "/ae/order/exportOrder"
+		"exportXsl": "/api/erp/ae/order/exportOrder"
 	},
 	{
-		"exportXslData": "/ae/order/showTask"
+		"exportXslData": "/api/erp/ae/order/showTask"
 	},
 	{
-		"mergeOrder": "/ae/order/mergeOrder"
+		"mergeOrder": "/api/erp/ae/order/mergeOrder"
 	},
 	{
-		"bulkDelivery": "/ae/order/bulkDelivery"
+		"bulkDelivery": "/api/erp/ae/order/bulkDelivery"
 	},
 	{
-		"queryWareHouse": "/ae/warehouse/getWarehouseList"
+		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
 	},
 	{
-		"queryOrderDetail": "/ae/order/getOrderDetail"
+		"queryOrderDetail": "/api/erp/ae/order/getOrderDetail"
 	},
 	{
-		"queryUserName": "/ae/phone/queryPhone"
+		"queryUserName": "/api/erp/ae/phone/queryPhone"
 	},
 	{
-		"queryUseraddRess": "/ae/phone/queryPhone"
+		"queryUseraddRess": "/api/erp/ae/phone/queryPhone"
 	},
 	{
-		"queryUserMobile": "/ae/phone/queryPhone"
+		"queryUserMobile": "/api/erp/ae/phone/queryPhone"
 	},
 	{
-		"getTraces": "/api/ae/deliveryQuery/queryDeliveryTracesNew"
+		"getTraces": "/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew"
 	},
 	{
-		"queryRessiueDetail": "/ae/reissueOrder/getReissueOrder"
+		"queryRessiueDetail": "/api/erp/ae/reissueOrder/getReissueOrder"
 	},
 	{
-		"switchWarehouse": "/ae/order/switchWarehouse"
+		"switchWarehouse": "/api/erp/ae/order/switchWarehouse"
 	},
 	{
-		"queryOrderList": "/ae/reissueOrder/list"
+		"queryOrderList": "/api/erp/ae/reissueOrder/list"
 	},
 	{
-		"handleExport": "/ae/reissueOrder/export"
+		"handleExport": "/api/erp/ae/reissueOrder/export"
 	},
 	{
-		"createOldReissue": "/ae/reissueOrder/createOldReissueOrder"
+		"createOldReissue": "/api/erp/ae/reissueOrder/createOldReissueOrder"
 	},
 	{
-		"reSyncOrder": "ae/reissueOrder/reSyncReissueOrder"
+		"reSyncOrder": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
 	},
 	{
-		"cancelReissueOrder": "/ae/reissueOrder/closeReissueOrder"
+		"cancelReissueOrder": "/api/erp/ae/reissueOrder/closeReissueOrder"
 	},
 	{
-		"batchInsertOrder": "/ae/reissueOrder/batchCreateReissueOrder"
+		"batchInsertOrder": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
 	},
 	{
-		"exportAddressLibrary": "/ae/reissueOrder/exportAddress"
+		"exportAddressLibrary": "/api/erp/ae/reissueOrder/exportAddress"
 	},
 	{
-		"reissueOrderTemplate": "/ae/reissueOrder/getReissueOrderTemplate"
+		"reissueOrderTemplate": "/api/erp/ae/reissueOrder/getReissueOrderTemplate"
 	},
 	{
-		"querySpDeliveryList": "/ae/apply/delivery/listDeliveryApply"
+		"querySpDeliveryList": "/api/erp/ae/apply/delivery/listDeliveryApply"
 	},
 	{
-		"creatSpApply": "ae/apply/delivery/create"
+		"creatSpApply": "/api/erp/ae/apply/delivery/create"
 	},
 	{
-		"switchSpShip": "ae/apply/delivery/deliveryApplySwitch"
+		"switchSpShip": "/api/erp/ae/apply/delivery/deliveryApplySwitch"
 	},
 	{
-		"queryDeliveryGoodsList": "/ae/asn/list"
+		"queryDeliveryGoodsList": "/api/erp/ae/asn/list"
 	},
 	{
-		"queryDetail": "/ae/asn/getViewById"
+		"queryDetail": "/api/erp/ae/asn/getViewById"
 	},
 	{
-		"diffConfirm": "/ae/asn/differenceConfirm"
+		"diffConfirm": "/api/erp/ae/asn/differenceConfirm"
 	},
 	{
-		"diffConfirmList": "/ae/asn/listDifferenceConfirm"
+		"diffConfirmList": "/api/erp/ae/asn/listDifferenceConfirm"
 	},
 	{
-		"querySupplieGoodsList": "/ae/price-adjust/list"
+		"querySupplieGoodsList": "/api/erp/ae/price-adjust/list"
 	},
 	{
-		"saveBaseInfo": "/ae/price-adjust/saveBase"
+		"saveBaseInfo": "/api/erp/ae/price-adjust/saveBase"
 	},
 	{
-		"goodsInfoList": "/ae/price-adjust/listDetailV2"
+		"goodsInfoList": "/api/erp/ae/price-adjust/listDetailV2"
 	},
 	{
-		"queryGoodsInfo": "/ae/price-adjust/supplierGoodsInfo"
+		"queryGoodsInfo": "/api/erp/ae/price-adjust/supplierGoodsInfo"
 	},
 	{
-		"goodsPriceRange": "/ae/price-adjust/saveDetail"
+		"goodsPriceRange": "/api/erp/ae/price-adjust/saveDetail"
 	},
 	{
-		"clearGoodsInfo": "/ae/price-adjust/delAllDetail"
+		"clearGoodsInfo": "/api/erp/ae/price-adjust/delAllDetail"
 	},
 	{
-		"queryDetail": "/ae/price-adjust/getInfoById"
+		"queryDetail": "/api/erp/ae/price-adjust/getInfoById"
 	},
 	{
-		"submitAudit": "/ae/price-adjust/submit"
+		"submitAudit": "/api/erp/ae/price-adjust/submit"
 	},
 	{
-		"delGoods": "/ae/price-adjust/delDetail"
+		"delGoods": "/api/erp/ae/price-adjust/delDetail"
 	},
 	{
-		"queryLog": "/ae/price-adjust/listAuditLog"
+		"queryLog": "/api/erp/ae/price-adjust/listAuditLog"
 	},
 	{
-		"editPrice": "/ae/price-adjust/editPrice"
+		"editPrice": "/api/erp/ae/price-adjust/editPrice"
 	},
 	{
-		"priceAdjustLetterDownLoad": "/ae/price-adjust/getAdjustLetterUrl"
+		"priceAdjustLetterDownLoad": "/api/erp/ae/price-adjust/getAdjustLetterUrl"
 	},
 	{
-		"priceGoodsImport": "/ae/price-adjust/importDetail"
+		"priceGoodsImport": "/api/erp/ae/price-adjust/importDetail"
 	},
 	{
-		"priceAdjustDel": "/ae/price-adjust/delPriceAdjust"
+		"priceAdjustDel": "/api/erp/ae/price-adjust/delPriceAdjust"
 	},
 	{
-		"priceAdjustTemplate": "/ae/price-adjust/getImportTemplateAddr"
+		"priceAdjustTemplate": "/api/erp/ae/price-adjust/getImportTemplateAddr"
 	},
 	{
-		"priceCompare": "/ae/price-adjust/compare', param"
+		"priceCompare": "/api/erp/ae/price-adjust/compare"
 	},
 	{
-		"queryPurchaseList": "/ae/purchase-order/list"
+		"queryPurchaseList": "/api/erp/ae/purchase-order/list"
 	},
 	{
-		"saveBaseInfo": "/ae/purchase-order/saveBase"
+		"saveBaseInfo": "/api/erp/ae/purchase-order/saveBase"
 	},
 	{
-		"queryGoods": "/ae/purchase-order/getGoods"
+		"queryGoods": "/api/erp/ae/purchase-order/getGoods"
 	},
 	{
-		"saveGoodsInfo": "/ae/purchase-order/addGoods"
+		"saveGoodsInfo": "/api/erp/ae/purchase-order/addGoods"
 	},
 	{
-		"queryGoodsList": "/ae/purchase-order/listDetail"
+		"queryGoodsList": "/api/erp/ae/purchase-order/listDetail"
 	},
 	{
-		"templateDown": "/ae/purchase-order/getImportTemplateAddr"
+		"templateDown": "/api/erp/ae/purchase-order/getImportTemplateAddr"
 	},
 	{
-		"purchaseDetail": "/ae/purchase-order/getInfoById"
+		"purchaseDetail": "/api/erp/ae/purchase-order/getInfoById"
 	},
 	{
-		"cancelOrder": "/ae/purchase-order/cancelOrder"
+		"cancelOrder": "/api/erp/ae/purchase-order/cancelOrder"
 	},
 	{
-		"closeOrder": "/ae/purchase-order/closeOrder"
+		"closeOrder": "/api/erp/ae/purchase-order/closeOrder"
 	},
 	{
-		"delOrder": "/ae/purchase-order/delOrder"
+		"delOrder": "/api/erp/ae/purchase-order/delOrder"
 	},
 	{
-		"purChaseOrderImport": "/ae/purchase-order/importDetail"
+		"purChaseOrderImport": "/api/erp/ae/purchase-order/importDetail"
 	},
 	{
-		"editQuantity": "/ae/purchase-order/editPurchaseCount"
+		"editQuantity": "/api/erp/ae/purchase-order/editPurchaseCount"
 	},
 	{
-		"delGoodsList": "/ae/purchase-order/delOneDetail"
+		"delGoodsList": "/api/erp/ae/purchase-order/delOneDetail"
 	},
 	{
-		"confirmOrder": "/ae/purchase-order/confirmOrder"
+		"confirmOrder": "/api/erp/ae/purchase-order/confirmOrder"
 	},
 	{
-		"validateParentOrderNo": "/ae/purchase-order/validateParentOrderNo"
+		"validateParentOrderNo": "/api/erp/ae/purchase-order/validateParentOrderNo"
 	},
 	{
-		"exportXsl": "/ae/purchase-order/export"
+		"exportXsl": "/api/erp/ae/purchase-order/export"
 	},
 	{
-		"findByGoodId": "/ae/price-adjust-result/findByGoodId"
+		"findByGoodId": "/api/erp/ae/price-adjust-result/findByGoodId"
 	},
 	{
-		"queryOrderList": "/ae/return-order/search"
+		"queryOrderList": "/api/erp/ae/return-order/search"
 	},
 	{
-		"createReOrder": "/ae/return-order/create"
+		"createReOrder": "/api/erp/ae/return-order/create"
 	},
 	{
-		"queryGoodsList": "/ae/goods/search-goods"
+		"queryGoodsList": "/api/erp/ae/goods/search-goods"
 	},
 	{
-		"queryReGoodsList": "/ae/return-order/item/search"
+		"queryReGoodsList": "/api/erp/ae/return-order/item/search"
 	},
 	{
-		"append": "/ae/return-order/item/append"
+		"append": "/api/erp/ae/return-order/item/append"
 	},
 	{
-		"remove": "/ae/return-order/item/remove"
+		"remove": "/api/erp/ae/return-order/item/remove"
 	},
 	{
-		"update": "/ae/return-order/item/update-quantity"
+		"update": "/api/erp/ae/return-order/item/update-quantity"
 	},
 	{
-		"updateOrder": "/ae/return-order/update"
+		"updateOrder": "/api/erp/ae/return-order/update"
 	},
 	{
-		"cancel": "/ae/return-order/cancel"
+		"cancel": "/api/erp/ae/return-order/cancel"
 	},
 	{
-		"del": "/ae/return-order/delete"
+		"del": "/api/erp/ae/return-order/delete"
 	},
 	{
-		"detail": "/ae/return-order/detail"
+		"detail": "/api/erp/ae/return-order/detail"
 	},
 	{
-		"querySupplierList": "/ae/supplier/listSupplierActive"
-	},
-	{
-		"getWarehouseList": "/ae/warehouse/getWarehouseList"
-	},
-	{
-		"submit": "/ae/return-order/submit"
-	},
-	{
-		"querySupplierList": "/ae/supplier/list"
-	},
-	{
-		"createSupplier": "/ae/supplier/create"
-	},
-	{
-		"queryDetail": "/ae/supplier/detail"
-	},
-	{
-		"queryLogDetail": "/ae/supplier/logDetail"
-	},
-	{
-		"querySupplier": "/ae/supplier/listSupplier"
-	},
-	{
-		"queryEnableSupplier": "/ae/supplier/listSupplierActive"
-	},
-	{
-		"stopCooper": "/ae/supplier/stopCooperation"
-	},
-	{
-		"auditSubmit": "/ae/supplier/submit"
-	},
-	{
-		"purchaseSubmit": "/ae/supplier/purchaseSubmit"
-	},
-	{
-		"purchaseReject": "/ae/supplier/purchaseDecline"
-	},
-	{
-		"financeSubmit": "/ae/supplier/financeSubmit"
-	},
-	{
-		"financeReject": "/ae/supplier/financeDecline"
-	},
-	{
-		"queryManage": "/ae/supplier/findManager"
-	},
-	{
-		"supplierEdit": "/ae/supplier/edit"
-	},
-	{
-		"syncWarehouse": "/ae/supplier/synToWms"
-	},
-	{
-		"supplierDelete": "/ae/supplier/delete"
-	},
-	{
-		"querySupplieGoodsList": "/ae/price-adjust-result/list"
-	},
-	{
-		"supplierGoodsImport": "/ae/price-adjust-result/import"
-	},
-	{
-		"queryDetail": "/ae/price-adjust-result/findById"
-	},
-	{
-		"supplierGoodsEdit": "/ae/price-adjust-result/cycleEdit"
-	},
-	{
-		"templateDownLoad": "/ae/price-adjust-result/getImportTemplateAddr"
-	},
-	{
-		"exportPriceChangeLog": "/ae/price-adjust-result/exportSku"
-	},
-	{
-		"histroyLog": "/ae/price-adjust-result/histroy"
-	},
-	{
-		"exportXsl": "/ae/price-adjust-result/export"
-	},
-	{
-		"exportAveragepPriceXsl": "/ae/price-adjust-result/exportGoodsWeightedAveragePrice"
-	},
-	{
-		"queryGiftMapList": "/ae/gift/good/list"
-	},
-	{
-		"deleteData": "/ae/gift/good/delete"
-	},
-	{
-		"disableData": "/ae/gift/good/stopGiftGoods"
-	},
-	{
-		"getCourseList": "/ae/course-goods/course-list"
-	},
-	{
-		"getClassList": "/ae/course-goods/class-list"
-	},
-	{
-		"getGiftList": "/ae/gift/listGift"
-	},
-	{
-		"getStudySegmentCodeList": "/ae/course-goods/studySegment"
-	},
-	{
-		"createSubjectMap": "/ae/gift/good/save"
-	},
-	{
-		"giftMapDetail": "/ae/gift/good/getGiftGoodsInfoById"
-	},
-	{
-		"subjectMapEdit": "/ae/gift/good/save"
-	},
-	{
-		"subjectAudit": "/ae/gift/good/auditGiftGoods"
-	},
-	{
-		"subjectAuditReject": "/ae/gift/good/auditGiftGoods"
-	},
-	{
-		"submitAudit": "/ae/gift/good/submitGiftGoods"
-	},
-	{
-		"syncWms": "/ae/course-goods/synToWms"
-	},
-	{
-		"createData": "/ae/category/add"
-	},
-	{
-		"queryClassify": "/ae/category/list"
-	},
-	{
-		"editData": "/ae/category/edit"
-	},
-	{
-		"queryDataList": "/ae/goods/list"
-	},
-	{
-		"handleGoodsEnable": "/ae/goods/enable"
-	},
-	{
-		"handleGoodsDisable": "/ae/goods/disable"
-	},
-	{
-		"handleSyncGoods": "/ae/goods/sync"
-	},
-	{
-		"goodsDelete": "/ae/goods/delete"
-	},
-	{
-		"getGoodsDetail": "/ae/goods/detail"
-	},
-	{
-		"exportsGoods": "/ae/goods/exportGoods"
-	},
-	{
-		"createData": "/ae/goods/add"
-	},
-	{
-		"editData": "/ae/goods/edit"
-	},
-	{
-		"queryGoodsList": "/ae/goods/list"
-	},
-	{
-		"queryCourseList": "/ae/course-goods/list"
-	},
-	{
-		"deleteData": "/ae/course-goods/delete"
-	},
-	{
-		"disableData": "/ae/course-goods/disable"
-	},
-	{
-		"getPeriod": "/ae/course-goods/class-delivery-periods"
-	},
-	{
-		"createSubjectMap": "/ae/course-goods/add"
-	},
-	{
-		"subjectMapDetail": "/ae/course-goods/detail"
-	},
-	{
-		"subjectMapEdit": "/ae/course-goods/edit"
-	},
-	{
-		"subjectAudit": "/ae/course-goods/confirm"
-	},
-	{
-		"subjectAuditReject": "/ae/course-goods/reject"
-	},
-	{
-		"virtualDelete": "/ae/goods/delete"
-	},
-	{
-		"virtualAdd": "/ae/goods/add"
-	},
-	{
-		"queryDataDetail": "/ae/goods/detail"
-	},
-	{
-		"virtualEdit": "/ae/goods/edit"
-	},
-	{
-		"virtualAudit": "/ae/goods/audit"
-	},
-	{
-		"listReport": "/ae/invoicing/list"
-	},
-	{
-		"exportReport": "/ae/invoicing/export"
-	},
-	{
-		"queryDataList": "/api/erp/ae/statement/list"
-	},
-	{
-		"getDetailData": "/ae/statement/getViewById"
-	},
-	{
-		"getDataByHand": "/ae/statement/listAllExpenseOnHand"
-	},
-	{
-		"updateDataByHand": "/ae/statement/saveExpenseOnHand"
-	},
-	{
-		"submitAudit": "/ae/statement/audit"
-	},
-	{
-		"deleteRecord": "/ae/statement/deleteExpenseOnHand"
-	},
-	{
-		"submitStatement": "/ae/statement/submit"
-	},
-	{
-		"reCompute": "/ae/statement/reCompute"
-	},
-	{
-		"printBill": "/ae/statement/printBill"
-	},
-	{
-		"payCallBack": "/ae/statement/payCallBack"
-	},
-	{
-		"fetchLog": "/ae/statement/listAuditLog"
-	},
-	{
-		"exportByExpenseId": "/ae/statement/exportByExpenseId"
-	},
-	{
-		"exportXslData": "/api/ae/common/showTask"
-	},
-	{
-		"getAllExpenseItem": "/ae/statementExpenseItem/allExpenseItem"
-	},
-	{
-		"createOrder": "/ae/statement/create"
-	},
-	{
-		"delOrder": "/ae/statement/delete"
-	},
-	{
-		"queryDataList": "/api/ae/cost/list"
-	},
-	{
-		"createDeliverRule": "/api/ae/cost/create"
-	},
-	{
-		"modifyDeliverRule": "/api/ae/cost/modify"
-	},
-	{
-		"getDeliverRuleDetail": "/api/ae/cost/showDetail"
-	},
-	{
-		"stopDeliverCost": "/api/ae/cost/disable"
-	},
-	{
-		"copyDeliverRule": "/api/ae/cost/copy"
-	},
-	{
-		"submitProcess": "/api/ae/cost/submit"
-	},
-	{
-		"viewLog": "/api/ae/cost/showOperationLog"
-	},
-	{
-		"queryCostList": "/api/ae/cost/listCost"
-	},
-	{
-		"createDeliverCost": "/api/ae/cost/createCost"
-	},
-	{
-		"modifyDeliverCost": "/api/ae/cost/modifyCost"
-	},
-	{
-		"deleteDeliverCost": "/api/ae/cost/deleteCost"
+		"querySupplierList": "/api/erp/ae/supplier/listSupplierActive"
 	},
 	{
 		"getWarehouseList": "/api/erp/ae/warehouse/getWarehouseList"
 	},
 	{
-		"getProvinceList": "/api/ae/address/get-province"
+		"submit": "/api/erp/ae/return-order/submit"
+	},
+	{
+		"querySupplierList": "/api/erp/ae/supplier/list"
+	},
+	{
+		"createSupplier": "/api/erp/ae/supplier/create"
+	},
+	{
+		"queryDetail": "/api/erp/ae/supplier/detail"
+	},
+	{
+		"queryLogDetail": "/api/erp/ae/supplier/logDetail"
+	},
+	{
+		"querySupplier": "/api/erp/ae/supplier/listSupplier"
+	},
+	{
+		"queryEnableSupplier": "/api/erp/ae/supplier/listSupplierActive"
+	},
+	{
+		"stopCooper": "/api/erp/ae/supplier/stopCooperation"
+	},
+	{
+		"auditSubmit": "/api/erp/ae/supplier/submit"
+	},
+	{
+		"purchaseSubmit": "/api/erp/ae/supplier/purchaseSubmit"
+	},
+	{
+		"purchaseReject": "/api/erp/ae/supplier/purchaseDecline"
+	},
+	{
+		"financeSubmit": "/api/erp/ae/supplier/financeSubmit"
+	},
+	{
+		"financeReject": "/api/erp/ae/supplier/financeDecline"
+	},
+	{
+		"queryManage": "/api/erp/ae/supplier/findManager"
+	},
+	{
+		"supplierEdit": "/api/erp/ae/supplier/edit"
+	},
+	{
+		"syncWarehouse": "/api/erp/ae/supplier/synToWms"
+	},
+	{
+		"supplierDelete": "/api/erp/ae/supplier/delete"
+	},
+	{
+		"querySupplieGoodsList": "/api/erp/ae/price-adjust-result/list"
+	},
+	{
+		"supplierGoodsImport": "/api/erp/ae/price-adjust-result/import"
+	},
+	{
+		"queryDetail": "/api/erp/ae/price-adjust-result/findById"
+	},
+	{
+		"supplierGoodsEdit": "/api/erp/ae/price-adjust-result/cycleEdit"
+	},
+	{
+		"templateDownLoad": "/api/erp/ae/price-adjust-result/getImportTemplateAddr"
+	},
+	{
+		"exportPriceChangeLog": "/api/erp/ae/price-adjust-result/exportSku"
+	},
+	{
+		"histroyLog": "/api/erp/ae/price-adjust-result/histroy"
+	},
+	{
+		"exportXsl": "/api/erp/ae/price-adjust-result/export"
+	},
+	{
+		"exportAveragepPriceXsl": "/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice"
+	},
+	{
+		"queryGiftMapList": "/api/erp/ae/gift/good/list"
+	},
+	{
+		"deleteData": "/api/erp/ae/gift/good/delete"
+	},
+	{
+		"disableData": "/api/erp/ae/gift/good/stopGiftGoods"
+	},
+	{
+		"getCourseList": "/api/erp/ae/course-goods/course-list"
+	},
+	{
+		"getClassList": "/api/erp/ae/course-goods/class-list"
+	},
+	{
+		"getGiftList": "/api/erp/ae/gift/listGift"
+	},
+	{
+		"getStudySegmentCodeList": "/api/erp/ae/course-goods/studySegment"
+	},
+	{
+		"createSubjectMap": "/api/erp/ae/gift/good/save"
+	},
+	{
+		"giftMapDetail": "/api/erp/ae/gift/good/getGiftGoodsInfoById"
+	},
+	{
+		"subjectMapEdit": "/api/erp/ae/gift/good/save"
+	},
+	{
+		"subjectAudit": "/api/erp/ae/gift/good/auditGiftGoods"
+	},
+	{
+		"subjectAuditReject": "/api/erp/ae/gift/good/auditGiftGoods"
+	},
+	{
+		"submitAudit": "/api/erp/ae/gift/good/submitGiftGoods"
+	},
+	{
+		"syncWms": "/api/erp/ae/course-goods/synToWms"
+	},
+	{
+		"createData": "/api/erp/ae/category/add"
+	},
+	{
+		"queryClassify": "/api/erp/ae/category/list"
+	},
+	{
+		"editData": "/api/erp/ae/category/edit"
+	},
+	{
+		"queryDataList": "/api/erp/ae/goods/list"
+	},
+	{
+		"handleGoodsEnable": "/api/erp/ae/goods/enable"
+	},
+	{
+		"handleGoodsDisable": "/api/erp/ae/goods/disable"
+	},
+	{
+		"handleSyncGoods": "/api/erp/ae/goods/sync"
+	},
+	{
+		"goodsDelete": "/api/erp/ae/goods/delete"
+	},
+	{
+		"getGoodsDetail": "/api/erp/ae/goods/detail"
+	},
+	{
+		"exportsGoods": "/api/erp/ae/goods/exportGoods"
+	},
+	{
+		"createData": "/api/erp/ae/goods/add"
+	},
+	{
+		"editData": "/api/erp/ae/goods/edit"
+	},
+	{
+		"queryGoodsList": "/api/erp/ae/goods/list"
+	},
+	{
+		"queryCourseList": "/api/erp/ae/course-goods/list"
+	},
+	{
+		"deleteData": "/api/erp/ae/course-goods/delete"
+	},
+	{
+		"disableData": "/api/erp/ae/course-goods/disable"
+	},
+	{
+		"getPeriod": "/api/erp/ae/course-goods/class-delivery-periods"
+	},
+	{
+		"createSubjectMap": "/api/erp/ae/course-goods/add"
+	},
+	{
+		"subjectMapDetail": "/api/erp/ae/course-goods/detail"
+	},
+	{
+		"subjectMapEdit": "/api/erp/ae/course-goods/edit"
+	},
+	{
+		"subjectAudit": "/api/erp/ae/course-goods/confirm"
+	},
+	{
+		"subjectAuditReject": "/api/erp/ae/course-goods/reject"
+	},
+	{
+		"virtualDelete": "/api/erp/ae/goods/delete"
+	},
+	{
+		"virtualAdd": "/api/erp/ae/goods/add"
+	},
+	{
+		"queryDataDetail": "/api/erp/ae/goods/detail"
+	},
+	{
+		"virtualEdit": "/api/erp/ae/goods/edit"
+	},
+	{
+		"virtualAudit": "/api/erp/ae/goods/audit"
+	},
+	{
+		"listReport": "/api/erp/ae/invoicing/list"
+	},
+	{
+		"exportReport": "/api/erp/ae/invoicing/export"
+	},
+	{
+		"stockProductList": "/api/erp/ae/inventory/product/listGoodsInventory"
+	},
+	{
+		"exportXsl": "/api/erp/ae/inventory/product/exportGoodsInventory"
+	},
+	{
+		"queryDataList": "/api/erp/ae/statement/list"
+	},
+	{
+		"getDetailData": "/api/erp/ae/statement/getViewById"
+	},
+	{
+		"getDataByHand": "/api/erp/ae/statement/listAllExpenseOnHand"
+	},
+	{
+		"updateDataByHand": "/api/erp/ae/statement/saveExpenseOnHand"
+	},
+	{
+		"submitAudit": "/api/erp/ae/statement/audit"
+	},
+	{
+		"deleteRecord": "/api/erp/ae/statement/deleteExpenseOnHand"
+	},
+	{
+		"submitStatement": "/api/erp/ae/statement/submit"
+	},
+	{
+		"reCompute": "/api/erp/ae/statement/reCompute"
+	},
+	{
+		"printBill": "/api/erp/ae/statement/printBill"
+	},
+	{
+		"payCallBack": "/api/erp/ae/statement/payCallBack"
+	},
+	{
+		"fetchLog": "/api/erp/ae/statement/listAuditLog"
+	},
+	{
+		"exportByExpenseId": "/api/erp/ae/statement/exportByExpenseId"
+	},
+	{
+		"exportXslData": "/admin-api/delivery/api/ae/common/showTask"
+	},
+	{
+		"getAllExpenseItem": "/api/erp/ae/statementExpenseItem/allExpenseItem"
+	},
+	{
+		"createOrder": "/api/erp/ae/statement/create"
+	},
+	{
+		"delOrder": "/api/erp/ae/statement/delete"
+	},
+	{
+		"queryDataList": "/admin-api/delivery/api/ae/cost/list"
+	},
+	{
+		"createDeliverRule": "/admin-api/delivery/api/ae/cost/create"
+	},
+	{
+		"modifyDeliverRule": "/admin-api/delivery/api/ae/cost/modify"
+	},
+	{
+		"getDeliverRuleDetail": "/admin-api/delivery/api/ae/cost/showDetail"
+	},
+	{
+		"stopDeliverCost": "/admin-api/delivery/api/ae/cost/disable"
+	},
+	{
+		"copyDeliverRule": "/admin-api/delivery/api/ae/cost/copy"
+	},
+	{
+		"submitProcess": "/admin-api/delivery/api/ae/cost/submit"
+	},
+	{
+		"viewLog": "/admin-api/delivery/api/ae/cost/showOperationLog"
+	},
+	{
+		"queryCostList": "/admin-api/delivery/api/ae/cost/listCost"
+	},
+	{
+		"createDeliverCost": "/admin-api/delivery/api/ae/cost/createCost"
+	},
+	{
+		"modifyDeliverCost": "/admin-api/delivery/api/ae/cost/modifyCost"
+	},
+	{
+		"deleteDeliverCost": "/admin-api/delivery/api/ae/cost/deleteCost"
+	},
+	{
+		"getProvinceList": "/admin-api/order/api/ae/address/get-province"
 	},
 	{
 		"queryDataList": "/api/erp/ae/statementExpenseItem/list"
@@ -675,63 +678,57 @@
 		"handCostItemDelete": "/api/erp/ae/statementExpenseItem/deleteItem"
 	},
 	{
-		"queryWaitSettleBillingList": "/ae/waitSettleBilling/list"
+		"queryWaitSettleBillingList": "/api/erp/ae/waitSettleBilling/list"
 	},
 	{
-		"billingMoney": "/ae/waitSettleBilling/billingMoney"
+		"billingMoney": "/api/erp/ae/waitSettleBilling/billingMoney"
 	},
 	{
-		"billedMoney": "/ae/waitSettleBilling/billedMoney"
+		"billedMoney": "/api/erp/ae/waitSettleBilling/billedMoney"
 	},
 	{
-		"waitSettleBillingCountData": "/ae/waitSettleBilling/countData"
+		"waitSettleBillingCountData": "/api/erp/ae/waitSettleBilling/countData"
 	},
 	{
-		"waitSettleBillingCreateBilling": "/ae/waitSettleBilling/createBilling"
+		"waitSettleBillingCreateBilling": "/api/erp/ae/waitSettleBilling/createBilling"
 	},
 	{
-		"queryBillingList": "/ae/billing/list"
+		"queryBillingList": "/api/erp/ae/billing/list"
 	},
 	{
-		"detail": "/ae/billing/detail"
+		"detail": "/api/erp/ae/billing/detail"
 	},
 	{
-		"addMulFee": "ae/billing/addMulFee"
+		"addMulFee": "/api/erp/ae/billing/addMulFee"
 	},
 	{
-		"deleteMulFee": "ae/billing/deleteMulFee"
+		"deleteMulFee": "/api/erp/ae/billing/deleteMulFee"
 	},
 	{
-		"modifyMulFee": "ae/billing/modifyMulFee"
+		"modifyMulFee": "/api/erp/ae/billing/modifyMulFee"
 	},
 	{
-		"submit": "ae/billing/submit"
+		"submit": "/api/erp/ae/billing/submit"
 	},
 	{
-		"audit": "ae/billing/audit"
+		"audit": "/api/erp/ae/billing/audit"
 	},
 	{
-		"printBill": "/ae/billing/print"
+		"printBill": "/api/erp/ae/billing/print"
 	},
 	{
-		"payCallBack": "/ae/billing/payCallBack"
+		"payCallBack": "/api/erp/ae/billing/payCallBack"
 	},
 	{
-		"feeDetail": "/ae/billing/feeDetail"
+		"feeDetail": "/api/erp/ae/billing/feeDetail"
 	},
 	{
-		"downloadFeeDetail": "/ae/billing/downloadFeeDetail"
+		"downloadFeeDetail": "/api/erp/ae/billing/downloadFeeDetail"
 	},
 	{
-		"transferBillingList": "/ae/billing/transfer/list"
+		"transferBillingList": "/api/erp/ae/billing/transfer/list"
 	},
 	{
-		"transferStatistics": "/ae/billing/transfer/statistics"
-	},
-	{
-		"stockProductList": "/ae/inventory/product/listGoodsInventory"
-	},
-	{
-		"exportXsl": "/ae/inventory/product/exportGoodsInventory"
+		"transferStatistics": "/api/erp/ae/billing/transfer/statistics"
 	}
 ]
