@@ -1,8 +1,8 @@
 {
 	"logistics-manage/courseSpecifyExpress": {
 		"apiPath": [
-			"/admin-api/delivery/api/ae/deliveryCourseAssign/stop",
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/admin-api/delivery/api/ae/deliveryCourseAssign/stop",
 			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
@@ -18,9 +18,9 @@
 			"/api/erp/ae/statementExpenseItem/list",
 			"/admin-api/delivery/api/ae/deliveryCourseAssign/save",
 			"/api/erp/ae/goodsCodeAssign/save",
+			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/specialOrder/getAddress",
 			"/api/erp/ae/specialOrder/getAddressInfo",
-			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/course-goods/class-list",
 			"/api/erp/ae/course-goods/course-list",
 			"/api/erp/ae/course-goods/class-delivery-periods",
@@ -29,10 +29,10 @@
 	},
 	"logistics-manage/giftSpecifyWarehouse": {
 		"apiPath": [
+			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/gift/warehouse/saveGiftWarehouse",
 			"/api/erp/ae/delivery/rule/create",
 			"/admin-api/delivery/api/ae/deliveryInfo/insert",
-			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/statementExpenseItem/saveItem",
 			"/api/erp/ae/gift/warehouse/getInfoById",
 			"/api/erp/ae/delivery/rule/detail",
@@ -74,20 +74,20 @@
 	},
 	"logistics-manage/userSpecifyExpress": {
 		"apiPath": [
+			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/api/erp/ae/delivery/rule/createGoodsRule",
+			"/admin-api/delivery/api/ae/deliveryUserAssign/insert",
+			"/api/erp/ae/return-order/delete",
+			"/api/erp/ae/category/add",
+			"/api/erp/ae/goods/add",
 			"/admin-api/delivery/api/ae/deliveryCourseAssign/list",
 			"/api/erp/ae/delivery/rule/listGoodsRule",
 			"/admin-api/delivery/api/ae/deliveryUserAssign/list",
 			"/admin-api/delivery/api/ae/deliveryInfo/list",
-			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
-			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/goods/list",
 			"/api/erp/ae/statement/list",
 			"/admin-api/delivery/api/ae/cost/list",
 			"/api/erp/ae/statementExpenseItem/list",
-			"/api/erp/ae/delivery/rule/createGoodsRule",
-			"/admin-api/delivery/api/ae/deliveryUserAssign/insert",
-			"/api/erp/ae/category/add",
-			"/api/erp/ae/goods/add",
 			"/api/erp/ae/delivery/rule/editGoodsRule",
 			"/admin-api/delivery/api/ae/deliveryUserAssign/update",
 			"/admin-api/delivery/api/ae/deliveryInfo/update",
@@ -96,10 +96,10 @@
 	},
 	"logistics-manage/wareHouse": {
 		"apiPath": [
+			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/gift/warehouse/saveGiftWarehouse",
 			"/api/erp/ae/delivery/rule/create",
 			"/admin-api/delivery/api/ae/deliveryInfo/insert",
-			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/statementExpenseItem/saveItem",
 			"/api/erp/ae/gift/warehouse/getInfoById",
 			"/api/erp/ae/delivery/rule/detail",
@@ -140,15 +140,15 @@
 	},
 	"order/abnormalOrder-manage": {
 		"apiPath": [
-			"/api/erp/ae/specialOrder/updateAddress",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask",
+			"/api/erp/ae/specialOrder/updateAddress",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/ae/common/showTask",
 			"/api/erp/ae/billing/detail",
+			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/specialOrder/exportOrder",
 			"/api/erp/ae/specialOrder/getAddress",
 			"/api/erp/ae/specialOrder/retry",
@@ -161,49 +161,28 @@
 			"/api/erp/ae/course-goods/class-delivery-periods"
 		]
 	},
-	"order/order-manage-reissue": {
-		"apiPath": [
-			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
-			"/api/erp/ae/reissueOrder/getReissueOrder",
-			"/api/erp/ae/return-order/delete",
-			"/api/erp/ae/warehouse/getWarehouseList",
-			"/api/erp/ae/reissueOrder/batchCreateReissueOrder",
-			"/api/erp/ae/return-order/detail",
-			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/reissueOrder/closeReissueOrder",
-			"/api/erp/ae/return-order/cancel",
-			"/api/erp/ae/reissueOrder/createOldReissueOrder",
-			"/api/erp/ae/order/listOrder",
-			"/api/erp/ae/reissueOrder/list",
-			"/api/erp/ae/return-order/search",
-			"/api/erp/ae/reissueOrder/exportAddress",
-			"/api/erp/ae/reissueOrder/getReissueOrderTemplate",
-			"/api/erp/ae/reissueOrder/reSyncReissueOrder",
-			"/api/erp/ae/phone/queryPhone"
-		]
-	},
 	"order/order-manage": {
 		"apiPath": [
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
-			"/api/erp/ae/order/bulkDelivery",
 			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/return-order/detail",
+			"/api/erp/ae/order/bulkDelivery",
 			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/order/cancelHandle",
 			"/api/erp/ae/return-order/cancel",
+			"/api/erp/ae/order/cancelHandle",
 			"/api/erp/ae/reissueOrder/createReissue",
-			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/order/showTask",
-			"/admin-api/delivery/api/ae/common/showTask",
+			"/api/ae/common/showTask",
 			"/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew",
 			"/api/erp/ae/order/mergeOrder",
 			"/api/erp/ae/order/getOrderDetail",
+			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/order/listOrder",
 			"/api/erp/ae/reissueOrder/list",
-			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/reissueOrder/getGoods",
 			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/order/reSyncOrderToWarehouse",
@@ -216,6 +195,27 @@
 			"/api/erp/ae/gift/listGift",
 			"/api/erp/ae/course-goods/course-list",
 			"/api/erp/ae/course-goods/class-delivery-periods"
+		]
+	},
+	"order/order-manage-reissue": {
+		"apiPath": [
+			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/api/erp/ae/return-order/delete",
+			"/api/erp/ae/reissueOrder/getReissueOrder",
+			"/api/erp/ae/warehouse/getWarehouseList",
+			"/api/erp/ae/return-order/detail",
+			"/api/erp/ae/reissueOrder/batchCreateReissueOrder",
+			"/api/erp/ae/billing/detail",
+			"/api/erp/ae/return-order/cancel",
+			"/api/erp/ae/reissueOrder/closeReissueOrder",
+			"/api/erp/ae/reissueOrder/createOldReissueOrder",
+			"/api/erp/ae/return-order/search",
+			"/api/erp/ae/order/listOrder",
+			"/api/erp/ae/reissueOrder/list",
+			"/api/erp/ae/reissueOrder/exportAddress",
+			"/api/erp/ae/reissueOrder/getReissueOrderTemplate",
+			"/api/erp/ae/reissueOrder/reSyncReissueOrder",
+			"/api/erp/ae/phone/queryPhone"
 		]
 	},
 	"order/spShipApp": {
@@ -261,10 +261,10 @@
 			"/api/erp/ae/price-adjust/getAdjustLetterUrl",
 			"/api/erp/ae/price-adjust/delPriceAdjust",
 			"/api/erp/ae/supplier/listSupplier",
+			"/api/erp/ae/price-adjust/listDetailV2",
 			"/api/erp/ae/price-adjust/compare",
 			"/api/erp/ae/price-adjust/supplierGoodsInfo",
 			"/api/erp/ae/purchase-order/getGoods",
-			"/api/erp/ae/price-adjust/listDetailV2",
 			"/api/erp/ae/price-adjust/saveDetail",
 			"/api/erp/ae/price-adjust/delAllDetail",
 			"/api/erp/ae/price-adjust/delDetail",
@@ -278,12 +278,12 @@
 	},
 	"procurement/purchaseOrder": {
 		"apiPath": [
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask",
 			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/purchase-order/cancelOrder",
 			"/api/erp/ae/return-order/cancel",
@@ -295,6 +295,8 @@
 			"/api/erp/ae/purchase-order/delOrder",
 			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/statement/delete",
+			"/api/erp/ae/goodsCodeAssign/list",
+			"/api/erp/ae/purchase-order/list-export",
 			"/api/erp/ae/purchase-order/getInfoById",
 			"/api/erp/ae/purchase-order/getGoods",
 			"/api/erp/ae/purchase-order/listDetail",
@@ -318,8 +320,8 @@
 		"apiPath": [
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/supplier/submit",
 			"/api/erp/ae/billing/audit",
+			"/api/erp/ae/supplier/submit",
 			"/api/erp/ae/supplier/create",
 			"/api/erp/ae/supplier/financeDecline",
 			"/api/erp/ae/supplier/financeSubmit",
@@ -344,12 +346,12 @@
 	},
 	"procurement/supplierGoods": {
 		"apiPath": [
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask",
 			"/api/erp/ae/price-adjust/list",
 			"/api/erp/ae/price-adjust-result/list",
 			"/api/erp/ae/price-adjust-result/import",
@@ -388,14 +390,14 @@
 			"/api/erp/ae/gift/good/submitGiftGoods",
 			"/api/erp/ae/statement/audit",
 			"/api/erp/ae/billing/submit",
-			"/api/erp/ae/course-goods/class-list",
-			"/api/erp/ae/course-goods/course-list",
-			"/api/erp/ae/gift/listGift",
 			"/api/erp/ae/category/list",
 			"/api/erp/ae/purchase-order/getGoods",
 			"/api/erp/ae/purchase-order/listDetail",
 			"/api/erp/ae/goods/search-goods",
 			"/api/erp/ae/goods/list",
+			"/api/erp/ae/course-goods/class-list",
+			"/api/erp/ae/course-goods/course-list",
+			"/api/erp/ae/gift/listGift",
 			"/api/erp/ae/course-goods/class-delivery-periods"
 		]
 	},
@@ -410,15 +412,15 @@
 	},
 	"product/product-manage": {
 		"apiPath": [
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/goods/exportGoods",
-			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask",
+			"/api/ae/common/showTask",
 			"/api/erp/ae/billing/detail",
+			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/goods/detail",
 			"/api/erp/ae/goods/delete",
 			"/api/erp/ae/goods/disable",
@@ -506,12 +508,12 @@
 			"/api/erp/ae/invoicing/list",
 			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/invoicing/export",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask"
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/ae/common/showTask",
+			"/api/erp/ae/inventory/product/exportGoodsInventory"
 		]
 	},
 	"settlement/deliverBillManage": {
@@ -607,16 +609,16 @@
 		"apiPath": [
 			"/api/erp/ae/inventory/product/listGoodsInventory",
 			"/api/erp/ae/category/list",
-			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask"
+			"/api/ae/common/showTask",
+			"/api/erp/ae/inventory/product/exportGoodsInventory"
 		]
 	},
 	"settlement/pendingBillManage": {
@@ -646,12 +648,12 @@
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
 			"/api/erp/ae/billing/downloadFeeDetail",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/admin-api/delivery/api/ae/common/showTask",
 			"/api/erp/ae/billing/modifyMulFee",
 			"/api/erp/ae/return-order/submit",
 			"/api/erp/ae/billing/submit",
@@ -662,18 +664,26 @@
 	},
 	"crs-message-manage/crs-message-log": {
 		"apiPath": [
-			"/api/erp/ae/phoneView/listPhoneView",
-			"/api/erp/ae/goodsCodeAssign/list",
 			"/api/erp/ae/phoneView/listViewDetail",
+			"/api/erp/ae/goodsCodeAssign/list",
+			"/api/erp/ae/phoneView/listPhoneView",
 			"/api/erp/ae/phoneView/listAllDept"
+		]
+	},
+	"logistics-manage/assignRules": {
+		"apiPath": [
+			"/api/erp/ae/billing/audit",
+			"/api/erp/ae/billing/transfer/list",
+			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/api/erp/ae/warehouse/getWarehouseList"
 		]
 	},
 	"logistics-manage/productCode": {
 		"apiPath": [
 			"/api/erp/ae/specialOrder/getAddress",
 			"/api/erp/ae/specialOrder/getAddressInfo",
-			"/api/erp/ae/goodsCodeAssign/save",
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/api/erp/ae/goodsCodeAssign/save",
 			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/goodsCodeAssign/validCode",
 			"/api/erp/ae/goodsCodeAssign/list",
@@ -702,9 +712,9 @@
 			"/api/erp/ae/return-order/update",
 			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/return-order/delete",
+			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/order/listOrder",
 			"/api/erp/ae/reissueOrder/list",
-			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail"
 		]

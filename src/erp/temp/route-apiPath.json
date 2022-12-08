@@ -9,6 +9,18 @@
 		"listAllDept": "/api/erp/ae/phoneView/listAllDept"
 	},
 	{
+		"transferBillingList": "/api/erp/ae/billing/transfer/list"
+	},
+	{
+		"queryAllCpy": "/admin-api/delivery/api/ae/deliveryInfo/allMap"
+	},
+	{
+		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
+	},
+	{
+		"audit": "/api/erp/ae/billing/audit"
+	},
+	{
 		"queryDataList": "/admin-api/delivery/api/ae/deliveryCourseAssign/list"
 	},
 	{
@@ -112,111 +124,6 @@
 	},
 	{
 		"validateForm": "/admin-api/delivery/api/ae/deliveryInfo/validateDuplicate"
-	},
-	{
-		"unNormalOrderDetail": "/api/erp/ae/specialOrder/listSpecialOrder"
-	},
-	{
-		"orderRetry": "/api/erp/ae/specialOrder/retry"
-	},
-	{
-		"getAddress": "/api/erp/ae/specialOrder/getAddress"
-	},
-	{
-		"getAddressList": "/api/erp/ae/specialOrder/getAddressInfo"
-	},
-	{
-		"addressUpdate": "/api/erp/ae/specialOrder/updateAddress"
-	},
-	{
-		"queryAbnormalOrderDetail": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
-	},
-	{
-		"exportAnnormalOrder": "/api/erp/ae/specialOrder/exportOrder"
-	},
-	{
-		"queryOrderList": "/api/erp/ae/order/listOrder"
-	},
-	{
-		"reSycnOrderToWare": "/api/erp/ae/order/reSyncOrderToWarehouse"
-	},
-	{
-		"cancelIntercept": "/api/erp/ae/order/cancelHandle"
-	},
-	{
-		"queryReissue": "/api/erp/ae/reissueOrder/getGoods"
-	},
-	{
-		"createReissue": "/api/erp/ae/reissueOrder/createReissue"
-	},
-	{
-		"exportXsl": "/api/erp/ae/order/exportOrder"
-	},
-	{
-		"exportXslData": "/api/erp/ae/order/showTask"
-	},
-	{
-		"mergeOrder": "/api/erp/ae/order/mergeOrder"
-	},
-	{
-		"bulkDelivery": "/api/erp/ae/order/bulkDelivery"
-	},
-	{
-		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
-	},
-	{
-		"queryOrderDetail": "/api/erp/ae/order/getOrderDetail"
-	},
-	{
-		"queryUserName": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"queryUseraddRess": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"queryUserMobile": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"getTraces": "/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew"
-	},
-	{
-		"queryRessiueDetail": "/api/erp/ae/reissueOrder/getReissueOrder"
-	},
-	{
-		"switchWarehouse": "/api/erp/ae/order/switchWarehouse"
-	},
-	{
-		"queryOrderList": "/api/erp/ae/reissueOrder/list"
-	},
-	{
-		"handleExport": "/api/erp/ae/reissueOrder/export"
-	},
-	{
-		"createOldReissue": "/api/erp/ae/reissueOrder/createOldReissueOrder"
-	},
-	{
-		"reSyncOrder": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
-	},
-	{
-		"cancelReissueOrder": "/api/erp/ae/reissueOrder/closeReissueOrder"
-	},
-	{
-		"batchInsertOrder": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
-	},
-	{
-		"exportAddressLibrary": "/api/erp/ae/reissueOrder/exportAddress"
-	},
-	{
-		"reissueOrderTemplate": "/api/erp/ae/reissueOrder/getReissueOrderTemplate"
-	},
-	{
-		"querySpDeliveryList": "/api/erp/ae/apply/delivery/listDeliveryApply"
-	},
-	{
-		"creatSpApply": "/api/erp/ae/apply/delivery/create"
-	},
-	{
-		"switchSpShip": "/api/erp/ae/apply/delivery/deliveryApplySwitch"
 	},
 	{
 		"queryDeliveryGoodsList": "/api/erp/ae/asn/list"
@@ -328,6 +235,9 @@
 	},
 	{
 		"findByGoodId": "/api/erp/ae/price-adjust-result/findByGoodId"
+	},
+	{
+		"listExportXsl": "/api/erp/ae/purchase-order/list-export"
 	},
 	{
 		"queryOrderList": "/api/erp/ae/return-order/search"
@@ -445,6 +355,111 @@
 	},
 	{
 		"exportAveragepPriceXsl": "/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice"
+	},
+	{
+		"unNormalOrderDetail": "/api/erp/ae/specialOrder/listSpecialOrder"
+	},
+	{
+		"orderRetry": "/api/erp/ae/specialOrder/retry"
+	},
+	{
+		"getAddress": "/api/erp/ae/specialOrder/getAddress"
+	},
+	{
+		"getAddressList": "/api/erp/ae/specialOrder/getAddressInfo"
+	},
+	{
+		"addressUpdate": "/api/erp/ae/specialOrder/updateAddress"
+	},
+	{
+		"queryAbnormalOrderDetail": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
+	},
+	{
+		"exportAnnormalOrder": "/api/erp/ae/specialOrder/exportOrder"
+	},
+	{
+		"queryOrderList": "/api/erp/ae/order/listOrder"
+	},
+	{
+		"reSycnOrderToWare": "/api/erp/ae/order/reSyncOrderToWarehouse"
+	},
+	{
+		"cancelIntercept": "/api/erp/ae/order/cancelHandle"
+	},
+	{
+		"queryReissue": "/api/erp/ae/reissueOrder/getGoods"
+	},
+	{
+		"createReissue": "/api/erp/ae/reissueOrder/createReissue"
+	},
+	{
+		"exportXsl": "/api/erp/ae/order/exportOrder"
+	},
+	{
+		"exportXslData": "/api/erp/ae/order/showTask"
+	},
+	{
+		"mergeOrder": "/api/erp/ae/order/mergeOrder"
+	},
+	{
+		"bulkDelivery": "/api/erp/ae/order/bulkDelivery"
+	},
+	{
+		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
+	},
+	{
+		"queryOrderDetail": "/api/erp/ae/order/getOrderDetail"
+	},
+	{
+		"queryUserName": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"queryUseraddRess": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"queryUserMobile": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"getTraces": "/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew"
+	},
+	{
+		"queryRessiueDetail": "/api/erp/ae/reissueOrder/getReissueOrder"
+	},
+	{
+		"switchWarehouse": "/api/erp/ae/order/switchWarehouse"
+	},
+	{
+		"queryOrderList": "/api/erp/ae/reissueOrder/list"
+	},
+	{
+		"handleExport": "/api/erp/ae/reissueOrder/export"
+	},
+	{
+		"createOldReissue": "/api/erp/ae/reissueOrder/createOldReissueOrder"
+	},
+	{
+		"reSyncOrder": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
+	},
+	{
+		"cancelReissueOrder": "/api/erp/ae/reissueOrder/closeReissueOrder"
+	},
+	{
+		"batchInsertOrder": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
+	},
+	{
+		"exportAddressLibrary": "/api/erp/ae/reissueOrder/exportAddress"
+	},
+	{
+		"reissueOrderTemplate": "/api/erp/ae/reissueOrder/getReissueOrderTemplate"
+	},
+	{
+		"querySpDeliveryList": "/api/erp/ae/apply/delivery/listDeliveryApply"
+	},
+	{
+		"creatSpApply": "/api/erp/ae/apply/delivery/create"
+	},
+	{
+		"switchSpShip": "/api/erp/ae/apply/delivery/deliveryApplySwitch"
 	},
 	{
 		"queryGiftMapList": "/api/erp/ae/gift/good/list"
@@ -612,18 +627,6 @@
 		"exportXslData": "/api/erp/ae/order/showTask"
 	},
 	{
-		"stockProductList": "/api/erp/ae/inventory/product/listGoodsInventory"
-	},
-	{
-		"queryClassify": "/api/erp/ae/category/list"
-	},
-	{
-		"exportXsl": "/api/erp/ae/inventory/product/exportGoodsInventory"
-	},
-	{
-		"exportXslData": "/api/erp/ae/order/showTask"
-	},
-	{
 		"queryDataList": "/api/erp/ae/statement/list"
 	},
 	{
@@ -660,7 +663,7 @@
 		"exportByExpenseId": "/api/erp/ae/statement/exportByExpenseId"
 	},
 	{
-		"exportXslData": "/admin-api/delivery/api/ae/common/showTask"
+		"exportXslData": "/api/ae/common/showTask"
 	},
 	{
 		"getAllExpenseItem": "/api/erp/ae/statementExpenseItem/allExpenseItem"
@@ -790,5 +793,17 @@
 	},
 	{
 		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
+	},
+	{
+		"stockProductList": "/api/erp/ae/inventory/product/listGoodsInventory"
+	},
+	{
+		"queryClassify": "/api/erp/ae/category/list"
+	},
+	{
+		"exportXsl": "/api/erp/ae/inventory/product/exportGoodsInventory"
+	},
+	{
+		"exportXslData": "/api/erp/ae/order/showTask"
 	}
 ]

@@ -17,25 +17,11 @@ module.exports = [
         "ext": "{\"index\":0}",
         "children": [
           {
-            "name": "更新物流公司",
-            "key": "DELIVERY-MANAGE:UPDATE",
+            "name": "快递公司管理接口权限（必选）",
+            "key": "MERCHANT_MANAGE:DELIVERYCPY_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/ae/deliveryInfo/update"
-          },
-          {
-            "name": "新增物流公司",
-            "key": "DELIVERY-MANAGE:INSERT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryInfo/insert"
-          },
-          {
-            "name": "物流列表",
-            "key": "DELIVERY-MANAGE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryInfo/list"
+            "path": "/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/statementExpenseItem/saveItem,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity,/admin-api/delivery/api/ae/deliveryInfo/validateDuplicate"
           }
         ]
       }
@@ -59,116 +45,11 @@ module.exports = [
         "ext": "{\"index\":0}",
         "children": [
           {
-            "name": "订单管理分页列表",
-            "key": "ORDER:ORDER_LIST:LIST",
+            "name": "订单管理接口权限（必选）",
+            "key": "ORDER:ORDER_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/order/listOrder"
-          },
-          {
-            "name": "查询仓库列表",
-            "key": "ORDER:WAREHOUSE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/warehouse/getWarehouseList"
-          },
-          {
-            "name": "查询内容包列表",
-            "key": "PRODUCT:COURSE-LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/course-list"
-          },
-          {
-            "name": "查询期数列表",
-            "key": "PRODUCT:CLASS-LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/class-list"
-          },
-          {
-            "name": "查询月数列表",
-            "key": "PRODUCT:PERIODS-LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/class-delivery-periods"
-          },
-          {
-            "name": "订单详情",
-            "key": "ORDER:ORDER_DTETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/getOrderDetail"
-          },
-          {
-            "name": "物流轨迹",
-            "key": "ORDER:ORDER_TRACES",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryQuery/queryTraces"
-          },
-          {
-            "name": "轮询导出xsl",
-            "key": "ORDER:ORDER_LIST:EXPORTXSLData",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/showTask"
-          },
-          {
-            "name": "重新同步仓库",
-            "key": "ORDER:ORDER_LIST:REWAREHOUSE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/reSyncOrderToWarehouse"
-          },
-          {
-            "name": "取消拦截",
-            "key": "ORDER:ORDER_LIST:CANCELINTERCEPT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/cancelHandle"
-          },
-          {
-            "name": "查询订单货品信息",
-            "key": "ORDER_REISSUE:GOODS_DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/getGoods"
-          },
-          {
-            "name": "合单",
-            "key": "ORDER:ORDER_LIST:MERGEORDER",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/mergeOrder"
-          },
-          {
-            "name": "订单导出xsl",
-            "key": "ORDER:ORDER_LIST:EXPORTXSL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/exportOrder"
-          },
-          {
-            "name": "创建补发单",
-            "key": "ORDER:ORDER_LIST:CREATEREISSUE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/createReissue"
-          },
-          {
-            "name": "批量发货",
-            "key": "ORDER:ORDER_LIST:BULKDELIVERY",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/bulkDelivery"
-          },
-          {
-            "name": "转仓",
-            "key": "ORDER:ORDER_LIST:SWITCHWAREHOUSE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/order/switchWarehouse"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/order/bulkDelivery,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/order/cancelHandle,/api/erp/ae/return-order/cancel,/api/erp/ae/reissueOrder/createReissue,/api/erp/ae/order/exportOrder,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/order/showTask,/api/ae/common/showTask,/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew,/api/erp/ae/order/mergeOrder,/api/erp/ae/order/getOrderDetail,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/reissueOrder/getGoods,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/order/reSyncOrderToWarehouse,/api/erp/ae/order/switchWarehouse,/api/erp/ae/phone/queryPhone,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/goods/detail,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
           }
         ]
       },
@@ -181,53 +62,11 @@ module.exports = [
         "ext": "{\"index\":1}",
         "children": [
           {
-            "name": "补发单批量导入",
-            "key": "REISSUE_ORDER:BATCH_IMPORT",
+            "name": "补发单管理接口权限（必选）",
+            "key": "ORDER:REISSUE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
-          },
-          {
-            "name": "获取补发单列表",
-            "key": "ORDER:ORDER-MANAGE-REISSUE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/list"
-          },
-          {
-            "name": "补发单详情",
-            "key": "ORDER:REISSUE_DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/getReissueOrder"
-          },
-          {
-            "name": "补发单重新同步",
-            "key": "ORDER:REISSUE_SYNC",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
-          },
-          {
-            "name": "补发单批量取消",
-            "key": "ORDER:REISSUE_CANCEL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/closeReissueOrder"
-          },
-          {
-            "name": "订单导出xsl",
-            "key": "ORDER:REISSUE-ORDER:EXPORTXSL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/export"
-          },
-          {
-            "name": "创建历史补发单",
-            "key": "ORDER:ORDER-MANAGE-REISSUE-OLD:CREATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/reissueOrder/createOldReissueOrder"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/reissueOrder/getReissueOrder,/api/erp/ae/return-order/delete,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/reissueOrder/batchCreateReissueOrder,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/reissueOrder/closeReissueOrder,/api/erp/ae/return-order/cancel,/api/erp/ae/reissueOrder/createOldReissueOrder,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/reissueOrder/exportAddress,/api/erp/ae/reissueOrder/getReissueOrderTemplate,/api/erp/ae/reissueOrder/reSyncReissueOrder,/api/erp/ae/phone/queryPhone"
           }
         ]
       },
@@ -240,46 +79,11 @@ module.exports = [
         "ext": "{\"index\":2}",
         "children": [
           {
-            "name": "异常订单列表",
-            "key": "ORDER:ABNORMALORDER:LIST",
+            "name": "异常订单管理接口权限（必选）",
+            "key": "ORDER:ANNORMALORDER_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/specialOrder/listSpecialOrder"
-          },
-          {
-            "name": "异常订单详情",
-            "key": "ORDER:ABNORMAL-MANAGE:DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
-          },
-          {
-            "name": "异常订单重新执行",
-            "key": "ORDER:ORDER-RETRY:API",
-            "type": "api",
-            "authority": [],
-            "path": "/ae/specialOrder/retry"
-          },
-          {
-            "name": "查询订单地址",
-            "key": "ORDER:ANNORMAL_ORDER:ADDRESS",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/specialOrder/getAddress"
-          },
-          {
-            "name": "异常订单导出xsl",
-            "key": "ORDER:EXPORT-ANNORMAL_ORDER:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/specialOrder/exportOrder"
-          },
-          {
-            "name": "地址修改",
-            "key": "ORDER:UPDATE-ADDRESS:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/aae/specialOrder/updateAddress"
+            "path": "/api/erp/ae/specialOrder/updateAddress,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/specialOrder/exportOrder,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/retry,/api/erp/ae/specialOrder/getSpecialOrderDetail,/api/erp/ae/specialOrder/listSpecialOrder,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
           }
         ]
       },
@@ -292,18 +96,11 @@ module.exports = [
         "ext": "{\"index\":3}",
         "children": [
           {
-            "name": "特殊发货申请列表",
-            "key": "ORDER:SPDELIVERY:LIST",
+            "name": "特殊发货申请接口权限（必选）",
+            "key": "ORDER:SPSHIPAPP_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/apply/delivery/listDeliveryApply"
-          },
-          {
-            "name": "新建特殊发货申请",
-            "key": "ORDER:CREATESPAPPLY:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/apply/delivery/create"
+            "path": "/api/erp/ae/apply/delivery/listDeliveryApply,/api/erp/ae/apply/delivery/create,/api/erp/ae/apply/delivery/deliveryApplySwitch"
           }
         ]
       }
@@ -320,12 +117,26 @@ module.exports = [
     "children": [
       {
         "name": "货品信息管理",
-        "key": "PRODUCT:PRODUCT_MANAGE:LIST",
+        "key": "PRODUCT:PRODUCT_MANAGE",
         "type": "route",
-        "path": "/product/product-manage/list",
+        "path": "/product/product-manage",
         "authority": [],
         "ext": "{\"index\":0}",
-        "children": []
+        "children": [
+          {
+            "name": "货品信息管理接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/erp/ae/goods/exportGoods,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/goods/detail,/api/erp/ae/goods/delete,/api/erp/ae/goods/disable,/api/erp/ae/goods/enable,/api/erp/ae/goods/sync,/api/erp/ae/category/list,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list"
+          },
+          {
+            "name": "商品编辑",
+            "key": "PRODUCT-ENABLE:EDIT",
+            "type": "component",
+            "authority": []
+          }
+        ]
       },
       {
         "name": "新增商品",
@@ -337,25 +148,11 @@ module.exports = [
         "hidden": true,
         "children": [
           {
-            "name": "货品详情",
-            "key": "PRODUCT-NEW:DETAIL",
+            "name": "新增商品接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE:NEW_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/goods/detail?goodsId"
-          },
-          {
-            "name": "新建货品",
-            "key": "PRODUCT-NEW:CREATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/add"
-          },
-          {
-            "name": "编辑货品",
-            "key": "PRODUCT-NEW:EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/edit?goodsId"
+            "path": "/api/erp/ae/category/add,/api/erp/ae/goods/detail,/api/erp/ae/goods/add,/api/erp/ae/category/edit,/api/erp/ae/goods/edit,/api/erp/ae/category/list,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list"
           }
         ]
       },
@@ -368,46 +165,11 @@ module.exports = [
         "ext": "{\"index\":2}",
         "children": [
           {
-            "name": "虚拟组套列表",
-            "key": "PRODUCT-VIRTUALSUIT:LIST",
+            "name": "虚拟组套接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE:VIRTUALSUIT_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/goods/list"
-          },
-          {
-            "name": "虚拟组套删除",
-            "key": "PRODUCT-VIRTUALSUIT:DELETE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/list"
-          },
-          {
-            "name": "虚拟组套停用",
-            "key": "PRODUCT-VIRTUALSUIT:DISABLE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/enable"
-          },
-          {
-            "name": "编辑虚拟组套",
-            "key": "PRODUCT-VIRTUALSUIT:EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/edit"
-          },
-          {
-            "name": "新建虚拟组套",
-            "key": "PRODUCT-VIRTUALSUIT:CREATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/add"
-          },
-          {
-            "name": "虚拟组套审核",
-            "key": "PRODUCT-VIRTUALSUIT:AUDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/goods/audit"
+            "path": "/api/erp/ae/goods/disable,/api/erp/ae/goods/detail,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/goods/add,/api/erp/ae/goods/audit,/api/erp/ae/goods/delete,/api/erp/ae/goods/edit,/api/erp/ae/course-goods/course-list,/api/erp/ae/category/list,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods"
           }
         ]
       },
@@ -420,67 +182,11 @@ module.exports = [
         "ext": "{\"index\":3}",
         "children": [
           {
-            "name": "内容包映射详情",
-            "key": "PRODUCT:SUBJECT-DETAIL",
+            "name": "内容包映射接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE:SUBJECTMAP_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/course-goods/detail"
-          },
-          {
-            "name": "删除内容包映射",
-            "key": "PRODUCT-COURSE:DEL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/delete"
-          },
-          {
-            "name": "停用内容包映射",
-            "key": "PRODUCT-COURSE:DISABLED",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/disable"
-          },
-          {
-            "name": "内容包映射列表",
-            "key": "PRODUCT-COURSE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/list"
-          },
-          {
-            "name": "新增内容包列表",
-            "key": "PRODUCT:SUBJECT-ADD",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/add"
-          },
-          {
-            "name": "编辑内容包映射",
-            "key": "PRODUCT:SUBJECT-EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/edit"
-          },
-          {
-            "name": "审核通过",
-            "key": "PRODUCT:AUDITCONFIRM-API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/confirm"
-          },
-          {
-            "name": "审核驳回",
-            "key": "PRODUCT:AUDITREJECT-API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/reject"
-          },
-          {
-            "name": "同步仓库",
-            "key": "PRODUCT:SYNCWMS-API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/course-goods/synToWms"
+            "path": "/api/erp/ae/gift/good/save,/api/erp/ae/course-goods/add,/api/erp/ae/return-order/delete,/api/erp/ae/gift/good/delete,/api/erp/ae/course-goods/delete,/api/erp/ae/gift/good/stopGiftGoods,/api/erp/ae/course-goods/disable,/api/erp/ae/course-goods/studySegment,/api/erp/ae/course-goods/list,/api/erp/ae/gift/good/auditGiftGoods,/api/erp/ae/course-goods/confirm,/api/erp/ae/course-goods/reject,/api/erp/ae/course-goods/detail,/api/erp/ae/course-goods/edit,/api/erp/ae/course-goods/synToWms,/api/erp/ae/category/list,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
           }
         ]
       },
@@ -492,6 +198,13 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
+          {
+            "name": "礼包实物映射接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE:GIFTENTITYMAP_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/gift/good/save,/api/erp/ae/course-goods/add,/api/erp/ae/return-order/delete,/api/erp/ae/gift/good/delete,/api/erp/ae/course-goods/delete,/api/erp/ae/gift/good/stopGiftGoods,/api/erp/ae/course-goods/disable,/api/erp/ae/course-goods/studySegment,/api/erp/ae/gift/good/getGiftGoodsInfoById,/api/erp/ae/gift/good/list,/api/erp/ae/gift/good/auditGiftGoods,/api/erp/ae/course-goods/confirm,/api/erp/ae/course-goods/reject,/api/erp/ae/course-goods/edit,/api/erp/ae/price-adjust/submit,/api/erp/ae/return-order/submit,/api/erp/ae/gift/good/submitGiftGoods,/api/erp/ae/statement/audit,/api/erp/ae/billing/submit,/api/erp/ae/category/list,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/class-delivery-periods"
+          },
           {
             "name": "新建礼包映射",
             "key": "GIFT-ENTITY-SUBJECT-ENABLE:ADD",
@@ -545,18 +258,11 @@ module.exports = [
         "ext": "{\"index\":5}",
         "children": [
           {
-            "name": "新建分类",
-            "key": "PRODUCT-CATEGORY:CREATE",
+            "name": "品类分类接口权限（必选）",
+            "key": "PRODUCT:PRODUCT_MANAGE:CATEGORY_APIS",
             "type": "api",
             "authority": [],
-            "path": "/ae/category/add"
-          },
-          {
-            "name": "编辑分类",
-            "key": "PRODUCT-CATEGORY:EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/ae/category/edit"
+            "path": "/api/erp/ae/category/list,/api/erp/ae/category/add,/api/erp/ae/goods/add,/api/erp/ae/category/edit,/api/erp/ae/goods/edit"
           }
         ]
       }
@@ -580,18 +286,11 @@ module.exports = [
         "ext": "{\"index\":0}",
         "children": [
           {
-            "name": "货品库存订单列表",
-            "key": "ORDER:STOCKPRODUCT:LIST",
+            "name": "货品库存管理接口权限（必选）",
+            "key": "STOCK_MANAGE:PRODUCT_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/inventory/product/listGoodsInventory"
-          },
-          {
-            "name": "货品库存导出xsl",
-            "key": "STOCK:STOCK_LIST:EXPORTXSL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/inventory/product/exportGoodsInventory"
+            "path": "/api/erp/ae/inventory/product/listGoodsInventory,/api/erp/ae/category/list,/api/erp/ae/order/exportOrder,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
           }
         ]
       }
@@ -613,7 +312,15 @@ module.exports = [
         "path": "/logistics-manage/user",
         "authority": [],
         "ext": "{\"index\":0}",
-        "children": []
+        "children": [
+          {
+            "name": "按用户指定快递接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:USER_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/delivery/rule/createGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/insert,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/category/add,/api/erp/ae/goods/add,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/delivery/rule/editGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/update,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity"
+          }
+        ]
       },
       {
         "name": "按内容包指定快递",
@@ -624,39 +331,11 @@ module.exports = [
         "ext": "{\"index\":1}",
         "children": [
           {
-            "name": "获取内容包指定物流详情",
-            "key": "LOGISTICS-COURSE-DETAIL:API",
+            "name": "按内容包指定快递接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:COURSE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/ae/deliveryCourseAssign/getCourseAssignById"
-          },
-          {
-            "name": "启用内容包指定物流",
-            "key": "LOGISTICS-COURSE-ENABLE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryCourseAssign/start"
-          },
-          {
-            "name": "停用内容包指定物流",
-            "key": "LOGISTICS-COURSE-DISABLE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryCourseAssign/stop"
-          },
-          {
-            "name": "内容包指定物流列表",
-            "key": "LOGISTICS-COURSE:FETCH-LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryCourseAssign/list"
-          },
-          {
-            "name": "编辑新增内容包物流规则",
-            "key": "LOGISTICS-COURSE-EDIT:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/deliveryCourseAssign/save"
+            "path": "/admin-api/delivery/api/ae/deliveryCourseAssign/stop,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/admin-api/delivery/api/ae/deliveryCourseAssign/start,/admin-api/delivery/api/ae/deliveryCourseAssign/getCourseAssignById,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/admin-api/delivery/api/ae/deliveryCourseAssign/save,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
           }
         ]
       },
@@ -669,46 +348,11 @@ module.exports = [
         "ext": "{\"index\":2}",
         "children": [
           {
-            "name": "内容包指定仓库详情",
-            "key": "WAREHOUSE:DETAIL",
+            "name": "按内容包指定仓库接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:WAREHOUSE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/delivery/rule/detail"
-          },
-          {
-            "name": "停用",
-            "key": "WAREHOUSE:ENABLE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp//ae/delivery/rule/enable"
-          },
-          {
-            "name": "停用",
-            "key": "WAREHOUSE:DISABLE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp//ae/delivery/rule/disable"
-          },
-          {
-            "name": "查询指定仓库列表",
-            "key": "COURSE_WAREHOUSE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/delivery/rule/list"
-          },
-          {
-            "name": "创建指定仓库列表",
-            "key": "COURSE_WAREHOUSE:CREATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/delivery/rule/create"
-          },
-          {
-            "name": "编辑指定仓库列表",
-            "key": "COURSE_WAREHOUSE:EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/delivery/rule/update"
+            "path": "/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/delivery/rule/update,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
           }
         ]
       },
@@ -721,18 +365,11 @@ module.exports = [
         "ext": "{\"index\":3}",
         "children": [
           {
-            "name": "货品指定仓库详情",
-            "key": "LOGISTICS-GOODS:DETAIL",
+            "name": "按货品指定仓库接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:GOODS_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/delivery/rule/goodsRuleDetail"
-          },
-          {
-            "name": "货品指定快递列表",
-            "key": "LOGISTICS-GOODS:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/delivery/rule/listGoodsRule"
+            "path": "/api/erp/ae/warehouse/getWarehouseList,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/delivery/rule/createGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/insert,/api/erp/ae/category/add,/api/erp/ae/goods/add,/api/erp/ae/delivery/rule/editGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/update,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity,/api/erp/ae/delivery/rule/goodsRuleDetail"
           }
         ]
       },
@@ -744,6 +381,13 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":4}",
         "children": [
+          {
+            "name": "按礼包指定仓库接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:GIFTSPECIFYWAREHOUSE_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/course-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/class-delivery-periods"
+          },
           {
             "name": "新建规则",
             "key": "GIFT-SPECIFY-WARE-ENABLE:ADD",
@@ -784,6 +428,13 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":5}",
         "children": [
+          {
+            "name": "按商品编码指定快递接口权限（必选）",
+            "key": "LOGISTICS_MANAGE:PRODUCTCODE_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/goodsCodeAssign/save,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/goodsCodeAssign/validCode,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/goodsCodeAssign/delById,/api/erp/ae/goodsCodeAssign/start,/api/erp/ae/goodsCodeAssign/stop"
+          },
           {
             "name": "新建规则",
             "key": "PRODUCT-CODE-ENABLE:ADD",
@@ -848,95 +499,11 @@ module.exports = [
         "ext": "{\"index\":0}",
         "children": [
           {
-            "name": "供应商名称列表",
-            "key": "SUPPLIER:LIST_SUPPLIER",
+            "name": "供应商管理接口权限（必选）",
+            "key": "PROCUREMENT:SUPPLIER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/supplier/listSupplier"
-          },
-          {
-            "name": "供应商详情",
-            "key": "SUPPLIER:DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/detail"
-          },
-          {
-            "name": "创建供应商",
-            "key": "SUPPLIER:CREATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/create"
-          },
-          {
-            "name": "编辑供应商",
-            "key": "SUPPLIER:EDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/edit"
-          },
-          {
-            "name": "供应商合作终止",
-            "key": "SUPPLIER:STOP_COOPER",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/stopCooperation"
-          },
-          {
-            "name": "供应商提交审核",
-            "key": "SUPPLIER:SUBMIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/submit"
-          },
-          {
-            "name": "同步供应商仓库",
-            "key": "SUPPLIER:SYNCWAREHOUSE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/synToWms"
-          },
-          {
-            "name": "供应商列表",
-            "key": "SUPPLIER:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/list"
-          },
-          {
-            "name": "采购负责人",
-            "key": "SUPPLIER:MANAGER_LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/findManager"
-          },
-          {
-            "name": "采购审核通过",
-            "key": "SUPPLIER:PURCHASE_SUBMIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/purchaseSubmit"
-          },
-          {
-            "name": "采购审核驳回",
-            "key": "SUPPLIER:PURCHASE_REJECT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/purchaseDecline"
-          },
-          {
-            "name": "财务审核通过",
-            "key": "SUPPLIER:FINANCE_SUBMIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/financeSubmit"
-          },
-          {
-            "name": "财务审核驳回",
-            "key": "SUPPLIER:FINANCE_REJECT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/supplier/financeDecline"
+            "path": "/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/supplier/submit,/api/erp/ae/billing/audit,/api/erp/ae/supplier/create,/api/erp/ae/supplier/financeDecline,/api/erp/ae/supplier/financeSubmit,/api/erp/ae/supplier/purchaseDecline,/api/erp/ae/supplier/purchaseSubmit,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust/listAuditLog,/api/erp/ae/supplier/logDetail,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/goodsCodeAssign/stop,/api/erp/ae/supplier/stopCooperation,/api/erp/ae/supplier/delete,/api/erp/ae/supplier/edit,/api/erp/ae/supplier/synToWms,/api/erp/ae/supplier/findManager"
           }
         ]
       },
@@ -949,52 +516,11 @@ module.exports = [
         "ext": "{\"index\":1}",
         "children": [
           {
-            "name": "导出价格变动历史",
-            "key": "SUPPLIER_GOODS:HISTORY_PRICE_EXPORT",
+            "name": "供应商货品管理接口权限（必选）",
+            "key": "PROCUREMENT:SUPPLIERGOODS_APIS",
             "type": "api",
-            "authority": []
-          },
-          {
-            "name": "编辑",
-            "key": "SUPPLIER_GOODS:EDIT",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "导入模版下载",
-            "key": "SUPPLIER_GOODS:TEMPLATE_DOWNLOAD",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "批量导入",
-            "key": "SUPPLIER_GOODS:GOODS_LIST_IMPORT",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "查看货品工艺",
-            "key": "SUPPLIER_GOODS:WATCH_GOODS_TECH",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "导出（导出供应商货品）",
-            "key": "SUPPLIER_GOODS:GOODS_LIST_EXPORT",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "加权平均价导出",
-            "key": "SUPPLIER_GOODS:AVERAGE_PRICE_EXPORT",
-            "type": "api",
-            "authority": []
-          },
-          {
-            "name": "查看价格调整历史记录",
-            "key": "SUPPLIER_GOODS:WATCH_HISTORY_ADJUST_PRICE_RECODE",
-            "type": "api",
-            "authority": []
+            "authority": [],
+            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/price-adjust/list,/api/erp/ae/price-adjust-result/list,/api/erp/ae/price-adjust-result/import,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust-result/cycleEdit,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/price-adjust-result/getImportTemplateAddr,/api/erp/ae/price-adjust-result/exportSku,/api/erp/ae/price-adjust-result/histroy,/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/findManager"
           }
         ]
       },
@@ -1007,46 +533,11 @@ module.exports = [
         "ext": "{\"index\":2}",
         "children": [
           {
-            "name": "价格调整单详情",
-            "key": "PRICE_ADJUST:DETAIL",
+            "name": "价格调整单管理接口权限（必选）",
+            "key": "PROCUREMENT:PRICEADJUSTMENT_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/price-adjust/getInfoById"
-          },
-          {
-            "name": "货品信息列表",
-            "key": "PRICE_ADJUST_GOODS:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/price-adjust/listDetailV2"
-          },
-          {
-            "name": "调价函下载",
-            "key": "PRICE_ADJUST_GOODS:DOWNLOAD",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/price-adjust/getAdjustLetterUrl"
-          },
-          {
-            "name": "价格调整单管理列表",
-            "key": "PRICE_ADJUST:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/price-adjust/list"
-          },
-          {
-            "name": "基础信息保存",
-            "key": "PRICE_ADJUST:SAVE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/price-adjust/saveBase"
-          },
-          {
-            "name": "价格调整单审核",
-            "key": "PRICE_ADJUST:AUDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/price-adjust/submit"
+            "path": "/api/erp/ae/billing/audit,/api/erp/ae/price-adjust/list,/api/erp/ae/price-adjust-result/list,/api/erp/ae/price-adjust/submit,/api/erp/ae/return-order/submit,/api/erp/ae/gift/good/submitGiftGoods,/api/erp/ae/statement/audit,/api/erp/ae/billing/submit,/api/erp/ae/price-adjust/listAuditLog,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/price-adjust/saveBase,/api/erp/ae/purchase-order/saveBase,/api/erp/ae/price-adjust/getAdjustLetterUrl,/api/erp/ae/price-adjust/delPriceAdjust,/api/erp/ae/supplier/listSupplier,/api/erp/ae/price-adjust/listDetailV2,/api/erp/ae/price-adjust/compare,/api/erp/ae/price-adjust/supplierGoodsInfo,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/price-adjust/saveDetail,/api/erp/ae/price-adjust/delAllDetail,/api/erp/ae/price-adjust/delDetail,/api/erp/ae/return-order/delete,/api/erp/ae/price-adjust/editPrice,/api/erp/ae/price-adjust/importDetail,/api/erp/ae/price-adjust/getImportTemplateAddr,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/findManager"
           },
           {
             "name": "提交审核",
@@ -1083,60 +574,11 @@ module.exports = [
         "ext": "{\"index\":3}",
         "children": [
           {
-            "name": "采购单详情",
-            "key": "PURCHASE_ORDER_GOODS:DETAIL",
+            "name": "采购单管理接口权限（必选）",
+            "key": "PROCUREMENT:PURCHASEORDER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/purchase-order/getInfoById"
-          },
-          {
-            "name": "采购单货品列表",
-            "key": "PURCHASE_ORDER_GOODS:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/listDetail"
-          },
-          {
-            "name": "采购单管理删除",
-            "key": "PURCHASE_ORDER:DEL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/delOrder"
-          },
-          {
-            "name": "采购单作废",
-            "key": "PURCHASE_ORDER:CANCEL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/cancelOrder"
-          },
-          {
-            "name": "采购单管理列表",
-            "key": "PURCHASE_ORDER:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/list"
-          },
-          {
-            "name": "采购单基础信息保存",
-            "key": "PURCHASE_ORDER:SAVE_BASE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/saveBase"
-          },
-          {
-            "name": "采购单确认下单",
-            "key": "PURCHASE_ORDER:CONFIRM",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/confirmOrder"
-          },
-          {
-            "name": "校验关联订单",
-            "key": "PURCHASE_ORDER:VALIDATE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/purchase-order/validateParentOrderNo"
+            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/purchase-order/cancelOrder,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/detail,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/billing/detail,/api/erp/ae/purchase-order/closeOrder,/api/erp/ae/purchase-order/confirmOrder,/api/erp/ae/purchase-order/delOrder,/api/erp/ae/return-order/delete,/api/erp/ae/statement/delete,/api/erp/ae/purchase-order/getInfoById,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/purchase-order/list,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/price-adjust/saveBase,/api/erp/ae/purchase-order/saveBase,/api/erp/ae/price-adjust-result/findByGoodId,/api/erp/ae/price-adjust/delDetail,/api/erp/ae/purchase-order/delOneDetail,/api/erp/ae/purchase-order/editPurchaseCount,/api/erp/ae/purchase-order/importDetail,/api/erp/ae/purchase-order/addGoods,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/purchase-order/validateParentOrderNo"
           }
         ]
       },
@@ -1149,32 +591,11 @@ module.exports = [
         "ext": "{\"index\":4}",
         "children": [
           {
-            "name": "到货单列表",
-            "key": "DELIVERY_ORDER:LIST",
+            "name": "到货单管理接口权限（必选）",
+            "key": "PROCUREMENT:DELIVERYORDER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/asn/list"
-          },
-          {
-            "name": "到货单详情",
-            "key": "DELIVERY_ORDER:DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/asn/getViewById"
-          },
-          {
-            "name": "差异确认列表",
-            "key": "DELIVERY_ORDER_DIFF:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/asn/listDifferenceConfirm"
-          },
-          {
-            "name": "差异确认",
-            "key": "DELIVERY_ORDER_DIFF:CONFIRM",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/asn/differenceConfirm"
+            "path": "/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/asn/differenceConfirm,/api/erp/ae/return-order/detail,/api/erp/ae/supplier/listSupplier,/api/erp/ae/billing/detail,/api/erp/ae/asn/listDifferenceConfirm,/api/erp/ae/asn/list,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById"
           }
         ]
       },
@@ -1187,18 +608,23 @@ module.exports = [
         "ext": "{\"index\":5}",
         "children": [
           {
+            "name": "采购退货管理接口权限（必选）",
+            "key": "PROCUREMENT:PURCHASERETURN_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/return-order/item/append,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/return-order/create,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/return-order/item/search,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier,/api/erp/ae/return-order/item/remove,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/return-order/item/update-quantity,/api/erp/ae/return-order/update,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/delete,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail"
+          },
+          {
             "name": "查询",
             "key": "PURCHASE_RETURN:SEARCH",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "新建采购退货单",
             "key": "PURCHASE_RETURN:ADD",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "删除",
@@ -1216,15 +642,13 @@ module.exports = [
             "name": "作废",
             "key": "PURCHASE_RETURN:VOID",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "查看详情",
             "key": "PURCHASE_RETURN:WATCH",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           }
         ]
       }
@@ -1248,157 +672,58 @@ module.exports = [
         "ext": "{\"index\":0}",
         "children": [
           {
-            "name": "物流规则列表",
-            "key": "DELIVER-COUNT-RULE-LIST:FETCH-LIST",
+            "name": "物流费用规则管理接口权限（必选）",
+            "key": "SETTLEMENT:DELIVERCOUNTRULEMANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/ae/cost/list"
-          },
-          {
-            "name": "创建物流规则",
-            "key": "DELIVER-COUNT-RULE-CREATE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/create"
-          },
-          {
-            "name": "编辑物流规则",
-            "key": "DELIVER-COUNT-RULE-MODIFY:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/modify"
-          },
-          {
-            "name": "复制物流规则",
-            "key": "DELIVER-COUNT-RULE-COPY:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/copy"
-          },
-          {
-            "name": "物流花费规则详情",
-            "key": "DELIVER-COUNT-RULE-DETAIL:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/showDetail"
-          },
-          {
-            "name": "停用物流规则",
-            "key": "DELIVER-COUNT-COST-DISABLE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/disable"
-          },
-          {
-            "name": "审批物流规则",
-            "key": "DELIVER-COUNT-COST-SUBMIT:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/submit"
-          },
-          {
-            "name": "查看物流规则操作日志",
-            "key": "DELIVER-COUNT-COST-VIEWLOG:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/showOperationLog"
-          },
-          {
-            "name": "物流操作费用列表",
-            "key": "DELIVER-COUNT-COST-LIST:FETCH-LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/listCost"
-          },
-          {
-            "name": "创建物流费用",
-            "key": "DELIVER-COUNT-COST-CREATE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/createCost"
-          },
-          {
-            "name": "修改物流费用",
-            "key": "DELIVER-COUNT-COST-MODIFY:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/modifyCost"
-          },
-          {
-            "name": "删除物流费用",
-            "key": "DELIVER-COUNT-COST-DELETE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/cost/deleteCost"
-          },
-          {
-            "name": "查询仓库列表",
-            "key": "DELIVER-COUNT-WAREHOUSE:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/warehouse/getWarehouseList"
-          },
-          {
-            "name": "查询省数据列表",
-            "key": "DELIVER-COUNT-PROVINCES:LIST",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/address/get-province"
+            "path": "/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/admin-api/delivery/api/ae/cost/copy,/admin-api/delivery/api/ae/cost/showDetail,/api/erp/ae/warehouse/getWarehouseList,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/goodsCodeAssign/stop,/admin-api/delivery/api/ae/cost/disable,/api/erp/ae/return-order/submit,/admin-api/delivery/api/ae/cost/submit,/api/erp/ae/billing/submit,/admin-api/delivery/api/ae/cost/createCost,/admin-api/delivery/api/ae/cost/create,/admin-api/delivery/api/ae/cost/deleteCost,/admin-api/delivery/api/ae/cost/modifyCost,/admin-api/delivery/api/ae/cost/modify,/admin-api/delivery/api/ae/cost/listCost,/admin-api/delivery/api/ae/deliveryInfo/allMap,/admin-api/order/api/ae/address/get-province,/admin-api/delivery/api/ae/cost/showOperationLog"
           },
           {
             "key": "DELIVER-COUNT-RULE:DELIVER-MANAGER-AUDIT",
             "name": "物流经理审核",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:DELIVER-MANAGER-REJECT",
             "name": "物流经理审核驳回",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:SUPPLY-CHAIN-DIRECTOR-AUDIT",
             "name": "供应链总监审核",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:SUPPLY-CHAIN-DIRECTOR-REJECT",
             "name": "供应链总监审核驳回",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-FIRST-AUDIT",
             "name": "财务初审",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-FIRST-REJECT",
             "name": "财务初审驳回",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-REVIEW-AUDIT",
             "name": "财务复审",
             "authority": [],
-            "path": "",
             "type": "component"
           },
           {
             "key": "DELIVER-COUNT-RULE:FINANCIAL-REVIEW-REJECT",
             "name": "财务复审驳回",
             "authority": [],
-            "path": "",
             "type": "component"
           }
         ]
@@ -1412,95 +737,11 @@ module.exports = [
         "ext": "{\"index\":1}",
         "children": [
           {
-            "name": "对账单列表",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:LIST",
+            "name": "物流对账单管理接口权限（必选）",
+            "key": "SETTLEMENT:DELIVERBILLMANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/statement/list"
-          },
-          {
-            "name": "审批",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:AUTDIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/audit"
-          },
-          {
-            "name": "删除单条手工费用",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:DELETEEXPENSEONHAND",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/deleteExpenseOnHand"
-          },
-          {
-            "name": "通过费用id导出费用详情",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:EXPORTBYEXPENSEID",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/exportByExpenseId"
-          },
-          {
-            "name": "详情",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:DETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/getViewById"
-          },
-          {
-            "name": "查询所有手工费用",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:LISTALLEXPENSEONHAND",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/listAllExpenseOnHand"
-          },
-          {
-            "name": "付款回执",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:PAYCALLBACK",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/payCallBack"
-          },
-          {
-            "name": "打印付款单",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:PRINTBILL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/printBill"
-          },
-          {
-            "name": "重算账单",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:RECOMPUTE",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/reCompute"
-          },
-          {
-            "name": "编辑账单手工费用",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:SAVEEXPENSEONHAND",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/saveExpenseOnHand"
-          },
-          {
-            "name": "费用提交",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:SUBMIT",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/submit"
-          },
-          {
-            "name": "日志",
-            "key": "SETTLEMENT-DELIVERBILLMANAGEMENT:LOGDETAIL",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statement/listAuditLog"
-          },
-          {
-            "name": "物流对账单明细导出轮循接口",
-            "key": "SETTLEMENT-DELIVER-BILL-DETAIL:EXPORTXSLData",
-            "type": "api",
-            "authority": [],
-            "path": "/api/ae/common/showTask"
+            "path": "/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/statement/create,/api/erp/ae/billing/detail,/api/erp/ae/purchase-order/delOrder,/api/erp/ae/statement/delete,/api/erp/ae/statement/printBill,/api/erp/ae/billing/print,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/statement/reCompute,/api/erp/ae/price-adjust/submit,/api/erp/ae/return-order/submit,/api/erp/ae/gift/good/submitGiftGoods,/api/erp/ae/statement/audit,/api/erp/ae/billing/submit,/api/erp/ae/statementExpenseItem/allExpenseItem,/api/erp/ae/statement/getViewById,/admin-api/delivery/api/ae/deliveryCourseAssign/getCourseAssignById,/api/erp/ae/statement/listAllExpenseOnHand,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity,/api/erp/ae/statement/saveExpenseOnHand,/api/erp/ae/statement/deleteExpenseOnHand,/api/erp/ae/statement/submit,/api/erp/ae/statement/exportByExpenseId,/api/erp/ae/statement/listAuditLog,/api/erp/ae/statement/payCallBack,/api/erp/ae/billing/payCallBack"
           },
           {
             "name": "物流结算组审核",
@@ -1543,32 +784,35 @@ module.exports = [
         "ext": "{\"index\":2}",
         "children": [
           {
+            "name": "采购对账单管理接口权限（必选）",
+            "key": "SETTLEMENT:PURCHASEBILLMANAGE_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/billing/feeDetail,/api/erp/ae/statement/payCallBack,/api/erp/ae/billing/payCallBack,/api/erp/ae/statement/printBill,/api/erp/ae/billing/print,/api/erp/ae/billing/list,/api/erp/ae/billing/addMulFee,/api/erp/ae/billing/audit,/api/erp/ae/return-order/delete,/api/erp/ae/billing/deleteMulFee,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/billing/downloadFeeDetail,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/billing/modifyMulFee,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier"
+          },
+          {
             "name": "查询",
             "key": "PURCHASE_BILL_MANAGE:SEARCH",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "查看详情",
             "key": "PURCHASE_BILL_MANAGE:WATCH",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "打印付款审批单",
             "key": "PURCHASE_BILL_MANAGE:PRINT",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           },
           {
             "name": "付款回执",
             "key": "PURCHASE_BILL_MANAGE:PAYMENT_RECEIPT",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           }
         ]
       },
@@ -1581,25 +825,11 @@ module.exports = [
         "ext": "{\"index\":3}",
         "children": [
           {
-            "name": "手工费用项列表查询",
-            "key": "SETTLEMENT-HANDCOST-LIST:API",
+            "name": "手工费用项管理接口权限（必选）",
+            "key": "SETTLEMENT:HANDCOSTMANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/statementExpenseItem/list"
-          },
-          {
-            "name": "手工费用项新增",
-            "key": "SETTLEMENT-HANDCOST-ITEM-ADD:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statementExpenseItem/saveItem"
-          },
-          {
-            "name": "手工费用项删除",
-            "key": "SETTLEMENT-HANDCOST-ITEM-DELETE:API",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/statementExpenseItem/deleteItem"
+            "path": "/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/statementExpenseItem/deleteItem"
           }
         ]
       },
@@ -1612,11 +842,23 @@ module.exports = [
         "ext": "{\"index\":4}",
         "children": [
           {
-            "name": "创建预付款账单",
+            "name": "待结算订单管理接口权限（必选）",
+            "key": "SETTLEMENT:PENDINGBILLMANAGE_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/waitSettleBilling/billedMoney,/api/erp/ae/waitSettleBilling/billingMoney,/api/erp/ae/waitSettleBilling/list,/api/erp/ae/waitSettleBilling/countData,/api/erp/ae/waitSettleBilling/createBilling,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier"
+          },
+          {
+            "name": "查询",
+            "key": "PENDING_BILL_MANAGE:SEARCH",
+            "type": "component",
+            "authority": []
+          },
+          {
+            "name": "创建账单",
             "key": "PENDING_BILL_MANAGE:CREATE",
             "type": "component",
-            "authority": [],
-            "path": ""
+            "authority": []
           }
         ]
       },
@@ -1627,7 +869,15 @@ module.exports = [
         "path": "/settlement/transferDetailsConsignment",
         "authority": [],
         "ext": "{\"index\":5}",
-        "children": []
+        "children": [
+          {
+            "name": "调拨明细-寄售接口权限（必选）",
+            "key": "SETTLEMENT:TRANSFERDETAILSCONSIGNMENT_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/billing/transfer/list,/api/erp/ae/billing/transfer/statistics,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier,/api/erp/ae/warehouse/getWarehouseList"
+          }
+        ]
       }
     ]
   },
@@ -1648,6 +898,13 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
+          {
+            "name": "客户信息日志查询接口权限（必选）",
+            "key": "CRS_MESSAGE_MANAGE:CRS_MESSAGE_LOG_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/phoneView/listAllDept,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/phoneView/listViewDetail,/api/erp/ae/phoneView/listPhoneView"
+          },
           {
             "name": "查看",
             "key": "CRS-MESSAGE-LOG:DETAIL",
@@ -1675,6 +932,13 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":0}",
         "children": [
+          {
+            "name": "进销汇存总表接口权限（必选）",
+            "key": "REPORT_MANAGE:REMITDEPOSIT_APIS",
+            "type": "api",
+            "authority": [],
+            "path": "/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/invoicing/list,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/invoicing/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
+          },
           {
             "name": "查询",
             "key": "REMIT-DEPOSIT:SEARCH",

@@ -53,8 +53,8 @@ module.exports = [
     routes: [
       {
         name: 'product-manage',
-        path: '/product/product-manage/list',
-        component: 'product/product-manage/list',
+        path: '/product/product-manage',
+        component: 'product/product-manage/index',
         title: '货品信息管理'
       },
       {
@@ -113,7 +113,7 @@ module.exports = [
       {
         name: 'logistics-manage-user',
         path: '/logistics-manage/user',
-        component: 'logistics-manage/userSpecifyExpress/list',
+        component: 'logistics-manage/userSpecifyExpress/index',
         title: '按用户指定快递'
       },
       {

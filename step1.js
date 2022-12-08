@@ -9,7 +9,8 @@ const values = [];
 // 其他服务接口地址前缀，必须是通过OA平台
 const baseUrlObj = {
   DELI_DEGUG_URL: '/admin-api/delivery',
-  ORDER_DEGUG_URL: '/admin-api/order'
+  ORDER_DEGUG_URL: '/admin-api/order',
+  RAINBOW_DEGUG_URL: '/admin-api/rainbow'
 }
 const openFile = async (location, key) => {
   const fd = fs.openSync(location, 'rs+');
