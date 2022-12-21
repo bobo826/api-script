@@ -49,7 +49,7 @@ module.exports = [
             "key": "ORDER:ORDER_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/order/bulkDelivery,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/order/cancelHandle,/api/erp/ae/return-order/cancel,/api/erp/ae/reissueOrder/createReissue,/api/erp/ae/order/exportOrder,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/order/showTask,/api/ae/common/showTask,/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew,/api/erp/ae/order/mergeOrder,/api/erp/ae/order/getOrderDetail,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/reissueOrder/getGoods,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/order/reSyncOrderToWarehouse,/api/erp/ae/order/switchWarehouse,/api/erp/ae/phone/queryPhone,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/goods/detail,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/order/bulkDelivery,/api/erp/ae/billing/detail,/api/erp/ae/return-order/cancel,/api/erp/ae/order/cancelHandle,/api/erp/ae/reissueOrder/createReissue,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/order/showTask,/api/ae/common/showTask,/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew,/api/erp/ae/order/mergeOrder,/api/erp/ae/order/getOrderDetail,/api/erp/ae/return-order/search,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/reissueOrder/getGoods,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/order/reSyncOrderToWarehouse,/api/erp/ae/order/switchWarehouse,/api/erp/ae/phone/queryPhone,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/goods/detail,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
           }
         ]
       },
@@ -66,7 +66,7 @@ module.exports = [
             "key": "ORDER:REISSUE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/reissueOrder/getReissueOrder,/api/erp/ae/return-order/delete,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/reissueOrder/batchCreateReissueOrder,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/reissueOrder/closeReissueOrder,/api/erp/ae/return-order/cancel,/api/erp/ae/reissueOrder/createOldReissueOrder,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/reissueOrder/exportAddress,/api/erp/ae/reissueOrder/getReissueOrderTemplate,/api/erp/ae/reissueOrder/reSyncReissueOrder,/api/erp/ae/phone/queryPhone"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/reissueOrder/getReissueOrder,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/return-order/detail,/api/erp/ae/reissueOrder/batchCreateReissueOrder,/api/erp/ae/billing/detail,/api/erp/ae/return-order/cancel,/api/erp/ae/reissueOrder/closeReissueOrder,/api/erp/ae/reissueOrder/createOldReissueOrder,/api/erp/ae/return-order/search,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/reissueOrder/exportAddress,/api/erp/ae/reissueOrder/getReissueOrderTemplate,/api/erp/ae/reissueOrder/reSyncReissueOrder,/api/erp/ae/phone/queryPhone"
           }
         ]
       },
@@ -83,7 +83,7 @@ module.exports = [
             "key": "ORDER:ANNORMALORDER_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/specialOrder/updateAddress,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/specialOrder/exportOrder,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/retry,/api/erp/ae/specialOrder/getSpecialOrderDetail,/api/erp/ae/specialOrder/listSpecialOrder,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
+            "path": "/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/erp/ae/specialOrder/updateAddress,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/specialOrder/exportOrder,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/retry,/api/erp/ae/specialOrder/getSpecialOrderDetail,/api/erp/ae/specialOrder/listSpecialOrder,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/course-goods/class-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods"
           }
         ]
       },
@@ -128,7 +128,7 @@ module.exports = [
             "key": "PRODUCT:PRODUCT_MANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/erp/ae/goods/exportGoods,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/goods/detail,/api/erp/ae/goods/delete,/api/erp/ae/goods/disable,/api/erp/ae/goods/enable,/api/erp/ae/goods/sync,/api/erp/ae/category/list,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list"
+            "path": "/api/erp/ae/purchase-order/export,/api/erp/ae/return-order/detail,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/goods/exportGoods,/api/ae/common/showTask,/api/erp/ae/billing/detail,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/goods/detail,/api/erp/ae/goods/delete,/api/erp/ae/goods/disable,/api/erp/ae/goods/enable,/api/erp/ae/goods/sync,/api/erp/ae/category/list,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list"
           },
           {
             "name": "商品编辑",
@@ -290,7 +290,7 @@ module.exports = [
             "key": "STOCK_MANAGE:PRODUCT_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/inventory/product/listGoodsInventory,/api/erp/ae/category/list,/api/erp/ae/order/exportOrder,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
+            "path": "/api/erp/ae/inventory/product/listGoodsInventory,/api/erp/ae/category/list,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
           }
         ]
       }
@@ -318,7 +318,7 @@ module.exports = [
             "key": "LOGISTICS_MANAGE:USER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/delivery/rule/createGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/insert,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/category/add,/api/erp/ae/goods/add,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/delivery/rule/editGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/update,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/delivery/rule/createGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/insert,/api/erp/ae/return-order/delete,/api/erp/ae/category/add,/api/erp/ae/goods/add,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/api/erp/ae/delivery/rule/editGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/update,/admin-api/delivery/api/ae/deliveryInfo/update,/api/erp/ae/return-order/item/update-quantity"
           }
         ]
       },
@@ -335,7 +335,7 @@ module.exports = [
             "key": "LOGISTICS_MANAGE:COURSE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/admin-api/delivery/api/ae/deliveryCourseAssign/stop,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/admin-api/delivery/api/ae/deliveryCourseAssign/start,/admin-api/delivery/api/ae/deliveryCourseAssign/getCourseAssignById,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/admin-api/delivery/api/ae/deliveryCourseAssign/save,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
+            "path": "/admin-api/delivery/api/ae/deliveryInfo/allMap,/admin-api/delivery/api/ae/deliveryCourseAssign/stop,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/admin-api/delivery/api/ae/deliveryCourseAssign/start,/admin-api/delivery/api/ae/deliveryCourseAssign/getCourseAssignById,/admin-api/delivery/api/ae/deliveryCourseAssign/list,/api/erp/ae/delivery/rule/listGoodsRule,/admin-api/delivery/api/ae/deliveryUserAssign/list,/admin-api/delivery/api/ae/deliveryInfo/list,/api/erp/ae/goods/list,/api/erp/ae/statement/list,/admin-api/delivery/api/ae/cost/list,/api/erp/ae/statementExpenseItem/list,/admin-api/delivery/api/ae/deliveryCourseAssign/save,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
           }
         ]
       },
@@ -352,7 +352,7 @@ module.exports = [
             "key": "LOGISTICS_MANAGE:WAREHOUSE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/delivery/rule/update,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
+            "path": "/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/delivery/rule/update,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/course-list,/api/erp/ae/course-goods/class-delivery-periods,/api/erp/ae/gift/listGift"
           }
         ]
       },
@@ -386,7 +386,7 @@ module.exports = [
             "key": "LOGISTICS_MANAGE:GIFTSPECIFYWAREHOUSE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/course-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/class-delivery-periods"
+            "path": "/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/gift/warehouse/saveGiftWarehouse,/api/erp/ae/delivery/rule/create,/admin-api/delivery/api/ae/deliveryInfo/insert,/api/erp/ae/statementExpenseItem/saveItem,/api/erp/ae/gift/warehouse/getInfoById,/api/erp/ae/delivery/rule/detail,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/gift/warehouse/list,/api/erp/ae/delivery/rule/list,/api/erp/ae/gift/warehouse/stopGiftWarehouse,/api/erp/ae/delivery/rule/disable,/api/erp/ae/gift/warehouse/startGiftWarehouse,/api/erp/ae/delivery/rule/enable,/api/erp/ae/course-goods/course-list,/api/erp/ae/gift/listGift,/api/erp/ae/course-goods/class-list,/api/erp/ae/course-goods/class-delivery-periods"
           },
           {
             "name": "新建规则",
@@ -428,13 +428,6 @@ module.exports = [
         "authority": [],
         "ext": "{\"index\":5}",
         "children": [
-          {
-            "name": "按商品编码指定快递接口权限（必选）",
-            "key": "LOGISTICS_MANAGE:PRODUCTCODE_APIS",
-            "type": "api",
-            "authority": [],
-            "path": "/api/erp/ae/specialOrder/getAddress,/api/erp/ae/specialOrder/getAddressInfo,/api/erp/ae/goodsCodeAssign/save,/admin-api/delivery/api/ae/deliveryInfo/allMap,/api/erp/ae/return-order/delete,/api/erp/ae/goodsCodeAssign/validCode,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/goodsCodeAssign/delById,/api/erp/ae/goodsCodeAssign/start,/api/erp/ae/goodsCodeAssign/stop"
-          },
           {
             "name": "新建规则",
             "key": "PRODUCT-CODE-ENABLE:ADD",
@@ -478,6 +471,34 @@ module.exports = [
             "authority": []
           }
         ]
+      },
+      {
+        "name": "分配规则审核管理",
+        "key": "LOGISTICS_MANAGE:ASSIGNRULES",
+        "type": "route",
+        "path": "/logistics-manage/assignRules",
+        "authority": [],
+        "ext": "{\"index\":6}",
+        "children": [
+          {
+            "name": "查询",
+            "key": "ASSIGN_RULES:SEARCH",
+            "type": "component",
+            "authority": []
+          },
+          {
+            "name": "审核驳回",
+            "key": "ASSIGN_RULES:AUDIT_REJECT",
+            "type": "component",
+            "authority": []
+          },
+          {
+            "name": "审核通过",
+            "key": "ASSIGN_RULES:AUDIT_PASS",
+            "type": "component",
+            "authority": []
+          }
+        ]
       }
     ]
   },
@@ -503,7 +524,7 @@ module.exports = [
             "key": "PROCUREMENT:SUPPLIER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/supplier/submit,/api/erp/ae/billing/audit,/api/erp/ae/supplier/create,/api/erp/ae/supplier/financeDecline,/api/erp/ae/supplier/financeSubmit,/api/erp/ae/supplier/purchaseDecline,/api/erp/ae/supplier/purchaseSubmit,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust/listAuditLog,/api/erp/ae/supplier/logDetail,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/goodsCodeAssign/stop,/api/erp/ae/supplier/stopCooperation,/api/erp/ae/supplier/delete,/api/erp/ae/supplier/edit,/api/erp/ae/supplier/synToWms,/api/erp/ae/supplier/findManager"
+            "path": "/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/billing/audit,/api/erp/ae/supplier/submit,/api/erp/ae/supplier/create,/api/erp/ae/supplier/financeDecline,/api/erp/ae/supplier/financeSubmit,/api/erp/ae/supplier/purchaseDecline,/api/erp/ae/supplier/purchaseSubmit,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust/listAuditLog,/api/erp/ae/supplier/logDetail,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/goodsCodeAssign/stop,/api/erp/ae/supplier/stopCooperation,/api/erp/ae/supplier/delete,/api/erp/ae/supplier/edit,/api/erp/ae/supplier/synToWms,/api/erp/ae/supplier/findManager"
           }
         ]
       },
@@ -520,7 +541,7 @@ module.exports = [
             "key": "PROCUREMENT:SUPPLIERGOODS_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/price-adjust/list,/api/erp/ae/price-adjust-result/list,/api/erp/ae/price-adjust-result/import,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust-result/cycleEdit,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/price-adjust-result/getImportTemplateAddr,/api/erp/ae/price-adjust-result/exportSku,/api/erp/ae/price-adjust-result/histroy,/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/findManager"
+            "path": "/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/price-adjust/list,/api/erp/ae/price-adjust-result/list,/api/erp/ae/price-adjust-result/import,/api/erp/ae/asn/getViewById,/api/erp/ae/price-adjust/getInfoById,/api/erp/ae/supplier/detail,/api/erp/ae/price-adjust-result/findById,/api/erp/ae/price-adjust-result/cycleEdit,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/price-adjust-result/getImportTemplateAddr,/api/erp/ae/price-adjust-result/exportSku,/api/erp/ae/price-adjust-result/histroy,/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice,/api/erp/ae/supplier/listSupplier,/api/erp/ae/supplier/findManager"
           }
         ]
       },
@@ -578,7 +599,7 @@ module.exports = [
             "key": "PROCUREMENT:PURCHASEORDER_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/purchase-order/cancelOrder,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/detail,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/billing/detail,/api/erp/ae/purchase-order/closeOrder,/api/erp/ae/purchase-order/confirmOrder,/api/erp/ae/purchase-order/delOrder,/api/erp/ae/return-order/delete,/api/erp/ae/statement/delete,/api/erp/ae/purchase-order/getInfoById,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/purchase-order/list,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/price-adjust/saveBase,/api/erp/ae/purchase-order/saveBase,/api/erp/ae/price-adjust-result/findByGoodId,/api/erp/ae/price-adjust/delDetail,/api/erp/ae/purchase-order/delOneDetail,/api/erp/ae/purchase-order/editPurchaseCount,/api/erp/ae/purchase-order/importDetail,/api/erp/ae/purchase-order/addGoods,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/purchase-order/validateParentOrderNo"
+            "path": "/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/purchase-order/cancelOrder,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/detail,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/billing/detail,/api/erp/ae/purchase-order/closeOrder,/api/erp/ae/purchase-order/confirmOrder,/api/erp/ae/purchase-order/delOrder,/api/erp/ae/return-order/delete,/api/erp/ae/statement/delete,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/purchase-order/list-export,/api/erp/ae/purchase-order/getInfoById,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/purchase-order/list,/api/erp/ae/goodsCodeAssign/save,/api/erp/ae/price-adjust/saveBase,/api/erp/ae/purchase-order/saveBase,/api/erp/ae/price-adjust-result/findByGoodId,/api/erp/ae/price-adjust/delDetail,/api/erp/ae/purchase-order/delOneDetail,/api/erp/ae/purchase-order/editPurchaseCount,/api/erp/ae/purchase-order/importDetail,/api/erp/ae/purchase-order/addGoods,/api/erp/ae/purchase-order/getImportTemplateAddr,/api/erp/ae/purchase-order/validateParentOrderNo"
           }
         ]
       },
@@ -612,7 +633,7 @@ module.exports = [
             "key": "PROCUREMENT:PURCHASERETURN_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/return-order/item/append,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/return-order/create,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/return-order/item/search,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier,/api/erp/ae/return-order/item/remove,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/return-order/item/update-quantity,/api/erp/ae/return-order/update,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/delete,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/search,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail"
+            "path": "/api/erp/ae/return-order/item/append,/api/erp/ae/purchase-order/getGoods,/api/erp/ae/purchase-order/listDetail,/api/erp/ae/goods/search-goods,/api/erp/ae/goods/list,/api/erp/ae/return-order/create,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/return-order/item/search,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier,/api/erp/ae/return-order/item/remove,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/return-order/item/update-quantity,/api/erp/ae/return-order/update,/api/erp/ae/return-order/cancel,/api/erp/ae/return-order/delete,/api/erp/ae/return-order/search,/api/erp/ae/order/listOrder,/api/erp/ae/reissueOrder/list,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail"
           },
           {
             "name": "查询",
@@ -788,7 +809,7 @@ module.exports = [
             "key": "SETTLEMENT:PURCHASEBILLMANAGE_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/billing/feeDetail,/api/erp/ae/statement/payCallBack,/api/erp/ae/billing/payCallBack,/api/erp/ae/statement/printBill,/api/erp/ae/billing/print,/api/erp/ae/billing/list,/api/erp/ae/billing/addMulFee,/api/erp/ae/billing/audit,/api/erp/ae/return-order/delete,/api/erp/ae/billing/deleteMulFee,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/billing/downloadFeeDetail,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/billing/modifyMulFee,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier"
+            "path": "/api/erp/ae/billing/feeDetail,/api/erp/ae/statement/payCallBack,/api/erp/ae/billing/payCallBack,/api/erp/ae/statement/printBill,/api/erp/ae/billing/print,/api/erp/ae/billing/list,/api/erp/ae/billing/addMulFee,/api/erp/ae/billing/audit,/api/erp/ae/return-order/delete,/api/erp/ae/billing/deleteMulFee,/api/erp/ae/return-order/detail,/api/erp/ae/billing/detail,/api/erp/ae/billing/downloadFeeDetail,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory,/api/erp/ae/billing/modifyMulFee,/api/erp/ae/return-order/submit,/api/erp/ae/billing/submit,/api/erp/ae/supplier/listSupplierActive,/api/erp/ae/supplier/list,/api/erp/ae/supplier/listSupplier"
           },
           {
             "name": "查询",
@@ -903,7 +924,7 @@ module.exports = [
             "key": "CRS_MESSAGE_MANAGE:CRS_MESSAGE_LOG_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/phoneView/listAllDept,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/phoneView/listViewDetail,/api/erp/ae/phoneView/listPhoneView"
+            "path": "/api/erp/ae/phoneView/listViewDetail,/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/phoneView/listPhoneView,/api/erp/ae/phoneView/listAllDept"
           },
           {
             "name": "查看",
@@ -937,7 +958,7 @@ module.exports = [
             "key": "REPORT_MANAGE:REMITDEPOSIT_APIS",
             "type": "api",
             "authority": [],
-            "path": "/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/invoicing/list,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/invoicing/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
+            "path": "/api/erp/ae/goodsCodeAssign/list,/api/erp/ae/invoicing/list,/api/erp/ae/warehouse/getWarehouseList,/api/erp/ae/invoicing/export,/api/erp/ae/purchase-order/export,/api/erp/ae/price-adjust-result/export,/api/erp/ae/order/exportOrder,/api/erp/ae/order/showTask,/api/ae/common/showTask,/api/erp/ae/inventory/product/exportGoodsInventory"
           },
           {
             "name": "查询",

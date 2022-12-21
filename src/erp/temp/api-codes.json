@@ -140,12 +140,12 @@
 	},
 	"order/abnormalOrder-manage": {
 		"apiPath": [
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/return-order/detail",
-			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/specialOrder/updateAddress",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/return-order/detail",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/billing/detail",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
@@ -164,25 +164,25 @@
 	"order/order-manage": {
 		"apiPath": [
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
+			"/api/erp/ae/order/bulkDelivery",
 			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/return-order/detail",
-			"/api/erp/ae/order/bulkDelivery",
 			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/order/cancelHandle",
+			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/reissueOrder/createReissue",
+			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/order/showTask",
 			"/api/ae/common/showTask",
 			"/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew",
 			"/api/erp/ae/order/mergeOrder",
 			"/api/erp/ae/order/getOrderDetail",
-			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/order/listOrder",
 			"/api/erp/ae/reissueOrder/list",
+			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/reissueOrder/getGoods",
 			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/order/reSyncOrderToWarehouse",
@@ -200,18 +200,18 @@
 	"order/order-manage-reissue": {
 		"apiPath": [
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
-			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/reissueOrder/getReissueOrder",
+			"/api/erp/ae/return-order/delete",
 			"/api/erp/ae/warehouse/getWarehouseList",
-			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/reissueOrder/batchCreateReissueOrder",
+			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/reissueOrder/closeReissueOrder",
+			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/reissueOrder/createOldReissueOrder",
-			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/order/listOrder",
 			"/api/erp/ae/reissueOrder/list",
+			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/reissueOrder/exportAddress",
 			"/api/erp/ae/reissueOrder/getReissueOrderTemplate",
 			"/api/erp/ae/reissueOrder/reSyncReissueOrder",
@@ -220,9 +220,12 @@
 	},
 	"order/spShipApp": {
 		"apiPath": [
-			"/api/erp/ae/apply/delivery/listDeliveryApply",
 			"/api/erp/ae/apply/delivery/create",
-			"/api/erp/ae/apply/delivery/deliveryApplySwitch"
+			"/api/erp/ae/apply/delivery/edit",
+			"/api/erp/ae/return-order/delete",
+			"/api/erp/ae/apply/delivery/listDeliveryApply",
+			"/api/erp/ae/apply/delivery/deliveryApplySwitch",
+			"/api/erp/ae/apply/delivery/detail"
 		]
 	},
 	"procurement/deliveryOrder": {
@@ -278,10 +281,10 @@
 	},
 	"procurement/purchaseOrder": {
 		"apiPath": [
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/warehouse/getWarehouseList",
@@ -320,8 +323,8 @@
 		"apiPath": [
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
-			"/api/erp/ae/billing/audit",
 			"/api/erp/ae/supplier/submit",
+			"/api/erp/ae/billing/audit",
 			"/api/erp/ae/supplier/create",
 			"/api/erp/ae/supplier/financeDecline",
 			"/api/erp/ae/supplier/financeSubmit",
@@ -346,10 +349,10 @@
 	},
 	"procurement/supplierGoods": {
 		"apiPath": [
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/price-adjust/list",
@@ -412,11 +415,11 @@
 	},
 	"product/product-manage": {
 		"apiPath": [
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/purchase-order/export",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
 			"/api/erp/ae/goods/exportGoods",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/billing/detail",
@@ -468,15 +471,15 @@
 			"/api/erp/ae/course-goods/detail",
 			"/api/erp/ae/course-goods/edit",
 			"/api/erp/ae/course-goods/synToWms",
+			"/api/erp/ae/gift/listGift",
+			"/api/erp/ae/course-goods/class-list",
+			"/api/erp/ae/course-goods/course-list",
+			"/api/erp/ae/course-goods/class-delivery-periods",
 			"/api/erp/ae/category/list",
 			"/api/erp/ae/purchase-order/getGoods",
 			"/api/erp/ae/purchase-order/listDetail",
 			"/api/erp/ae/goods/search-goods",
-			"/api/erp/ae/goods/list",
-			"/api/erp/ae/course-goods/class-list",
-			"/api/erp/ae/course-goods/course-list",
-			"/api/erp/ae/course-goods/class-delivery-periods",
-			"/api/erp/ae/gift/listGift"
+			"/api/erp/ae/goods/list"
 		]
 	},
 	"product/product-virtualSuit": {
@@ -508,10 +511,26 @@
 			"/api/erp/ae/invoicing/list",
 			"/api/erp/ae/warehouse/getWarehouseList",
 			"/api/erp/ae/invoicing/export",
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
+			"/api/ae/common/showTask",
+			"/api/erp/ae/inventory/product/exportGoodsInventory"
+		]
+	},
+	"stock/stock-product": {
+		"apiPath": [
+			"/api/erp/ae/inventory/product/listGoodsInventory",
+			"/api/erp/ae/category/list",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
+			"/api/erp/ae/inventory/product/exportGoodsInventory",
+			"/api/erp/ae/order/exportOrder",
+			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory"
 		]
@@ -605,22 +624,6 @@
 			"/api/erp/ae/statementExpenseItem/deleteItem"
 		]
 	},
-	"stock/stock-product": {
-		"apiPath": [
-			"/api/erp/ae/inventory/product/listGoodsInventory",
-			"/api/erp/ae/category/list",
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/inventory/product/exportGoodsInventory",
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
-			"/api/erp/ae/order/exportOrder",
-			"/api/erp/ae/order/showTask",
-			"/api/ae/common/showTask",
-			"/api/erp/ae/inventory/product/exportGoodsInventory"
-		]
-	},
 	"settlement/pendingBillManage": {
 		"apiPath": [
 			"/api/erp/ae/waitSettleBilling/billedMoney",
@@ -648,10 +651,10 @@
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail",
 			"/api/erp/ae/billing/downloadFeeDetail",
-			"/api/erp/ae/purchase-order/export",
-			"/api/erp/ae/price-adjust-result/export",
 			"/api/erp/ae/order/exportOrder",
 			"/api/erp/ae/order/showTask",
+			"/api/erp/ae/purchase-order/export",
+			"/api/erp/ae/price-adjust-result/export",
 			"/api/ae/common/showTask",
 			"/api/erp/ae/inventory/product/exportGoodsInventory",
 			"/api/erp/ae/billing/modifyMulFee",
@@ -672,8 +675,8 @@
 	},
 	"logistics-manage/assignRules": {
 		"apiPath": [
-			"/api/erp/ae/billing/audit",
-			"/api/erp/ae/billing/transfer/list",
+			"/api/rainbow/ae/allocationRule/page",
+			"/api/rainbow/ae/allocationRule/review",
 			"/admin-api/delivery/api/ae/deliveryInfo/allMap",
 			"/api/erp/ae/warehouse/getWarehouseList"
 		]
@@ -712,9 +715,9 @@
 			"/api/erp/ae/return-order/update",
 			"/api/erp/ae/return-order/cancel",
 			"/api/erp/ae/return-order/delete",
-			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/order/listOrder",
 			"/api/erp/ae/reissueOrder/list",
+			"/api/erp/ae/return-order/search",
 			"/api/erp/ae/return-order/detail",
 			"/api/erp/ae/billing/detail"
 		]

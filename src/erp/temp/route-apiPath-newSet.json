@@ -9,7 +9,7 @@
 		"listAllDept": "/api/erp/ae/phoneView/listAllDept"
 	},
 	{
-		"transferBillingList": "/api/erp/ae/billing/transfer/list"
+		"pageAllocationRule": "/api/rainbow/ae/allocationRule/page"
 	},
 	{
 		"queryAllCpy": "/admin-api/delivery/api/ae/deliveryInfo/allMap"
@@ -18,7 +18,7 @@
 		"queryWareHouse": "/api/erp/ae/warehouse/getWarehouseList"
 	},
 	{
-		"audit": "/api/erp/ae/billing/audit"
+		"reviewAllocationRule": "/api/rainbow/ae/allocationRule/review"
 	},
 	{
 		"queryDataList": "/admin-api/delivery/api/ae/deliveryCourseAssign/list"
@@ -121,6 +121,114 @@
 	},
 	{
 		"validateForm": "/admin-api/delivery/api/ae/deliveryInfo/validateDuplicate"
+	},
+	{
+		"unNormalOrderDetail": "/api/erp/ae/specialOrder/listSpecialOrder"
+	},
+	{
+		"orderRetry": "/api/erp/ae/specialOrder/retry"
+	},
+	{
+		"getAddress": "/api/erp/ae/specialOrder/getAddress"
+	},
+	{
+		"getAddressList": "/api/erp/ae/specialOrder/getAddressInfo"
+	},
+	{
+		"addressUpdate": "/api/erp/ae/specialOrder/updateAddress"
+	},
+	{
+		"queryAbnormalOrderDetail": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
+	},
+	{
+		"exportAnnormalOrder": "/api/erp/ae/specialOrder/exportOrder"
+	},
+	{
+		"queryOrderList": "/api/erp/ae/order/listOrder"
+	},
+	{
+		"reSycnOrderToWare": "/api/erp/ae/order/reSyncOrderToWarehouse"
+	},
+	{
+		"cancelIntercept": "/api/erp/ae/order/cancelHandle"
+	},
+	{
+		"queryReissue": "/api/erp/ae/reissueOrder/getGoods"
+	},
+	{
+		"createReissue": "/api/erp/ae/reissueOrder/createReissue"
+	},
+	{
+		"exportXsl": "/api/erp/ae/order/exportOrder"
+	},
+	{
+		"exportXslData": "/api/erp/ae/order/showTask"
+	},
+	{
+		"mergeOrder": "/api/erp/ae/order/mergeOrder"
+	},
+	{
+		"bulkDelivery": "/api/erp/ae/order/bulkDelivery"
+	},
+	{
+		"queryOrderDetail": "/api/erp/ae/order/getOrderDetail"
+	},
+	{
+		"queryUserName": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"queryUseraddRess": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"queryUserMobile": "/api/erp/ae/phone/queryPhone"
+	},
+	{
+		"getTraces": "/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew"
+	},
+	{
+		"queryRessiueDetail": "/api/erp/ae/reissueOrder/getReissueOrder"
+	},
+	{
+		"switchWarehouse": "/api/erp/ae/order/switchWarehouse"
+	},
+	{
+		"queryOrderList": "/api/erp/ae/reissueOrder/list"
+	},
+	{
+		"handleExport": "/api/erp/ae/reissueOrder/export"
+	},
+	{
+		"createOldReissue": "/api/erp/ae/reissueOrder/createOldReissueOrder"
+	},
+	{
+		"reSyncOrder": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
+	},
+	{
+		"cancelReissueOrder": "/api/erp/ae/reissueOrder/closeReissueOrder"
+	},
+	{
+		"batchInsertOrder": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
+	},
+	{
+		"exportAddressLibrary": "/api/erp/ae/reissueOrder/exportAddress"
+	},
+	{
+		"reissueOrderTemplate": "/api/erp/ae/reissueOrder/getReissueOrderTemplate"
+	},
+	{
+		"querySpDeliveryList": "/api/erp/ae/apply/delivery/listDeliveryApply"
+	},
+	{
+		"creatSpApply": "/api/erp/ae/apply/delivery/create"
+	},
+	{
+		"switchSpShip": "/api/erp/ae/apply/delivery/deliveryApplySwitch"
+	},
+	{
+		"deliveryDetail": "/api/erp/ae/apply/delivery/detail"
+	},
+	{
+		"deliveryEdit": "/api/erp/ae/apply/delivery/edit"
 	},
 	{
 		"queryDeliveryGoodsList": "/api/erp/ae/asn/list"
@@ -354,108 +462,6 @@
 		"exportAveragepPriceXsl": "/api/erp/ae/price-adjust-result/exportGoodsWeightedAveragePrice"
 	},
 	{
-		"unNormalOrderDetail": "/api/erp/ae/specialOrder/listSpecialOrder"
-	},
-	{
-		"orderRetry": "/api/erp/ae/specialOrder/retry"
-	},
-	{
-		"getAddress": "/api/erp/ae/specialOrder/getAddress"
-	},
-	{
-		"getAddressList": "/api/erp/ae/specialOrder/getAddressInfo"
-	},
-	{
-		"addressUpdate": "/api/erp/ae/specialOrder/updateAddress"
-	},
-	{
-		"queryAbnormalOrderDetail": "/api/erp/ae/specialOrder/getSpecialOrderDetail"
-	},
-	{
-		"exportAnnormalOrder": "/api/erp/ae/specialOrder/exportOrder"
-	},
-	{
-		"queryOrderList": "/api/erp/ae/order/listOrder"
-	},
-	{
-		"reSycnOrderToWare": "/api/erp/ae/order/reSyncOrderToWarehouse"
-	},
-	{
-		"cancelIntercept": "/api/erp/ae/order/cancelHandle"
-	},
-	{
-		"queryReissue": "/api/erp/ae/reissueOrder/getGoods"
-	},
-	{
-		"createReissue": "/api/erp/ae/reissueOrder/createReissue"
-	},
-	{
-		"exportXsl": "/api/erp/ae/order/exportOrder"
-	},
-	{
-		"exportXslData": "/api/erp/ae/order/showTask"
-	},
-	{
-		"mergeOrder": "/api/erp/ae/order/mergeOrder"
-	},
-	{
-		"bulkDelivery": "/api/erp/ae/order/bulkDelivery"
-	},
-	{
-		"queryOrderDetail": "/api/erp/ae/order/getOrderDetail"
-	},
-	{
-		"queryUserName": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"queryUseraddRess": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"queryUserMobile": "/api/erp/ae/phone/queryPhone"
-	},
-	{
-		"getTraces": "/admin-api/delivery/api/ae/deliveryQuery/queryDeliveryTracesNew"
-	},
-	{
-		"queryRessiueDetail": "/api/erp/ae/reissueOrder/getReissueOrder"
-	},
-	{
-		"switchWarehouse": "/api/erp/ae/order/switchWarehouse"
-	},
-	{
-		"queryOrderList": "/api/erp/ae/reissueOrder/list"
-	},
-	{
-		"handleExport": "/api/erp/ae/reissueOrder/export"
-	},
-	{
-		"createOldReissue": "/api/erp/ae/reissueOrder/createOldReissueOrder"
-	},
-	{
-		"reSyncOrder": "/api/erp/ae/reissueOrder/reSyncReissueOrder"
-	},
-	{
-		"cancelReissueOrder": "/api/erp/ae/reissueOrder/closeReissueOrder"
-	},
-	{
-		"batchInsertOrder": "/api/erp/ae/reissueOrder/batchCreateReissueOrder"
-	},
-	{
-		"exportAddressLibrary": "/api/erp/ae/reissueOrder/exportAddress"
-	},
-	{
-		"reissueOrderTemplate": "/api/erp/ae/reissueOrder/getReissueOrderTemplate"
-	},
-	{
-		"querySpDeliveryList": "/api/erp/ae/apply/delivery/listDeliveryApply"
-	},
-	{
-		"creatSpApply": "/api/erp/ae/apply/delivery/create"
-	},
-	{
-		"switchSpShip": "/api/erp/ae/apply/delivery/deliveryApplySwitch"
-	},
-	{
 		"queryGiftMapList": "/api/erp/ae/gift/good/list"
 	},
 	{
@@ -684,6 +690,9 @@
 		"queryWaitSettleBillingList": "/api/erp/ae/waitSettleBilling/list"
 	},
 	{
+		"querySupplierList": "/api/erp/ae/supplier/listSupplier"
+	},
+	{
 		"billingMoney": "/api/erp/ae/waitSettleBilling/billingMoney"
 	},
 	{
@@ -714,6 +723,9 @@
 		"submit": "/api/erp/ae/billing/submit"
 	},
 	{
+		"audit": "/api/erp/ae/billing/audit"
+	},
+	{
 		"printBill": "/api/erp/ae/billing/print"
 	},
 	{
@@ -724,6 +736,9 @@
 	},
 	{
 		"downloadFeeDetail": "/api/erp/ae/billing/downloadFeeDetail"
+	},
+	{
+		"transferBillingList": "/api/erp/ae/billing/transfer/list"
 	},
 	{
 		"transferStatistics": "/api/erp/ae/billing/transfer/statistics"

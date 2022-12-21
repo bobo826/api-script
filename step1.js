@@ -10,7 +10,7 @@ const values = [];
 const baseUrlObj = {
   DELI_DEGUG_URL: '/admin-api/delivery',
   ORDER_DEGUG_URL: '/admin-api/order',
-  RAINBOW_DEGUG_URL: '/admin-api/rainbow'
+  RAINBOW_DEGUG_URL: '/api/rainbow'
 }
 const openFile = async (location, key) => {
   const fd = fs.openSync(location, 'rs+');
